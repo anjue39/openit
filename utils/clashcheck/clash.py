@@ -142,14 +142,24 @@ def filter(config):
                     country = str(countrify.get(ip)['country']['iso_code'])
                 except:
                     country = 'UN'
+
+                if x['type'] == 'grpc':
+                    try:
+                        if 'tls' not in x or not x['tls']:
+                            x['tls'] = True
+                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'GRPC'
+                        authentication = 'password'
+                    except:
+                        continue
                 
-                # 增加gprc和h2 tls类型校验，确保开启TLS
-                if x['type'] in ['grpc', 'h2']:
-                    # 确保 TLS 开启
-                    if 'tls' not in x or not x['tls']:
-                        x['tls'] = True  # 强制开启 TLS
-                    x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + str(x['type'].upper())
-                    authentication = 'password'
+                elif x['type'] == 'h2':
+                    try:
+                        if 'tls' not in x or not x['tls']:
+                            x['tls'] = True
+                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'H2'
+                        authentication = 'password'
+                    except:
+                        continue
                     
                 elif x['type'] == 'ss':
                     try:
