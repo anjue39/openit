@@ -2,6 +2,6 @@ PyYAML~=6.0.2
 requests~=2.32.3
 geoip2==4.8.1
 maxminddb~=2.6.2
-psutil~=6.1.0
+psutil~=6.1.1
 emoji-country-flag~=2.0.1
 tqdm~=4.67.1
