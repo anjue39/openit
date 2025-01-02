@@ -197,169 +197,193 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: AE 1 → anjue, server: series-a2-mec.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
-  - {name: AM 1 → anjue, server: vm.v2ray.com.br, port: 8080, type: vmess, uuid: 7bc1cddb-e8a0-4742-8a15-4221c481e01f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CY 1 → anjue, server: www.csgo.com, port: 443, type: vmess, uuid: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: kr.cfyyds.filegear-sg.me}}, udp: true}
+  - {name: AT 1 → anjue, server: 95.164.9.144, port: 2927, type: ss, cipher: chacha20-ietf-poly1305, password: ug4Fu79SEREdFGlt2sUyT4, udp: true}
+  - {name: BH 1 → anjue, server: series-a2-me.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
+  - {name: CZ 1 → anjue, server: 94.131.97.22, port: 5139, type: ss, cipher: chacha20-ietf-poly1305, password: cN5RRTw7vYadEdRcdIduix, udp: true}
   - {name: FI 1 → anjue, server: 185.77.217.121, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: X7eoEBrARWsBUiVfchVEdH, udp: true}
-  - {name: IE 1 → anjue, server: 52.208.124.124, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: IE 2 → anjue, server: 34.250.12.114, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: IE 1 → anjue, server: 52.30.162.213, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: IE 2 → anjue, server: 54.170.224.134, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: IL 1 → anjue, server: 188.191.147.127, port: 31348, type: ss, cipher: chacha20-ietf-poly1305, password: 6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6, udp: true}
   - {name: IR 1 → anjue, server: exchange.gameaurela.click, port: 52952, type: ss, cipher: chacha20-ietf-poly1305, password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj, udp: true}
-  - {name: KZ 1 → anjue, server: 45.8.98.163, port: 52839, type: ss, cipher: chacha20-ietf-poly1305, password: 3N2JoZhDodMX5wPfr0xbT5, udp: true}
-  - {name: NO 1 → anjue, server: 51.13.35.115, port: 20760, type: ss, cipher: chacha20-ietf-poly1305, password: SK8DG4IJFnDwuhy35hOWUj, udp: true}
+  - {name: IR 2 → anjue, server: 92.242.220.22, port: 37885, type: vmess, uuid: 8dee19ab-50ce-4d06-be42-5e53c8989ccc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: LT 1 → anjue, server: 45.87.175.164, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
+  - {name: LT 2 → anjue, server: 45.87.175.154, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
   - {name: SE 1 → anjue, server: 46.246.98.155, port: 44013, type: ss, cipher: chacha20-ietf-poly1305, password: UDcjYQ6Z6AIWxViZpqyOmO, udp: true}
+  - {name: SE 2 → anjue, server: 13.48.80.188, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: SE 3 → anjue, server: 16.170.127.250, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
+  - {name: SE 4 → anjue, server: 13.48.143.1, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
   - {name: TR 1 → anjue, server: 207.211.215.169, port: 43118, type: trojan, password: ypDt8RkT7J, skip-cert-verify: true, udp: true}
   - {name: TR 2 → anjue, server: 45.89.52.66, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: undefinedUN 1 → anjue, server: gloal.anjue39.repl.co, port: 443, type: vmess, uuid: f2a1a5ab-4f2e-4840-a469-832d68c942e6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /f2a1a5ab-4f2e-4840-a469-832d68c942e6-vm, headers: {Host: gloal.anjue39.repl.co}}, udp: true}
-  - {name: 🇦🇺 AU 1 → anjue, server: 172.105.172.209, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
-  - {name: 🇦🇺 AU 2 → anjue, server: 195.254.165.63, port: 34497, type: vmess, uuid: 860a1295-0d81-403c-a179-97f396437809, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/@HosseinStore_Za/@NEKO_Za]}, udp: true}
+  - {name: 🇦🇺 AU 1 → anjue, server: 195.254.165.63, port: 34497, type: vmess, uuid: 860a1295-0d81-403c-a179-97f396437809, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/@HosseinStore_Za/@NEKO_Za]}, udp: true}
+  - {name: 🇦🇺 AU 2 → anjue, server: 172.105.172.209, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇦🇺 AU 3 → anjue, server: syd-01.oci.ee, port: 23451, type: vmess, uuid: a9197b2d-e7e2-47d9-854f-0334afd911d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: syd-01.oci.ee}}, udp: true}
+  - {name: 🇦🇺 AU 4 → anjue, server: syd-01.oci.ee, port: 23451, type: vmess, uuid: 8f8d666b-318f-466e-b81b-1e89ec8e2a46, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: syd-01.oci.ee}}, udp: true}
+  - {name: 🇦🇺 AU 5 → anjue, server: syd-01.oci.ee, port: 23451, type: vmess, uuid: d179939e-0a67-4448-a46a-75b35f594e5d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: syd-01.oci.ee}}, udp: true}
+  - {name: 🇦🇺 AU 6 → anjue, server: syd-01.oci.ee, port: 23451, type: vmess, uuid: 36008b5f-5de0-43a7-b213-a2a1b1e5fa89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: syd-01.oci.ee}}, udp: true}
   - {name: 🇨🇦 CA 1 → anjue, server: 142.4.216.225, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: JIhN6rBKkaEboLNXVSv5rq, udp: true}
+  - {name: 🇨🇦 CA 10 → anjue, server: 86.104.75.103, port: 49264, type: ss, cipher: chacha20-ietf-poly1305, password: LI4obOEIDLzDjd7xYlhhTJ, udp: true}
+  - {name: 🇨🇦 CA 11 → anjue, server: denc36.xtooltech.cfd, port: 443, type: vmess, uuid: b321fd5d-e6ec-4293-a644-164e3885f52e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: adenc36v.xtooltech.cfd}}, udp: true}
+  - {name: 🇨🇦 CA 12 → anjue, server: 86.104.74.243, port: 14255, type: ss, cipher: chacha20-ietf-poly1305, password: fDDmH4QefmWqMJ8UURZrGh, udp: true}
+  - {name: 🇨🇦 CA 13 → anjue, server: 23.162.200.182, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇦 CA 2 → anjue, server: 23.162.200.94, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: nina.bond}}, udp: true}
-  - {name: 🇨🇦 CA 3 → anjue, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇨🇦 CA 4 → anjue, server: 134.195.198.61, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇨🇦 CA 5 → anjue, server: 15.235.50.172, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇨🇦 CA 6 → anjue, server: 15.235.83.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: mankadmu.com}}, udp: true}
-  - {name: 🇨🇦 CA 7 → anjue, server: 23.162.200.103, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇨🇦 CA 3 → anjue, server: 23.162.200.103, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇨🇦 CA 4 → anjue, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇨🇦 CA 5 → anjue, server: 15.235.83.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: mankadmu.com}}, udp: true}
+  - {name: 🇨🇦 CA 6 → anjue, server: 134.195.198.61, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇨🇦 CA 7 → anjue, server: 15.235.50.172, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇨🇦 CA 8 → anjue, server: 38.107.226.146, port: 1230, type: ss, cipher: chacha20-ietf-poly1305, password: H5S0hvcxRi#YLmgU, udp: true}
+  - {name: 🇨🇦 CA 9 → anjue, server: 134.195.198.147, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
   - {name: 🇨🇳 CN 1 → anjue, server: 107.148.207.249, port: 48712, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 2 → anjue, server: 36.150.215.222, port: 48544, type: trojan, password: vzhXXZVw, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW 1 → anjue, server: tw.ssrxray.click, port: 36918, type: ss, cipher: aes-256-gcm, password: uoXctIQ4L89ykUZwn17Pn3CzNDNcZSRabCgN5hyNV7JQ, udp: true}
-  - {name: 🇩🇪 DE 1 → anjue, server: 80.92.204.106, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: 🇩🇪 DE 10 → anjue, server: 45.151.62.54, port: 28825, type: ss, cipher: chacha20-ietf-poly1305, password: 0zyDRZ1XmNXaaCAN7KEA8a, udp: true}
-  - {name: 🇩🇪 DE 11 → anjue, server: 138.199.145.158, port: 1090, type: ss, cipher: chacha20-ietf-poly1305, password: I3MiGSRLCZS0_iPOd35XfQ, udp: true}
+  - {name: 🇩🇪 DE 1 → anjue, server: linde06.indiavideo.sbs, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: linde06.indiavideo.sbs}}, udp: true}
+  - {name: 🇩🇪 DE 10 → anjue, server: 18.157.156.32, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE 11 → anjue, server: 63.177.35.90, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE 12 → anjue, server: hms23.fixedfloati.cfd, port: 443, type: vmess, uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkwsd, headers: {Host: hms23.fixedfloati.cfd}}, udp: true}
   - {name: 🇩🇪 DE 2 → anjue, server: 57.129.24.141, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇩🇪 DE 3 → anjue, server: linde06.indiavideo.sbs, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: linde06.indiavideo.sbs}}, udp: true}
-  - {name: 🇩🇪 DE 4 → anjue, server: 91.107.249.225, port: 2053, type: vmess, uuid: a0b2f962-fc82-407a-aa1b-647165a95a12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/telegram-Gozargah-Azadi], headers: {Host: [iran.ir]}}, udp: true}
-  - {name: 🇩🇪 DE 5 → anjue, server: 57.129.24.142, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇩🇪 DE 6 → anjue, server: 57.129.24.125, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc}}, udp: true}
-  - {name: 🇩🇪 DE 7 → anjue, server: 23.158.56.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇩🇪 DE 8 → anjue, server: 57.129.24.139, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇩🇪 DE 3 → anjue, server: 57.129.24.142, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇩🇪 DE 4 → anjue, server: 57.129.24.125, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc}}, udp: true}
+  - {name: 🇩🇪 DE 5 → anjue, server: 57.129.24.139, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇩🇪 DE 6 → anjue, server: 23.158.56.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇩🇪 DE 7 → anjue, server: 80.92.204.106, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
+  - {name: 🇩🇪 DE 8 → anjue, server: 45.151.62.54, port: 28825, type: ss, cipher: chacha20-ietf-poly1305, password: 0zyDRZ1XmNXaaCAN7KEA8a, udp: true}
   - {name: 🇩🇪 DE 9 → anjue, server: frankfurt03.zgjok.com, port: 443, type: vmess, uuid: 4f7c2243-a38a-4672-983b-f1378aee0a7f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: frankfurt03.zgjok.com}}, udp: true}
   - {name: 🇩🇰 DK 1 → anjue, server: 193.29.107.234, port: 49020, type: vmess, uuid: 2e967dd5-8d24-4099-a901-412dcb4024fd, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇰 DK 2 → anjue, server: 193.29.107.234, port: 49020, type: vmess, uuid: 2e967dd5-8d24-4099-a901-412dcb4024fd, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇪🇸 ES 1 → anjue, server: 150.241.95.63, port: 12271, type: ss, cipher: chacha20-ietf-poly1305, password: MDtZ$d1lcz, udp: true}
-  - {name: 🇫🇷 FR 1 → anjue, server: 57.128.184.119, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
-  - {name: 🇫🇷 FR 10 → anjue, server: 51.77.20.132, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇫🇷 FR 11 → anjue, server: beyonddbc.sbs, port: 443, type: vmess, uuid: 8d90c129-4156-4d6c-9115-24df25f26a02, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: beyonddbc.sbs}}, udp: true}
-  - {name: 🇫🇷 FR 12 → anjue, server: 57.129.25.20, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
-  - {name: 🇫🇷 FR 13 → anjue, server: irvideo.cfd, port: 443, type: vmess, uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: irvideo.cfd}}, udp: true}
-  - {name: 🇫🇷 FR 14 → anjue, server: 163.5.159.231, port: 443, type: vmess, uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: irvideo.cfd}}, udp: true}
-  - {name: 🇫🇷 FR 2 → anjue, server: 57.129.28.69, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇫🇷 FR 3 → anjue, server: 51.77.20.137, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇫🇷 FR 4 → anjue, server: 146.59.55.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇫🇷 FR 5 → anjue, server: 5.196.29.123, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇪🇸 ES 1 → anjue, server: 5.188.181.201, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: 🇪🇸 ES 2 → anjue, server: 194.87.45.189, port: 40076, type: ss, cipher: chacha20-ietf-poly1305, password: 6PwyQi3Ost6YWMKinMdgcS, udp: true}
+  - {name: 🇪🇸 ES 3 → anjue, server: 150.241.102.95, port: 21771, type: ss, cipher: chacha20-ietf-poly1305, password: ahxGyFAMoFsCknZh3yxsSZ, udp: true}
+  - {name: 🇫🇷 FR 1 → anjue, server: 5.196.29.123, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇫🇷 FR 10 → anjue, server: beyonddbc.sbs, port: 443, type: vmess, uuid: 8d90c129-4156-4d6c-9115-24df25f26a02, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: beyonddbc.sbs}}, udp: true}
+  - {name: 🇫🇷 FR 11 → anjue, server: 146.59.55.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇫🇷 FR 12 → anjue, server: beyonddsz.cfd, port: 443, type: vmess, uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: beyonddsz.cfd}}, udp: true}
+  - {name: 🇫🇷 FR 13 → anjue, server: 13.37.21.185, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 14 → anjue, server: 51.44.130.116, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 15 → anjue, server: hms182.glweidf.sbs, port: 443, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: hms182.glweidf.sbs}}, udp: true}
+  - {name: 🇫🇷 FR 16 → anjue, server: hms07.xfixedfloat.cfd, port: 443, type: vmess, uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: hms07.xfixedfloat.cfd}}, udp: true}
+  - {name: 🇫🇷 FR 17 → anjue, server: yournextcareerstep.online, port: 443, type: trojan, password: 984e400bf5d541b7b0815913fe0c432a, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 2 → anjue, server: 57.128.184.119, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇫🇷 FR 3 → anjue, server: 51.77.20.132, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇫🇷 FR 4 → anjue, server: 57.128.184.127, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇫🇷 FR 5 → anjue, server: 57.129.25.20, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
   - {name: 🇫🇷 FR 6 → anjue, server: 57.129.25.22, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇫🇷 FR 7 → anjue, server: 51.44.118.98, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 8 → anjue, server: 57.128.184.127, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇫🇷 FR 9 → anjue, server: 57.129.25.25, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇫🇷 FR 7 → anjue, server: 57.129.28.69, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇫🇷 FR 8 → anjue, server: 57.129.25.25, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇫🇷 FR 9 → anjue, server: 51.77.20.137, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
   - {name: 🇬🇧 GB 1 → anjue, server: 89.185.84.185, port: 12575, type: ss, cipher: chacha20-ietf-poly1305, password: JdkppSRNMuKUIbF229zC1e, udp: true}
-  - {name: 🇬🇧 GB 10 → anjue, server: 68.168.31.242, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇬🇧 GB 11 → anjue, server: 193.38.136.137, port: 8030, type: ss, cipher: aes-256-gcm, password: 4230161T38A0WzaL1SuVL, udp: true}
-  - {name: 🇬🇧 GB 12 → anjue, server: 149.7.16.248, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
-  - {name: 🇬🇧 GB 13 → anjue, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
-  - {name: 🇬🇧 GB 14 → anjue, server: 35.179.218.63, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 GB 2 → anjue, server: 149.7.16.194, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇬🇧 GB 3 → anjue, server: 149.7.16.73, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇬🇧 GB 4 → anjue, server: 107.181.155.244, port: 55330, type: ss, cipher: chacha20-ietf-poly1305, password: rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg, udp: true}
-  - {name: 🇬🇧 GB 5 → anjue, server: 185.5.38.111, port: 55988, type: ss, cipher: chacha20-ietf-poly1305, password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX, udp: true}
-  - {name: 🇬🇧 GB 6 → anjue, server: 149.7.16.33, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇬🇧 GB 7 → anjue, server: 149.7.16.174, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇬🇧 GB 8 → anjue, server: 172.99.190.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
-  - {name: 🇬🇧 GB 9 → anjue, server: 149.7.16.188, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇭🇰 HK 1 → anjue, server: xg.dashuai.cyou, port: 19901, type: vmess, uuid: dace78eb-56ae-4fc8-87c5-08294208b57f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 2 → anjue, server: xg.dashuai.cyou, port: 19901, type: vmess, uuid: dace78eb-56ae-4fc8-87c5-08294208b57f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 3 → anjue, server: 212.192.12.70, port: 53274, type: vmess, uuid: 960fe676-7d5d-40a8-af96-b482bab22f14, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇭🇰 HK 4 → anjue, server: 212.192.12.70, port: 53274, type: vmess, uuid: e240c428-c765-4b82-a9f3-5287c2bf0c36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇮🇳 IN 1 → anjue, server: 103.174.86.113, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: vZr8MlUXUihNEndqIpjDxQdSeqi37FbgoHBmQ1syy6ZjkbBn, udp: true}
-  - {name: 🇮🇳 IN 2 → anjue, server: 103.174.86.114, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: US4tskJaYStBPUKvcNVkf0PVhXbsAGCNvrhbfZybtOx9u2cF, udp: true}
-  - {name: 🇮🇳 IN 3 → anjue, server: 159.65.149.72, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: p7EhC8MR7o7GuRn27YF8SQNAKJ2lUbBNIjcyqSmBHsy8wLbJ, udp: true}
+  - {name: 🇬🇧 GB 10 → anjue, server: 149.7.16.188, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇬🇧 GB 11 → anjue, server: 172.99.190.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇬🇧 GB 12 → anjue, server: 107.181.155.244, port: 55330, type: ss, cipher: chacha20-ietf-poly1305, password: rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg, udp: true}
+  - {name: 🇬🇧 GB 13 → anjue, server: 213.109.147.242, port: 62685, type: ss, cipher: chacha20-ietf-poly1305, password: VpKABcOpNNA0l5G2AVOmw8, udp: true}
+  - {name: 🇬🇧 GB 14 → anjue, server: 185.168.195.211, port: 8080, type: vmess, uuid: 02788b47-d952-55e0-98de-d743d01bd007, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 15 → anjue, server: 185.168.195.211, port: 8080, type: vmess, uuid: 02788b47-d952-55e0-98de-d743d01bd007, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 16 → anjue, server: 52.56.171.102, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 17 → anjue, server: 79.127.229.54, port: 18000, type: vmess, uuid: fa1897db-1925-4c86-a495-939a959af900, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 18 → anjue, server: 79.127.229.54, port: 18000, type: vmess, uuid: fa1897db-1925-4c86-a495-939a959af900, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 2 → anjue, server: 193.38.136.137, port: 8030, type: ss, cipher: aes-256-gcm, password: 4230161T38A0WzaL1SuVL, udp: true}
+  - {name: 🇬🇧 GB 3 → anjue, server: 68.168.31.242, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇬🇧 GB 4 → anjue, server: 149.7.16.248, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇬🇧 GB 5 → anjue, server: 149.7.16.194, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇬🇧 GB 6 → anjue, server: 149.7.16.174, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇬🇧 GB 7 → anjue, server: 149.7.16.73, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇬🇧 GB 8 → anjue, server: 149.7.16.33, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇬🇧 GB 9 → anjue, server: 185.5.38.111, port: 55988, type: ss, cipher: chacha20-ietf-poly1305, password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX, udp: true}
+  - {name: 🇭🇰 HK 1 → anjue, server: 141.98.234.93, port: 20012, type: ss, cipher: chacha20-ietf-poly1305, password: WfmxKX2FBJRU0Ie9VLIYDL, udp: true}
+  - {name: 🇮🇳 IN 1 → anjue, server: 159.65.149.72, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: p7EhC8MR7o7GuRn27YF8SQNAKJ2lUbBNIjcyqSmBHsy8wLbJ, udp: true}
+  - {name: 🇮🇳 IN 2 → anjue, server: 103.174.86.113, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: vZr8MlUXUihNEndqIpjDxQdSeqi37FbgoHBmQ1syy6ZjkbBn, udp: true}
+  - {name: 🇮🇳 IN 3 → anjue, server: 103.174.86.114, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: US4tskJaYStBPUKvcNVkf0PVhXbsAGCNvrhbfZybtOx9u2cF, udp: true}
   - {name: 🇯🇵 JP 1 → anjue, server: 138.199.23.100, port: 43118, type: trojan, password: ypDt8RkT7J, sni: radtz.phooeyunfold.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 2 → anjue, server: jp01-alt-vm0.entry.srthdw.art, port: 21585, type: vmess, uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 2 → anjue, server: jp03-alt-vm0.entry.srthdw.art, port: 21585, type: vmess, uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 JP 3 → anjue, server: jp01-alt-vm0.entry.srthdw.art, port: 21583, type: vmess, uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 4 → anjue, server: jp03-alt-vm0.entry.srthdw.art, port: 21585, type: vmess, uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 5 → anjue, server: jp01-alt-vm0.entry.srthdw.art, port: 21583, type: vmess, uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR 1 → anjue, server: 146.56.112.110, port: 8888, type: vmess, uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR 2 → anjue, server: seoul-1ddns.aboutanime.eu.org, port: 23451, type: vmess, uuid: 316a1bdd-9c0b-4288-874a-eb94a68ad7e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: seoul-1ddns.aboutanime.eu.org}}, udp: true}
-  - {name: 🇲🇾 MY 1 → anjue, server: 103.106.229.29, port: 47929, type: vmess, uuid: 63ab66f1-4d71-424e-8f2d-f4fb90fc92a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wada12222}, udp: true}
+  - {name: 🇯🇵 JP 4 → anjue, server: jp01-alt-vm0.entry.srthdw.art, port: 21585, type: vmess, uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 5 → anjue, server: 140.83.63.38, port: 24445, type: vmess, uuid: 94c5ef37-4d82-49f9-c624-f01259374a17, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 6 → anjue, server: 140.83.63.38, port: 24445, type: vmess, uuid: 94c5ef37-4d82-49f9-c624-f01259374a17, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 7 → anjue, server: jp03-alt-vm0.entry.srthdw.art, port: 21585, type: vmess, uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 1 → anjue, server: seoul-1ddns.aboutanime.eu.org, port: 23451, type: vmess, uuid: 316a1bdd-9c0b-4288-874a-eb94a68ad7e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: seoul-1ddns.aboutanime.eu.org}}, udp: true}
+  - {name: 🇰🇷 KR 2 → anjue, server: 146.56.112.110, port: 8888, type: vmess, uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇲🇾 MY 1 → anjue, server: 103.106.229.29, port: 47928, type: vmess, uuid: a4141a2c-ca33-4237-add0-220a204e4ac3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wada12222}, udp: true}
+  - {name: 🇲🇾 MY 2 → anjue, server: 103.106.229.29, port: 47929, type: vmess, uuid: 63ab66f1-4d71-424e-8f2d-f4fb90fc92a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wada12222}, udp: true}
+  - {name: 🇲🇾 MY 3 → anjue, server: 103.106.229.29, port: 47930, type: vmess, uuid: ec7dd23d-d03b-4262-9793-def9c849a01d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wada12222}, udp: true}
+  - {name: 🇲🇾 MY 4 → anjue, server: 154.83.88.106, port: 8888, type: vmess, uuid: 63ab66f1-4d71-424e-8f2d-f4fb90fc92a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇲🇾 MY 5 → anjue, server: 154.83.88.106, port: 8888, type: vmess, uuid: 7c97b618-741d-49f9-82c2-169a197d28c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 NL 1 → anjue, server: 109.201.152.181, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: 🇳🇱 NL 2 → anjue, server: 5.35.47.122, port: 45635, type: ss, cipher: chacha20-ietf-poly1305, password: CLphyEMQT8nbG8EImX0A2D, udp: true}
-  - {name: 🇳🇱 NL 3 → anjue, server: 141.144.204.126, port: 2052, type: vmess, uuid: 113ade9e-cef2-428e-a1e6-803b7eb27a10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/index?ed=2048"}, udp: true}
-  - {name: 🇳🇱 NL 4 → anjue, server: 208.67.105.87, port: 42501, type: ss, cipher: chacha20-ietf-poly1305, password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf, udp: true}
-  - {name: 🇳🇱 NL 5 → anjue, server: 208.67.105.196, port: 42029, type: ss, cipher: chacha20-ietf-poly1305, password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD, udp: true}
-  - {name: 🇳🇱 NL 6 → anjue, server: 95.179.128.114, port: 80, type: vmess, uuid: a6292090-afe1-4640-97a7-4f1d1d877cf1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /Av8czorIlYicU6D349brWUw6a}, udp: true}
-  - {name: 🇳🇱 NL 7 → anjue, server: 198.105.123.190, port: 46902, type: ss, cipher: chacha20-ietf-poly1305, password: 2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8, udp: true}
+  - {name: 🇳🇱 NL 2 → anjue, server: 198.105.123.190, port: 46902, type: ss, cipher: chacha20-ietf-poly1305, password: 2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8, udp: true}
+  - {name: 🇳🇱 NL 3 → anjue, server: 95.179.128.114, port: 80, type: vmess, uuid: a6292090-afe1-4640-97a7-4f1d1d877cf1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /Av8czorIlYicU6D349brWUw6a}, udp: true}
+  - {name: 🇳🇱 NL 4 → anjue, server: 193.29.139.202, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 🇳🇱 NL 5 → anjue, server: 89.23.103.125, port: 42090, type: ss, cipher: chacha20-ietf-poly1305, password: uQS5ntVqC00sSKkeNzUiD3, udp: true}
+  - {name: 🇳🇱 NL 6 → anjue, server: 208.67.105.196, port: 42029, type: ss, cipher: chacha20-ietf-poly1305, password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD, udp: true}
+  - {name: 🇳🇱 NL 7 → anjue, server: 208.67.105.87, port: 42501, type: ss, cipher: chacha20-ietf-poly1305, password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf, udp: true}
   - {name: 🇵🇱 PL 1 → anjue, server: 94.228.165.178, port: 58176, type: ss, cipher: chacha20-ietf-poly1305, password: afKAHp1VfRWZu91LIi9o0D, udp: true}
+  - {name: 🇵🇱 PL 2 → anjue, server: 217.30.10.18, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
   - {name: 🇷🇺 RU 1 → anjue, server: 147.45.60.33, port: 16356, type: ss, cipher: chacha20-ietf-poly1305, password: LqlPI19oqnunGNSLMvdXyB, udp: true}
-  - {name: 🇷🇺 RU 10 → anjue, server: 176.32.39.181, port: 46976, type: vmess, uuid: 1f338fc8-c224-4972-ae64-1f0c2931553e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 RU 11 → anjue, server: 195.58.49.86, port: 28527, type: vmess, uuid: 960fe676-7d5d-40a8-af96-b482bab22f14, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 RU 12 → anjue, server: 195.58.49.42, port: 28527, type: vmess, uuid: 016c0e7b-506e-4ced-ad74-0722e41bf52e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 RU 13 → anjue, server: 195.58.49.173, port: 46976, type: vmess, uuid: b159ac71-2038-423f-b79a-8c6ab5a9b684, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 RU 14 → anjue, server: 195.58.49.50, port: 53274, type: vmess, uuid: 0946c625-b8c2-4bc3-9b4c-8d142b2b63fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 RU 15 → anjue, server: 195.58.49.42, port: 28527, type: vmess, uuid: 6278df73-fe4a-47e2-ade2-9ca9ada121a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 RU 2 → anjue, server: 194.87.69.52, port: 53274, type: vmess, uuid: 2ba077f8-9732-4eb3-9f16-df4d31b85d0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 RU 3 → anjue, server: 194.87.69.52, port: 53274, type: vmess, uuid: 362069da-5bb8-451f-9c7b-1b00b4348a98, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 RU 4 → anjue, server: 195.58.49.50, port: 53274, type: vmess, uuid: ea9d118e-4402-46cf-9ec1-08623681913e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 RU 5 → anjue, server: 176.32.39.181, port: 46976, type: vmess, uuid: 960fe676-7d5d-40a8-af96-b482bab22f14, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 RU 6 → anjue, server: 195.58.49.86, port: 28527, type: vmess, uuid: 349faaa2-f810-40d2-bf25-0ddacbce6e82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 RU 7 → anjue, server: 195.58.49.50, port: 53274, type: vmess, uuid: 72993cd9-b888-4e24-b969-fda99e0a0307, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 RU 8 → anjue, server: 195.58.49.86, port: 28527, type: vmess, uuid: 828497f6-44b3-4281-8122-3ca7c903a9a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 RU 9 → anjue, server: 195.58.49.86, port: 28527, type: vmess, uuid: 1d1e1b22-7a61-4165-b559-1031ddf9f833, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇸🇬 SG 1 → anjue, server: 154.90.63.193, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 🇸🇬 SG 2 → anjue, server: 103.36.91.23, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456, udp: true}
-  - {name: 🇸🇬 SG 3 → anjue, server: 139.59.119.143, port: 443, type: trojan, password: 0ab6c98dae3b48e8b9c4a776b6c9c19a, sni: connectwithemployers.online, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 2 → anjue, server: 139.59.119.143, port: 443, type: trojan, password: 0ab6c98dae3b48e8b9c4a776b6c9c19a, sni: connectwithemployers.online, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 3 → anjue, server: 103.36.91.23, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456, udp: true}
   - {name: 🇸🇬 SG 4 → anjue, server: 139.162.40.74, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
-  - {name: 🇺🇸 US 1 → anjue, server: 207.246.101.50, port: 1633, type: ss, cipher: chacha20-ietf-poly1305, password: o_A7inN1yqeWtOTL, udp: true}
-  - {name: 🇺🇸 US 10 → anjue, server: 167.88.61.159, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇺🇸 US 11 → anjue, server: 167.88.61.235, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇺🇸 US 12 → anjue, server: 38.99.82.253, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 13 → anjue, server: 172.111.38.233, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 14 → anjue, server: 38.99.82.203, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 15 → anjue, server: 38.99.82.96, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 16 → anjue, server: 185.180.13.70, port: 43118, type: trojan, password: ypDt8RkT7J, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 17 → anjue, server: 38.99.82.193, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 18 → anjue, server: 155.248.205.39, port: 45601, type: trojan, password: xjN4xcuPGg, sni: f.522226.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 19 → anjue, server: 172.111.36.108, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 2 → anjue, server: 23.154.136.23, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇸🇬 SG 5 → anjue, server: sg008.421421.xyz, port: 20230, type: trojan, password: b44da489-fc70-4fd0-8997-a83b51f59267, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1 → anjue, server: 172.111.38.233, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 10 → anjue, server: 185.172.129.91, port: 56220, type: ss, cipher: chacha20-ietf-poly1305, password: LLInmUBrxMgEn85Y6vVjeH, udp: true}
+  - {name: 🇺🇸 US 11 → anjue, server: 69.50.93.90, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 12 → anjue, server: 38.99.82.128, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 13 → anjue, server: 167.88.61.159, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 🇺🇸 US 14 → anjue, server: 38.91.107.36, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 15 → anjue, server: 23.154.136.2, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 16 → anjue, server: 38.110.1.103, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 🇺🇸 US 17 → anjue, server: 38.91.106.43, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 18 → anjue, server: 185.180.13.70, port: 43118, type: trojan, password: ypDt8RkT7J, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 19 → anjue, server: 23.154.136.247, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇺🇸 US 2 → anjue, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
   - {name: 🇺🇸 US 20 → anjue, server: 107.155.57.51, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
-  - {name: 🇺🇸 US 21 → anjue, server: 38.91.107.36, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 22 → anjue, server: h.522226.xyz, port: 45800, type: trojan, password: xjN4xcuPGg55, sni: h.522226.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 23 → anjue, server: h.522226.xyz, port: 45800, type: trojan, password: xjN4xcuPGg55, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 24 → anjue, server: 38.91.106.43, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 25 → anjue, server: 23.150.152.32, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 26 → anjue, server: f.522226.xyz, port: 45601, type: trojan, password: xjN4xcuPGg, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 27 → anjue, server: 38.75.136.73, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 21 → anjue, server: 167.88.61.235, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇺🇸 US 22 → anjue, server: 89.187.181.172, port: 43118, type: trojan, password: ypDt8RkT7J, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 23 → anjue, server: 38.91.106.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 24 → anjue, server: 38.110.1.197, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇺🇸 US 25 → anjue, server: 92.118.112.111, port: 18622, type: ss, cipher: chacha20-ietf-poly1305, password: gmYDzSG6K35s8b19oY4fGz, udp: true}
+  - {name: 🇺🇸 US 26 → anjue, server: 155.248.205.39, port: 45601, type: trojan, password: xjN4xcuPGg, sni: f.522226.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 27 → anjue, server: 107.174.133.203, port: 9875, type: ss, cipher: aes-256-gcm, password: BoiX102924, udp: true}
   - {name: 🇺🇸 US 28 → anjue, server: 38.75.137.21, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 29 → anjue, server: 23.150.152.52, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 3 → anjue, server: 38.110.1.103, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 🇺🇸 US 30 → anjue, server: 162.251.63.84, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 31 → anjue, server: 67.220.66.194, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
-  - {name: 🇺🇸 US 32 → anjue, server: 69.50.93.90, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 33 → anjue, server: cf.fovi.tk, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxlux.fovi.tk}}, udp: true}
-  - {name: 🇺🇸 US 34 → anjue, server: 185.172.129.91, port: 56220, type: ss, cipher: chacha20-ietf-poly1305, password: LLInmUBrxMgEn85Y6vVjeH, udp: true}
-  - {name: 🇺🇸 US 35 → anjue, server: 23.154.136.2, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 36 → anjue, server: 38.99.82.128, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 37 → anjue, server: 38.91.106.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US 38 → anjue, server: 142.4.104.33, port: 52143, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 39 → anjue, server: 198.2.218.108, port: 41400, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 4 → anjue, server: 89.187.181.172, port: 43118, type: trojan, password: ypDt8RkT7J, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 40 → anjue, server: 142.0.134.245, port: 45017, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 41 → anjue, server: 107.174.133.203, port: 9875, type: ss, cipher: aes-256-gcm, password: BoiX102924, udp: true}
-  - {name: 🇺🇸 US 42 → anjue, server: 142.0.134.244, port: 45017, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 43 → anjue, server: 198.2.218.100, port: 41400, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 44 → anjue, server: 198.2.218.102, port: 41400, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 45 → anjue, server: 23.154.136.247, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇸 US 46 → anjue, server: 142.0.134.241, port: 45017, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 47 → anjue, server: 38.150.7.183, port: 8888, type: vmess, uuid: fb05a8fb-d3ad-4e3f-8676-d5a59d66b5e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wada12222}, udp: true}
-  - {name: 🇺🇸 US 48 → anjue, server: xcf024.facai2024.com, port: 443, type: vmess, uuid: 939e72f2-3567-4712-c560-3eb999ff2a82, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /939e72f2, headers: {Host: xcf024.facai2024.com}}, udp: true}
-  - {name: 🇺🇸 US 49 → anjue, server: 38.14.107.233, port: 38003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/340434130032}, udp: true}
-  - {name: 🇺🇸 US 5 → anjue, server: 38.110.1.197, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇺🇸 US 50 → anjue, server: 38.14.107.226, port: 38003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/340434130032}, udp: true}
-  - {name: 🇺🇸 US 51 → anjue, server: 142.0.134.243, port: 45017, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 52 → anjue, server: 166.88.182.77, port: 22234, type: vmess, uuid: 480f124a-6732-4f14-8a29-d99a7951cf55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 53 → anjue, server: 172.67.164.232, port: 443, type: vmess, uuid: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: 33.bycf.us.kg}}, udp: true}
-  - {name: 🇺🇸 US 54 → anjue, server: 23.150.152.53, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇺🇸 US 55 → anjue, server: primer.ibilibi.li, port: 443, type: vmess, uuid: e5852393-ca52-4c90-a237-d63cbbb57f21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/farcry?ed=2560", headers: {Host: loki.oracle}}, udp: true}
-  - {name: 🇺🇸 US 6 → anjue, server: 45.55.2.232, port: 14293, type: ss, cipher: aes-256-cfb, password: 2170f8, udp: true}
-  - {name: 🇺🇸 US 7 → anjue, server: 139.64.165.144, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇺🇸 US 8 → anjue, server: 169.197.142.216, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 🇺🇸 US 9 → anjue, server: 139.64.165.115, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇺🇸 US 29 → anjue, server: 198.2.218.102, port: 41400, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 3 → anjue, server: 38.99.82.253, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 30 → anjue, server: 198.2.218.108, port: 41400, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 31 → anjue, server: 142.0.134.245, port: 45017, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 32 → anjue, server: 23.150.152.32, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 33 → anjue, server: 142.0.134.241, port: 45017, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 34 → anjue, server: f.522226.xyz, port: 45601, type: trojan, password: xjN4xcuPGg, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 35 → anjue, server: 198.2.218.100, port: 41400, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 36 → anjue, server: 74.50.98.185, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: Mju3ZSaa4QVk45mc, udp: true}
+  - {name: 🇺🇸 US 37 → anjue, server: 142.4.104.33, port: 52143, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 38 → anjue, server: 45.55.2.232, port: 14293, type: ss, cipher: aes-256-cfb, password: 2170f8, udp: true}
+  - {name: 🇺🇸 US 39 → anjue, server: 142.0.134.243, port: 45017, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 4 → anjue, server: 38.99.82.96, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 40 → anjue, server: 142.0.134.244, port: 45017, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 41 → anjue, server: 23.150.152.53, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 🇺🇸 US 42 → anjue, server: 67.220.95.100, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇺🇸 US 43 → anjue, server: 38.75.136.73, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 44 → anjue, server: 162.251.63.84, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 45 → anjue, server: 23.150.152.52, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 46 → anjue, server: 169.197.142.216, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 🇺🇸 US 47 → anjue, server: 139.64.165.115, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇺🇸 US 48 → anjue, server: 139.64.165.144, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇺🇸 US 49 → anjue, server: afrhms16v.bestxray.buzz, port: 443, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: afrhms16v.bestxray.buzz}}, udp: true}
+  - {name: 🇺🇸 US 5 → anjue, server: 38.99.82.203, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 50 → anjue, server: 185.148.104.118, port: 443, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hms02.fxiaomi.sbs/link, headers: {Host: ab-test-frosty-flower-e7fb.tariroc864.workers.dev}}, udp: true}
+  - {name: 🇺🇸 US 51 → anjue, server: 67.220.66.194, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇺🇸 US 52 → anjue, server: 154.3.8.151, port: 30067, type: ss, cipher: aes-256-gcm, password: iUB0923RBA, udp: true}
+  - {name: 🇺🇸 US 53 → anjue, server: 38.14.107.233, port: 38003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/340434130032}, udp: true}
+  - {name: 🇺🇸 US 54 → anjue, server: 23.150.152.112, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 🇺🇸 US 55 → anjue, server: 38.14.107.226, port: 38003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/340434130032}, udp: true}
+  - {name: 🇺🇸 US 56 → anjue, server: 194.116.173.21, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 🇺🇸 US 57 → anjue, server: 38.99.82.128, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 58 → anjue, server: 142.0.134.242, port: 45017, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 59 → anjue, server: primer.ibilibi.li, port: 443, type: vmess, uuid: e5852393-ca52-4c90-a237-d63cbbb57f21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/farcry?ed=2560", headers: {Host: loki.oracle}}, udp: true}
+  - {name: 🇺🇸 US 6 → anjue, server: 38.99.82.193, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 60 → anjue, server: 139.64.164.15, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇺🇸 US 61 → anjue, server: sj.5216818.xyz, port: 443, type: trojan, password: 15c33952, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 62 → anjue, server: 152.67.228.132, port: 443, type: trojan, password: 15c33952, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 63 → anjue, server: 94.131.123.147, port: 7383, type: ss, cipher: chacha20-ietf-poly1305, password: eSHEdJz96rqNkOCAzd5Csv, udp: true}
+  - {name: 🇺🇸 US 64 → anjue, server: 206.206.80.66, port: 23423, type: vmess, uuid: 8825fd04-9005-4410-b48c-d2f345ec7fee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 65 → anjue, server: primer.ibilibi.li, port: 443, type: vmess, uuid: e5852393-ca52-4c90-a237-d63cbbb57f21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/farcry?ed=2560", headers: {Host: primer.ibilibi.li}}, udp: true}
+  - {name: 🇺🇸 US 66 → anjue, server: 206.206.80.66, port: 23423, type: vmess, uuid: 8825fd04-9005-4410-b48c-d2f345ec7fee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 7 → anjue, server: 172.111.36.108, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 8 → anjue, server: 23.154.136.23, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US 9 → anjue, server: 207.246.101.50, port: 1633, type: ss, cipher: chacha20-ietf-poly1305, password: o_A7inN1yqeWtOTL, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -377,33 +401,47 @@ proxy-groups:
     type: select
     proxies:
       - AE 1 → anjue
-      - AM 1 → anjue
-      - CY 1 → anjue
+      - AT 1 → anjue
+      - BH 1 → anjue
+      - CZ 1 → anjue
       - FI 1 → anjue
       - IE 1 → anjue
       - IE 2 → anjue
+      - IL 1 → anjue
       - IR 1 → anjue
-      - KZ 1 → anjue
-      - NO 1 → anjue
+      - IR 2 → anjue
+      - LT 1 → anjue
+      - LT 2 → anjue
       - SE 1 → anjue
+      - SE 2 → anjue
+      - SE 3 → anjue
+      - SE 4 → anjue
       - TR 1 → anjue
       - TR 2 → anjue
-      - undefinedUN 1 → anjue
       - 🇦🇺 AU 1 → anjue
       - 🇦🇺 AU 2 → anjue
+      - 🇦🇺 AU 3 → anjue
+      - 🇦🇺 AU 4 → anjue
+      - 🇦🇺 AU 5 → anjue
+      - 🇦🇺 AU 6 → anjue
       - 🇨🇦 CA 1 → anjue
+      - 🇨🇦 CA 10 → anjue
+      - 🇨🇦 CA 11 → anjue
+      - 🇨🇦 CA 12 → anjue
+      - 🇨🇦 CA 13 → anjue
       - 🇨🇦 CA 2 → anjue
       - 🇨🇦 CA 3 → anjue
       - 🇨🇦 CA 4 → anjue
       - 🇨🇦 CA 5 → anjue
       - 🇨🇦 CA 6 → anjue
       - 🇨🇦 CA 7 → anjue
+      - 🇨🇦 CA 8 → anjue
+      - 🇨🇦 CA 9 → anjue
       - 🇨🇳 CN 1 → anjue
-      - 🇨🇳 CN 2 → anjue
-      - 🇨🇳 TW 1 → anjue
       - 🇩🇪 DE 1 → anjue
       - 🇩🇪 DE 10 → anjue
       - 🇩🇪 DE 11 → anjue
+      - 🇩🇪 DE 12 → anjue
       - 🇩🇪 DE 2 → anjue
       - 🇩🇪 DE 3 → anjue
       - 🇩🇪 DE 4 → anjue
@@ -413,14 +451,18 @@ proxy-groups:
       - 🇩🇪 DE 8 → anjue
       - 🇩🇪 DE 9 → anjue
       - 🇩🇰 DK 1 → anjue
-      - 🇩🇰 DK 2 → anjue
       - 🇪🇸 ES 1 → anjue
+      - 🇪🇸 ES 2 → anjue
+      - 🇪🇸 ES 3 → anjue
       - 🇫🇷 FR 1 → anjue
       - 🇫🇷 FR 10 → anjue
       - 🇫🇷 FR 11 → anjue
       - 🇫🇷 FR 12 → anjue
       - 🇫🇷 FR 13 → anjue
       - 🇫🇷 FR 14 → anjue
+      - 🇫🇷 FR 15 → anjue
+      - 🇫🇷 FR 16 → anjue
+      - 🇫🇷 FR 17 → anjue
       - 🇫🇷 FR 2 → anjue
       - 🇫🇷 FR 3 → anjue
       - 🇫🇷 FR 4 → anjue
@@ -435,6 +477,10 @@ proxy-groups:
       - 🇬🇧 GB 12 → anjue
       - 🇬🇧 GB 13 → anjue
       - 🇬🇧 GB 14 → anjue
+      - 🇬🇧 GB 15 → anjue
+      - 🇬🇧 GB 16 → anjue
+      - 🇬🇧 GB 17 → anjue
+      - 🇬🇧 GB 18 → anjue
       - 🇬🇧 GB 2 → anjue
       - 🇬🇧 GB 3 → anjue
       - 🇬🇧 GB 4 → anjue
@@ -444,9 +490,6 @@ proxy-groups:
       - 🇬🇧 GB 8 → anjue
       - 🇬🇧 GB 9 → anjue
       - 🇭🇰 HK 1 → anjue
-      - 🇭🇰 HK 2 → anjue
-      - 🇭🇰 HK 3 → anjue
-      - 🇭🇰 HK 4 → anjue
       - 🇮🇳 IN 1 → anjue
       - 🇮🇳 IN 2 → anjue
       - 🇮🇳 IN 3 → anjue
@@ -455,9 +498,15 @@ proxy-groups:
       - 🇯🇵 JP 3 → anjue
       - 🇯🇵 JP 4 → anjue
       - 🇯🇵 JP 5 → anjue
+      - 🇯🇵 JP 6 → anjue
+      - 🇯🇵 JP 7 → anjue
       - 🇰🇷 KR 1 → anjue
       - 🇰🇷 KR 2 → anjue
       - 🇲🇾 MY 1 → anjue
+      - 🇲🇾 MY 2 → anjue
+      - 🇲🇾 MY 3 → anjue
+      - 🇲🇾 MY 4 → anjue
+      - 🇲🇾 MY 5 → anjue
       - 🇳🇱 NL 1 → anjue
       - 🇳🇱 NL 2 → anjue
       - 🇳🇱 NL 3 → anjue
@@ -466,25 +515,13 @@ proxy-groups:
       - 🇳🇱 NL 6 → anjue
       - 🇳🇱 NL 7 → anjue
       - 🇵🇱 PL 1 → anjue
+      - 🇵🇱 PL 2 → anjue
       - 🇷🇺 RU 1 → anjue
-      - 🇷🇺 RU 10 → anjue
-      - 🇷🇺 RU 11 → anjue
-      - 🇷🇺 RU 12 → anjue
-      - 🇷🇺 RU 13 → anjue
-      - 🇷🇺 RU 14 → anjue
-      - 🇷🇺 RU 15 → anjue
-      - 🇷🇺 RU 2 → anjue
-      - 🇷🇺 RU 3 → anjue
-      - 🇷🇺 RU 4 → anjue
-      - 🇷🇺 RU 5 → anjue
-      - 🇷🇺 RU 6 → anjue
-      - 🇷🇺 RU 7 → anjue
-      - 🇷🇺 RU 8 → anjue
-      - 🇷🇺 RU 9 → anjue
       - 🇸🇬 SG 1 → anjue
       - 🇸🇬 SG 2 → anjue
       - 🇸🇬 SG 3 → anjue
       - 🇸🇬 SG 4 → anjue
+      - 🇸🇬 SG 5 → anjue
       - 🇺🇸 US 1 → anjue
       - 🇺🇸 US 10 → anjue
       - 🇺🇸 US 11 → anjue
@@ -536,7 +573,18 @@ proxy-groups:
       - 🇺🇸 US 53 → anjue
       - 🇺🇸 US 54 → anjue
       - 🇺🇸 US 55 → anjue
+      - 🇺🇸 US 56 → anjue
+      - 🇺🇸 US 57 → anjue
+      - 🇺🇸 US 58 → anjue
+      - 🇺🇸 US 59 → anjue
       - 🇺🇸 US 6 → anjue
+      - 🇺🇸 US 60 → anjue
+      - 🇺🇸 US 61 → anjue
+      - 🇺🇸 US 62 → anjue
+      - 🇺🇸 US 63 → anjue
+      - 🇺🇸 US 64 → anjue
+      - 🇺🇸 US 65 → anjue
+      - 🇺🇸 US 66 → anjue
       - 🇺🇸 US 7 → anjue
       - 🇺🇸 US 8 → anjue
       - 🇺🇸 US 9 → anjue
@@ -547,33 +595,47 @@ proxy-groups:
     tolerance: 50
     proxies:
       - AE 1 → anjue
-      - AM 1 → anjue
-      - CY 1 → anjue
+      - AT 1 → anjue
+      - BH 1 → anjue
+      - CZ 1 → anjue
       - FI 1 → anjue
       - IE 1 → anjue
       - IE 2 → anjue
+      - IL 1 → anjue
       - IR 1 → anjue
-      - KZ 1 → anjue
-      - NO 1 → anjue
+      - IR 2 → anjue
+      - LT 1 → anjue
+      - LT 2 → anjue
       - SE 1 → anjue
+      - SE 2 → anjue
+      - SE 3 → anjue
+      - SE 4 → anjue
       - TR 1 → anjue
       - TR 2 → anjue
-      - undefinedUN 1 → anjue
       - 🇦🇺 AU 1 → anjue
       - 🇦🇺 AU 2 → anjue
+      - 🇦🇺 AU 3 → anjue
+      - 🇦🇺 AU 4 → anjue
+      - 🇦🇺 AU 5 → anjue
+      - 🇦🇺 AU 6 → anjue
       - 🇨🇦 CA 1 → anjue
+      - 🇨🇦 CA 10 → anjue
+      - 🇨🇦 CA 11 → anjue
+      - 🇨🇦 CA 12 → anjue
+      - 🇨🇦 CA 13 → anjue
       - 🇨🇦 CA 2 → anjue
       - 🇨🇦 CA 3 → anjue
       - 🇨🇦 CA 4 → anjue
       - 🇨🇦 CA 5 → anjue
       - 🇨🇦 CA 6 → anjue
       - 🇨🇦 CA 7 → anjue
+      - 🇨🇦 CA 8 → anjue
+      - 🇨🇦 CA 9 → anjue
       - 🇨🇳 CN 1 → anjue
-      - 🇨🇳 CN 2 → anjue
-      - 🇨🇳 TW 1 → anjue
       - 🇩🇪 DE 1 → anjue
       - 🇩🇪 DE 10 → anjue
       - 🇩🇪 DE 11 → anjue
+      - 🇩🇪 DE 12 → anjue
       - 🇩🇪 DE 2 → anjue
       - 🇩🇪 DE 3 → anjue
       - 🇩🇪 DE 4 → anjue
@@ -583,14 +645,18 @@ proxy-groups:
       - 🇩🇪 DE 8 → anjue
       - 🇩🇪 DE 9 → anjue
       - 🇩🇰 DK 1 → anjue
-      - 🇩🇰 DK 2 → anjue
       - 🇪🇸 ES 1 → anjue
+      - 🇪🇸 ES 2 → anjue
+      - 🇪🇸 ES 3 → anjue
       - 🇫🇷 FR 1 → anjue
       - 🇫🇷 FR 10 → anjue
       - 🇫🇷 FR 11 → anjue
       - 🇫🇷 FR 12 → anjue
       - 🇫🇷 FR 13 → anjue
       - 🇫🇷 FR 14 → anjue
+      - 🇫🇷 FR 15 → anjue
+      - 🇫🇷 FR 16 → anjue
+      - 🇫🇷 FR 17 → anjue
       - 🇫🇷 FR 2 → anjue
       - 🇫🇷 FR 3 → anjue
       - 🇫🇷 FR 4 → anjue
@@ -605,6 +671,10 @@ proxy-groups:
       - 🇬🇧 GB 12 → anjue
       - 🇬🇧 GB 13 → anjue
       - 🇬🇧 GB 14 → anjue
+      - 🇬🇧 GB 15 → anjue
+      - 🇬🇧 GB 16 → anjue
+      - 🇬🇧 GB 17 → anjue
+      - 🇬🇧 GB 18 → anjue
       - 🇬🇧 GB 2 → anjue
       - 🇬🇧 GB 3 → anjue
       - 🇬🇧 GB 4 → anjue
@@ -614,9 +684,6 @@ proxy-groups:
       - 🇬🇧 GB 8 → anjue
       - 🇬🇧 GB 9 → anjue
       - 🇭🇰 HK 1 → anjue
-      - 🇭🇰 HK 2 → anjue
-      - 🇭🇰 HK 3 → anjue
-      - 🇭🇰 HK 4 → anjue
       - 🇮🇳 IN 1 → anjue
       - 🇮🇳 IN 2 → anjue
       - 🇮🇳 IN 3 → anjue
@@ -625,9 +692,15 @@ proxy-groups:
       - 🇯🇵 JP 3 → anjue
       - 🇯🇵 JP 4 → anjue
       - 🇯🇵 JP 5 → anjue
+      - 🇯🇵 JP 6 → anjue
+      - 🇯🇵 JP 7 → anjue
       - 🇰🇷 KR 1 → anjue
       - 🇰🇷 KR 2 → anjue
       - 🇲🇾 MY 1 → anjue
+      - 🇲🇾 MY 2 → anjue
+      - 🇲🇾 MY 3 → anjue
+      - 🇲🇾 MY 4 → anjue
+      - 🇲🇾 MY 5 → anjue
       - 🇳🇱 NL 1 → anjue
       - 🇳🇱 NL 2 → anjue
       - 🇳🇱 NL 3 → anjue
@@ -636,25 +709,13 @@ proxy-groups:
       - 🇳🇱 NL 6 → anjue
       - 🇳🇱 NL 7 → anjue
       - 🇵🇱 PL 1 → anjue
+      - 🇵🇱 PL 2 → anjue
       - 🇷🇺 RU 1 → anjue
-      - 🇷🇺 RU 10 → anjue
-      - 🇷🇺 RU 11 → anjue
-      - 🇷🇺 RU 12 → anjue
-      - 🇷🇺 RU 13 → anjue
-      - 🇷🇺 RU 14 → anjue
-      - 🇷🇺 RU 15 → anjue
-      - 🇷🇺 RU 2 → anjue
-      - 🇷🇺 RU 3 → anjue
-      - 🇷🇺 RU 4 → anjue
-      - 🇷🇺 RU 5 → anjue
-      - 🇷🇺 RU 6 → anjue
-      - 🇷🇺 RU 7 → anjue
-      - 🇷🇺 RU 8 → anjue
-      - 🇷🇺 RU 9 → anjue
       - 🇸🇬 SG 1 → anjue
       - 🇸🇬 SG 2 → anjue
       - 🇸🇬 SG 3 → anjue
       - 🇸🇬 SG 4 → anjue
+      - 🇸🇬 SG 5 → anjue
       - 🇺🇸 US 1 → anjue
       - 🇺🇸 US 10 → anjue
       - 🇺🇸 US 11 → anjue
@@ -706,7 +767,18 @@ proxy-groups:
       - 🇺🇸 US 53 → anjue
       - 🇺🇸 US 54 → anjue
       - 🇺🇸 US 55 → anjue
+      - 🇺🇸 US 56 → anjue
+      - 🇺🇸 US 57 → anjue
+      - 🇺🇸 US 58 → anjue
+      - 🇺🇸 US 59 → anjue
       - 🇺🇸 US 6 → anjue
+      - 🇺🇸 US 60 → anjue
+      - 🇺🇸 US 61 → anjue
+      - 🇺🇸 US 62 → anjue
+      - 🇺🇸 US 63 → anjue
+      - 🇺🇸 US 64 → anjue
+      - 🇺🇸 US 65 → anjue
+      - 🇺🇸 US 66 → anjue
       - 🇺🇸 US 7 → anjue
       - 🇺🇸 US 8 → anjue
       - 🇺🇸 US 9 → anjue
@@ -912,9 +984,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇭🇰 HK 1 → anjue
-      - 🇭🇰 HK 2 → anjue
-      - 🇭🇰 HK 3 → anjue
-      - 🇭🇰 HK 4 → anjue
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -926,6 +995,8 @@ proxy-groups:
       - 🇯🇵 JP 3 → anjue
       - 🇯🇵 JP 4 → anjue
       - 🇯🇵 JP 5 → anjue
+      - 🇯🇵 JP 6 → anjue
+      - 🇯🇵 JP 7 → anjue
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -983,7 +1054,18 @@ proxy-groups:
       - 🇺🇸 US 53 → anjue
       - 🇺🇸 US 54 → anjue
       - 🇺🇸 US 55 → anjue
+      - 🇺🇸 US 56 → anjue
+      - 🇺🇸 US 57 → anjue
+      - 🇺🇸 US 58 → anjue
+      - 🇺🇸 US 59 → anjue
       - 🇺🇸 US 6 → anjue
+      - 🇺🇸 US 60 → anjue
+      - 🇺🇸 US 61 → anjue
+      - 🇺🇸 US 62 → anjue
+      - 🇺🇸 US 63 → anjue
+      - 🇺🇸 US 64 → anjue
+      - 🇺🇸 US 65 → anjue
+      - 🇺🇸 US 66 → anjue
       - 🇺🇸 US 7 → anjue
       - 🇺🇸 US 8 → anjue
       - 🇺🇸 US 9 → anjue
@@ -993,7 +1075,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 TW 1 → anjue
+      - DIRECT
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1004,6 +1086,7 @@ proxy-groups:
       - 🇸🇬 SG 2 → anjue
       - 🇸🇬 SG 3 → anjue
       - 🇸🇬 SG 4 → anjue
+      - 🇸🇬 SG 5 → anjue
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
