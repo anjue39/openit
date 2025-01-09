@@ -38,7 +38,6 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   # 24.10.23 add
   - https://tgscan.onrender.com/sub #🚩github里snakem982的免费订阅
   - https://raw.githubusercontent.com/snakem982/proxypool/refs/heads/main/source/clash-meta.yaml
-  - https://raw.githubusercontent.com/snakem982/proxypool/refs/heads/main/source/clash-meta-1.yaml
   - https://raw.githubusercontent.com/snakem982/proxypool/refs/heads/main/source/clash-meta-2.yaml
   # 25.1.2 add
   - http://141.147.161.50:12580/clash/proxies
@@ -57,6 +56,7 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/trojan
   - https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/shadowsocks
   - https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/reality
+  - https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml
 # openit
 # - https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/openit/main/Clash.yaml #回环订阅
 # - https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/openit/main/utils/pool/pool.yaml #入库订阅
