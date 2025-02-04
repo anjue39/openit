@@ -31,8 +31,8 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - http://rot.9o9.top:880/clash/proxies
   - http://150.230.195.209:12580/clash/proxies
   # 24.5.16 add
-  - https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt
-  - https://raw.githubusercontent.com/shabane/kamaji/master/hub/merged.txt
+  #- https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt
+  #- https://raw.githubusercontent.com/shabane/kamaji/master/hub/merged.txt
  # - https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt
 # - https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml
   # 24.10.23 add
