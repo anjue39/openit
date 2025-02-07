@@ -8,7 +8,7 @@ test-url: https://www.youtube.com/s/player/23010b46/player_ias.vflset/en_US/remo
 # test-url1: http://anjue.oicp.net:85/remote.js #外国服务器延迟测试的本地地址，可选项。如果需要在外国服务器上测试本地路由的延迟，可以提供一个本地地址进行测试。本地测试不需要这个测试，注释掉
 # test-url1: https://cachefly.cachefly.net/10mb.test #本地延迟测试国外地址, 可以更改，注意必须是GFW完全屏蔽的网站，github.com不行，此处为YouTube的某个js文件
 # test-url1: http://www.wuxikj.cn/serverlist.txt #外国服务器延迟测试本地路由地址, 可以更改
-test-url1: https://speed.cloudflare.com/__down?bytes=10000000  # 下载速度测试的URL
+# test-url1: https://speed.cloudflare.com/__down?bytes=10000000  # 下载速度测试的URL
 # test-url: https://gw.alicdn.com/bao/uploaded/LB1bC41LVXXXXcGXFXXXXXXXXXX.mp4 #延迟测试地址, 可以更改，注意必须是GFW完全屏蔽的网站，github.com不行，此处为YouTube的某个js文件
 timeout: 3500 #测试的超时界限，单位: 毫秒
 # 配置下载速度测试参数
