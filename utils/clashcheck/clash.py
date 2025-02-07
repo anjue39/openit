@@ -117,12 +117,6 @@ def filter(config):
                 authentication = ''
                 x['port'] = int(x['port'])
               
-              # 以下两行是原来的代码，感觉是错误的。如果加上，vmess节点就没了，也不知道什么原因
-              # 以下两行的作用是检查该字符串是否只包含数字字符。如果是，则将该字符串转换为整数，并将新的整数值存储回"x"字典中的"password"键
-                # if x['password'].isdigit():
-                   # x['password'] = int(x['password'])
-              # 重新修改代码如下一行代码，密码字段统一为字符串类型
-                # x['password'] = str(x['password'])
                 # 统一 password 字段为字符串类型
                 if 'password' in x:
                     try:
@@ -147,6 +141,7 @@ def filter(config):
                     try:
                         if 'tls' not in x or not x['tls']:
                             x['tls'] = True
+                            continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'GRPC'
                         authentication = 'password'
                     except:
@@ -156,6 +151,7 @@ def filter(config):
                     try:
                         if 'tls' not in x or not x['tls']:
                             x['tls'] = True
+                            continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'H2'
                         authentication = 'password'
                     except:
