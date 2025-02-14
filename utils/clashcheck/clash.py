@@ -141,7 +141,6 @@ def filter(config):
                     try:
                         if 'tls' not in x or not x['tls']:
                             x['tls'] = True
-                            continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'GRPC'
                         authentication = 'password'
                     except:
@@ -151,7 +150,6 @@ def filter(config):
                     try:
                         if 'tls' not in x or not x['tls']:
                             x['tls'] = True
-                            continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'H2'
                         authentication = 'password'
                     except:
