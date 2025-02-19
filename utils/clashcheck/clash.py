@@ -116,7 +116,10 @@ def filter(config):
                 x = list[i]
                 authentication = ''
                 x['port'] = int(x['port'])
-              
+                # 新增逻辑：直接跳过所有 h2/grpc 节点
+                network = x.get('network', 'tcp')  # 获取传输协议类型
+                if network in ['h2', 'grpc']:
+                    continue  # 直接舍弃，不处理后续逻辑              
                 # 统一 password 字段为字符串类型
                 if 'password' in x:
                     try:
@@ -126,8 +129,7 @@ def filter(config):
                         print(f"Error processing password for node {x['name']}: {e}")
                         x['password'] = ''  # 如果处理失败，设置为空字符串或跳过该节点
                 else:
-                    x['password'] = ''  # 如果字段缺失，设置默认值
-                    
+                    x['password'] = ''  # 如果字段缺失，设置默认值   
                 try:
                     ip = str(socket.gethostbyname(x["server"]))
                 except:
@@ -135,29 +137,8 @@ def filter(config):
                 try:
                     country = str(countrify.get(ip)['country']['iso_code'])
                 except:
-                    country = 'UN'
-
-                if x['type'] == 'grpc':
-                    try:
-                        if 'tls' not in x or not x['tls']:
-                            x['tls'] = True
-                            continue
-                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'GRPC'
-                        authentication = 'password'
-                    except:
-                        continue
-                
-                elif x['type'] == 'h2':
-                    try:
-                        if 'tls' not in x or not x['tls']:
-                            x['tls'] = True
-                            continue
-                        x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'H2'
-                        authentication = 'password'
-                    except:
-                        continue
-                    
-                elif x['type'] == 'ss':
+                    country = 'UN'                   
+                if x['type'] == 'ss':
                     try:
                         if x['cipher'] not in ss_supported_ciphers:
                             ss_omit_cipher_unsupported = ss_omit_cipher_unsupported + 1
