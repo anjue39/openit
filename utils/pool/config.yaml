@@ -43,6 +43,7 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - http://150.230.195.209:12580/clash/proxies
   - http://155.248.172.106:12580/clash/proxies
   - http://66.42.50.118:12580/clash/proxies
+  - http://140.238.31.152:12580/clash/proxies
   - https://clashe.eu.org/clash/proxies
   - https://proxy.crazygeeky.com/clash/proxies
   - https://proxypool.link/clash/proxies
