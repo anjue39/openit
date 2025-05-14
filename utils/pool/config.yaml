@@ -52,7 +52,7 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/hysteria
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless
-  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/trojan
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/trojan
   #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/shadowsocks
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/reality
   - https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml
