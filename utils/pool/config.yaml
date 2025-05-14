@@ -1,11 +1,11 @@
 sub: #远程Clash配置文件，注有#的是失效的链接
 # proxypool节点池
  # 小火箭
- # - https://www.xrayvip.com/free.yaml #同上，https://t.me/xrayfree 目前主力clash订阅链接
+  - https://www.xrayvip.com/free.yaml #同上，https://t.me/xrayfree 目前主力clash订阅链接
  # https开头
- # - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg&config=https://raw.githubusercontent.com/anjue39/openit/main/utils/subconverter/config/rule_mini.ini&emoji=true&list=false&udp=false&tfo=false&scv=false&fdn=false&sort=false #每天更新，注意看抓取速度
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg&config=https://raw.githubusercontent.com/anjue39/openit/main/utils/subconverter/config/rule_mini.ini&emoji=true&list=false&udp=false&tfo=false&scv=false&fdn=false&sort=false #每天更新，注意看抓取速度
  # GitHub托管clash订阅链接
- # - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml&config=https://raw.githubusercontent.com/anjue39/openit/main/utils/subconverter/config/rule_mini.ini&emoji=true&list=false&udp=false&tfo=false&scv=false&fdn=false&sort=false #clash公益免费节点订阅每天更新
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml&config=https://raw.githubusercontent.com/anjue39/openit/main/utils/subconverter/config/rule_mini.ini&emoji=true&list=false&udp=false&tfo=false&scv=false&fdn=false&sort=false #clash公益免费节点订阅每天更新
  # GitHub托管b64订阅链接
 # - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/freefq/free/master/v2 #freev2，不怎么更新了，最新是2月份的，后期可关注🚩
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2 #v2rayfree，这个可以推荐朋友免费用🚩
@@ -57,13 +57,13 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/reality
   - https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml
   # 25.3.26 add
-  - https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml
-  - https://ghproxy.cfd/https:/raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml
-  - https://cdn.jsdelivr.net/gh/a2470982985/getNode@main/clash.yaml
-  - https://api.v1.mk/sub?target=clash&url=https://github.com/xiaoji235/airport-free/blob/main/clash/nodefree.txt
-  - https://fastly.jsdelivr.net/gh/dongchengjie/airport@main/subs/merged/tested_within.yaml
+ # - https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml
+ # - https://ghproxy.cfd/https:/raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml
+  #- https://cdn.jsdelivr.net/gh/a2470982985/getNode@main/clash.yaml
+  #- https://api.v1.mk/sub?target=clash&url=https://github.com/xiaoji235/airport-free/blob/main/clash/nodefree.txt
+ # - https://fastly.jsdelivr.net/gh/dongchengjie/airport@main/subs/merged/tested_within.yaml
   # 25.4.1 add
-  - https://proxypool.link/clash/proxies
+  #- https://proxypool.link/clash/proxies
 # openit
 # - https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/openit/main/Clash.yaml #回环订阅
 # - https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/openit/main/utils/pool/pool.yaml #入库订阅
