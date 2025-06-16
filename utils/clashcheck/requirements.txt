@@ -1,5 +1,5 @@
 PyYAML~=6.0.2
-requests~=2.32.3
+requests~=2.32.4
 geoip2==5.1.0
 maxminddb~=2.7.0
 psutil~=7.0.0
