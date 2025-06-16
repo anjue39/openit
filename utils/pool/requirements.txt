@@ -1,5 +1,5 @@
 tqdm~=4.67.1
-requests~=2.32.3
+requests~=2.32.4
 PyYAML~=6.0.2
 maxminddb~=2.7.0
 setuptools~=80.9.0
