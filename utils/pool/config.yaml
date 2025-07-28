@@ -32,8 +32,8 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt  
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml&insert=false&list=true
   # 24.10.23 add
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/refs/heads/main/source/clash-meta.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/refs/heads/main/source/clash-meta-2.yaml&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
   # 25.1.2 add
   - http://141.147.161.50:12580/clash/proxies
   - http://150.230.195.209:12580/clash/proxies
