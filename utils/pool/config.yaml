@@ -25,8 +25,6 @@ sub: #远程Clash配置文件，注有#的是失效的链接
 #- https://raw.githubusercontent.com/ronghuaxueleng/get_v2/main/pub/combine.yaml #🚩
   - https://api.v1.mk/sub?target=clash&url=https://jiang.netlify.app&insert=false&list=true #🚩二爷翻墙
   # 23.9.16 add
-  - https://clashe.eu.org/clash/proxies
-  - http://rot.9o9.top:880/clash/proxies
   - http://150.230.195.209:12580/clash/proxies
   # 24.5.16 add
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_base64_Sub.txt&insert=false&list=true
@@ -42,7 +40,6 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - http://155.248.172.106:12580/clash/proxies
   - http://66.42.50.118:12580/clash/proxies
   - http://140.238.31.152:12580/clash/proxies
-  - https://clashe.eu.org/clash/proxies
   - https://proxy.crazygeeky.com/clash/proxies
   - https://proxypool.link/clash/proxies
   - https://api.v1.mk/sub?target=clash&url=https://proxypool1999.banyunxiaoxi.icu/clash/proxies&insert=false&list=true
