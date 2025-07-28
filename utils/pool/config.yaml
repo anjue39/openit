@@ -8,7 +8,7 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml&insert=false&list=true #clash公益免费节点订阅每天更新
  # GitHub托管b64订阅链接
 # - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/freefq/free/master/v2 #freev2，不怎么更新了，最新是2月份的，后期可关注🚩
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2&insert=false&list=true #v2rayfree，这个可以推荐朋友免费用🚩
+  - https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Faiboboxx%2Fv2rayfree%2Fmain%2Fv2&insert=false&list=true #v2rayfree，这个可以推荐朋友免费用🚩
  # GitLab托管b64订阅链接
  # 订阅转换模版
 # - https://api.v1.mk/sub?target=clash&url=http://weoknow.com/data/dayupdate/1/z.yaml&insert=false&list=true
