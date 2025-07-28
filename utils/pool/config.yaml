@@ -13,8 +13,8 @@ sub: #远程Clash配置文件，注有#的是失效的链接
  # 订阅转换模版
 # - https://api.v1.mk/sub?target=clash&url=http://weoknow.com/data/dayupdate/1/z.yaml
 # - https://raw.githubusercontent.com/anjue39/PoolActions/main/subscribe/clash.yaml
-  - https://api.v1.mk/sub?target=clash&url=http://weoknow.com/data/dayupdate/1/z1.txt
-  - https://api.v1.mk/sub?target=clash&url=http://weoknow.com/data/dayupdate/2/z1.txt
+  - https://api.v1.mk/sub?target=clash&url=http://weoknow.com/data/dayupdate/1/z1.txt&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=http://weoknow.com/data/dayupdate/2/z1.txt&insert=false&list=true
 # - http://weoknow.com/data/dayupdate/1/z.yaml
 # - http://weoknow.com/data/dayupdate/2/z.yaml
   - https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml #不错的免费站点，每天更新，里面有大量合并的节点，有list源
@@ -28,8 +28,7 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - http://150.230.195.209:12580/clash/proxies
   # 24.5.16 add
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_base64_Sub.txt
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/shabane/kamaji/master/hub/merged.txt #停更，关注一下可取消
-  - https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt  
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/shabane/kamaji/master/hub/merged.txt #停更，关注一下可取消 
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml
   # 24.10.23 add
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
