@@ -1,6 +1,6 @@
 tqdm~=4.67.1
 requests~=2.32.4
 PyYAML~=6.0.2
-maxminddb~=2.7.0
+maxminddb~=2.8.2
 setuptools~=80.9.0
 emoji-country-flag~=2.0.1
