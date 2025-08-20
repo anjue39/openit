@@ -27,7 +27,6 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   # 23.9.16 add
   - http://150.230.195.209:12580/clash/proxies
   # 24.5.16 add
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/shabane/kamaji/refs/heads/master/hub/merged.txt #停更，关注一下可取消 
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml
   # 24.10.23 add
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
