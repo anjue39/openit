@@ -1,11 +1,11 @@
 sub: #远程Clash配置文件，注有#的是失效的链接
 # proxypool节点池
  # 小火箭
-  - https://www.xrayvip.com/free.yaml #同上，https://t.me/xrayfree 目前主力clash订阅链接
+  #- https://www.xrayvip.com/free.yaml #同上，https://t.me/xrayfree 目前主力clash订阅链接
  # https开头
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg #每天更新，注意看抓取速度
+  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg #每天更新，注意看抓取速度
  # GitHub托管clash订阅链接
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml #clash公益免费节点订阅每天更新
+  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml #clash公益免费节点订阅每天更新
  # GitHub托管b64订阅链接
 # - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/freefq/free/master/v2 #freev2，不怎么更新了，最新是2月份的，后期可关注🚩
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2 #v2rayfree，这个可以推荐朋友免费用
