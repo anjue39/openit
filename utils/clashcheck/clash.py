@@ -17,51 +17,76 @@ def push(list, outfile):
             {'name': 'automatic', 'type': 'url-test', 'proxies': [], 'url': 'https://www.google.com/favicon.ico',
              'interval': 300}, {'name': '🌐 Proxy', 'type': 'select', 'proxies': ['automatic']}],
              'rules': ['MATCH,🌐 Proxy']}
+    
+    # 预处理所有节点，确保字段类型正确
+    for i in tqdm(range(len(list)), desc="Pre-processing"):
+        x = list[i]
+        
+        # 确保所有必要字段存在且类型正确
+        if 'password' in x:
+            try:
+                x['password'] = str(x['password'])
+            except Exception as e:
+                print(f"Error processing password for node {i}: {e}")
+                x['password'] = ''
+        else:
+            x['password'] = ''
+            
+        if 'uuid' in x:
+            try:
+                x['uuid'] = str(x['uuid'])
+            except Exception as e:
+                print(f"Error processing uuid for node {i}: {e}")
+                x['uuid'] = ''
+                
+        # 确保端口是整数
+        if 'port' in x:
+            try:
+                x['port'] = int(x['port'])
+            except Exception as e:
+                print(f"Error processing port for node {i}: {e}")
+                x['port'] = 0
+    
     with maxminddb.open_database('Country.mmdb') as countrify:
-        for i in tqdm(range(int(len(list))), desc="Parse"):
+        for i in tqdm(range(len(list)), desc="Processing"):
             x = list[i]
             
-            # 统一password字段为字符串类型
-            if 'password' in x:
-                try:
-                    x['password'] = str(x['password'])
-                except Exception as e:
-                    print(f"Error processing password for node {x.get('name', 'unknown')}: {e}")
-                    x['password'] = ''  # 如果处理失败，设置为空字符串
-            
-            # 统一uuid字段为字符串类型（如果有）
-            if 'uuid' in x:
-                try:
-                    x['uuid'] = str(x['uuid'])
-                except Exception as e:
-                    print(f"Error processing uuid for node {x.get('name', 'unknown')}: {e}")
-                    x['uuid'] = ''  # 如果处理失败，设置为空字符串
-            
+            # 跳过无效节点
+            if x.get('port', 0) <= 0:
+                continue
+                
             try:
-                float(x['password'])
+                ip = str(socket.gethostbyname(x["server"]))
             except:
-                try:
-                    float(x['uuid'])
-                except:
-                    try:
-                        ip = str(socket.gethostbyname(x["server"]))
-                    except:
-                        ip = str(x["server"])
-                    try:
-                        country = str(countrify.get(ip)['country']['iso_code'])
-                    except:
-                        country = 'UN'
-                    flagcountry = country
-                    try:
-                        country_count[country] = country_count[country] + 1
-                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                    except:
-                        country_count[country] = 1
-                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                    clash['proxies'].append(x)
-                    clash['proxy-groups'][0]['proxies'].append(x['name'])
-                    clash['proxy-groups'][1]['proxies'].append(x['name'])
-                    count = count + 1
+                ip = str(x["server"])
+                
+            try:
+                country = str(countrify.get(ip)['country']['iso_code'])
+            except:
+                country = 'UN'
+                
+            flagcountry = country
+            try:
+                country_count[country] = country_count.get(country, 0) + 1
+                x['name'] = f"{flag.flag(flagcountry)} {country} {count}"
+            except:
+                country_count[country] = 1
+                x['name'] = f"{flag.flag(flagcountry)} {country} {count}"
+            
+            # 确保最终password是字符串
+            if 'password' in x and not isinstance(x['password'], str):
+                x['password'] = str(x['password'])
+                
+            clash['proxies'].append(x)
+            clash['proxy-groups'][0]['proxies'].append(x['name'])
+            clash['proxy-groups'][1]['proxies'].append(x['name'])
+            count += 1
+
+    # 最终验证
+    for i, proxy in enumerate(clash['proxies']):
+        if 'password' in proxy and not isinstance(proxy['password'], str):
+            print(f"Final conversion for proxy {i}: {proxy.get('name', 'unknown')}")
+            proxy['password'] = str(proxy['password'])
 
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
