@@ -20,6 +20,23 @@ def push(list, outfile):
     with maxminddb.open_database('Country.mmdb') as countrify:
         for i in tqdm(range(int(len(list))), desc="Parse"):
             x = list[i]
+            
+            # 统一password字段为字符串类型
+            if 'password' in x:
+                try:
+                    x['password'] = str(x['password'])
+                except Exception as e:
+                    print(f"Error processing password for node {x.get('name', 'unknown')}: {e}")
+                    x['password'] = ''  # 如果处理失败，设置为空字符串
+            
+            # 统一uuid字段为字符串类型（如果有）
+            if 'uuid' in x:
+                try:
+                    x['uuid'] = str(x['uuid'])
+                except Exception as e:
+                    print(f"Error processing uuid for node {x.get('name', 'unknown')}: {e}")
+                    x['uuid'] = ''  # 如果处理失败，设置为空字符串
+            
             try:
                 float(x['password'])
             except:
@@ -48,7 +65,6 @@ def push(list, outfile):
 
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
-
 
 def checkenv():
     operating_system = str(platform.system() + '/' +  platform.machine() + ' with ' + platform.node())
