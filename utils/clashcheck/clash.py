@@ -17,98 +17,34 @@ def push(list, outfile):
             {'name': 'automatic', 'type': 'url-test', 'proxies': [], 'url': 'https://www.google.com/favicon.ico',
              'interval': 300}, {'name': '🌐 Proxy', 'type': 'select', 'proxies': ['automatic']}],
              'rules': ['MATCH,🌐 Proxy']}
-    
-    # 最终验证：确保所有字段都是正确的类型
-    def validate_and_fix_node(node):
-        try:
-            # 创建一个新的节点字典，确保所有字段都是正确的类型
-            new_node = {}
-            
-            # 复制并转换所有字段
-            for field, value in node.items():
-                if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server']:
-                    # 确保字符串字段
-                    if not isinstance(value, str):
-                        try:
-                            new_node[field] = str(value)
-                        except:
-                            return None  # 如果转换失败，返回None表示节点有问题
-                    else:
-                        new_node[field] = value
-                elif field == 'port':
-                    # 确保端口是整数
-                    if not isinstance(value, int):
-                        try:
-                            new_node[field] = int(value)
-                        except:
-                            return None  # 如果转换失败，返回None表示节点有问题
-                    else:
-                        new_node[field] = value
-                elif field in ['udp', 'tls', 'skip-cert-verify']:
-                    # 确保布尔字段
-                    if not isinstance(value, bool):
-                        try:
-                            if isinstance(value, str):
-                                if value.lower() in ['true', '1', 'yes']:
-                                    new_node[field] = True
-                                elif value.lower() in ['false', '0', 'no']:
-                                    new_node[field] = False
-                                else:
-                                    return None  # 无效的布尔值
-                            else:
-                                new_node[field] = bool(value)
-                        except:
-                            return None  # 如果转换失败，返回None表示节点有问题
-                    else:
-                        new_node[field] = value
-                else:
-                    # 其他字段保持不变
-                    new_node[field] = value
-            
-            return new_node
-        except:
-            return None  # 如果任何处理失败，返回None表示节点有问题
-    
     with maxminddb.open_database('Country.mmdb') as countrify:
         for i in tqdm(range(int(len(list))), desc="Parse"):
             x = list[i]
-            
-            # 验证和修复节点
-            x = validate_and_fix_node(x)
-            if x is None:
-                continue  # 跳过有问题的节点
-            
             try:
-                # 原有的处理逻辑
+                float(x['password'])
+            except:
                 try:
-                    ip = str(socket.gethostbyname(x["server"]))
+                    float(x['uuid'])
                 except:
-                    ip = str(x["server"])
-                try:
-                    country = str(countrify.get(ip)['country']['iso_code'])
-                except:
-                    country = 'UN'
-                flagcountry = country
-                try:
-                    country_count[country] = country_count[country] + 1
-                    x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                except:
-                    country_count[country] = 1
-                    x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                
-                # 最终验证：确保所有字段都是正确的类型
-                for field in ['password', 'uuid', 'cipher', 'type', 'name', 'server']:
-                    if field in x and not isinstance(x[field], str):
-                        raise ValueError(f"字段 '{field}' 不是字符串类型")
-                
-                clash['proxies'].append(x)
-                clash['proxy-groups'][0]['proxies'].append(x['name'])
-                clash['proxy-groups'][1]['proxies'].append(x['name'])
-                count = count + 1
-                
-            except Exception as e:
-                # 任何错误都会导致跳过该节点
-                continue
+                    try:
+                        ip = str(socket.gethostbyname(x["server"]))
+                    except:
+                        ip = str(x["server"])
+                    try:
+                        country = str(countrify.get(ip)['country']['iso_code'])
+                    except:
+                        country = 'UN'
+                    flagcountry = country
+                    try:
+                        country_count[country] = country_count[country] + 1
+                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                    except:
+                        country_count[country] = 1
+                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                    clash['proxies'].append(x)
+                    clash['proxy-groups'][0]['proxies'].append(x['name'])
+                    clash['proxy-groups'][1]['proxies'].append(x['name'])
+                    count = count + 1
 
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
@@ -174,75 +110,26 @@ def filter(config):
             {'name': 'automatic', 'type': 'url-test', 'proxies': [], 'url': 'https://www.google.com/favicon.ico',
              'interval': 300}, {'name': '🌐 Proxy', 'type': 'select', 'proxies': ['automatic']}],
              'rules': ['MATCH,🌐 Proxy']}
-    
-    # 最终验证：确保所有字段都是正确的类型
-    def validate_and_fix_node(node):
-        try:
-            # 创建一个新的节点字典，确保所有字段都是正确的类型
-            new_node = {}
-            
-            # 复制并转换所有字段
-            for field, value in node.items():
-                if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server']:
-                    # 确保字符串字段
-                    if not isinstance(value, str):
-                        try:
-                            new_node[field] = str(value)
-                        except:
-                            return None  # 如果转换失败，返回None表示节点有问题
-                    else:
-                        new_node[field] = value
-                elif field == 'port':
-                    # 确保端口是整数
-                    if not isinstance(value, int):
-                        try:
-                            new_node[field] = int(value)
-                        except:
-                            return None  # 如果转换失败，返回None表示节点有问题
-                    else:
-                        new_node[field] = value
-                elif field in ['udp', 'tls', 'skip-cert-verify']:
-                    # 确保布尔字段
-                    if not isinstance(value, bool):
-                        try:
-                            if isinstance(value, str):
-                                if value.lower() in ['true', '1', 'yes']:
-                                    new_node[field] = True
-                                elif value.lower() in ['false', '0', 'no']:
-                                    new_node[field] = False
-                                else:
-                                    return None  # 无效的布尔值
-                            else:
-                                new_node[field] = bool(value)
-                        except:
-                            return None  # 如果转换失败，返回None表示节点有问题
-                    else:
-                        new_node[field] = value
-                else:
-                    # 其他字段保持不变
-                    new_node[field] = value
-            
-            return new_node
-        except:
-            return None  # 如果任何处理失败，返回None表示节点有问题
-    
     with maxminddb.open_database('Country.mmdb') as countrify:
         for i in tqdm(range(int(len(list))), desc="Parse"):
-            x = list[i]
-            
-            # 验证和修复节点
-            x = validate_and_fix_node(x)
-            if x is None:
-                continue  # 跳过有问题的节点
-            
             try:
+                x = list[i]
                 authentication = ''
                 x['port'] = int(x['port'])
                 # 新增逻辑：直接跳过所有 h2/grpc 节点
                 network = x.get('network', 'tcp')  # 获取传输协议类型
                 if network in ['h2', 'grpc']:
                     continue  # 直接舍弃，不处理后续逻辑              
-                
+                # 统一 password 字段为字符串类型
+                if 'password' in x:
+                    try:
+                        # 强制将 password 转为字符串类型
+                        x['password'] = str(x['password'])
+                    except Exception as e:
+                        print(f"Error processing password for node {x['name']}: {e}")
+                        x['password'] = ''  # 如果处理失败，设置为空字符串或跳过该节点
+                else:
+                    x['password'] = ''  # 如果字段缺失，设置默认值   
                 try:
                     ip = str(socket.gethostbyname(x["server"]))
                 except:
@@ -254,8 +141,10 @@ def filter(config):
                 if x['type'] == 'ss':
                     try:
                         if x['cipher'] not in ss_supported_ciphers:
+                            ss_omit_cipher_unsupported = ss_omit_cipher_unsupported + 1
                             continue
                         if ip in iplist:
+                            ss_omit_ip_dupe = ss_omit_ip_dupe + 1
                             continue
                         else:
                             iplist[ip] = []
@@ -336,7 +225,7 @@ def filter(config):
                         if 'tls' in x:
                             if x['tls'] not in [False, True]:
                                 continue
-                        if 'udp'在 x:
+                        if 'udp' in x:
                             if x['udp'] not in [False, True]:
                                 continue
                         if 'skip-cert-verify' in x:
@@ -344,6 +233,7 @@ def filter(config):
                                 continue
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SK5'
                         # authentication = 'userpass'
+                
                     except:
                         continue
                 else:
@@ -361,18 +251,13 @@ def filter(config):
                         iplist[ip] = []
                         iplist[ip].append(x['port'])
 
-                # 最终验证：确保所有字段都是正确的类型
-                for field in ['password', 'uuid', 'cipher', 'type', 'name', 'server']:
-                    if field in x and not isinstance(x[field], str):
-                        raise ValueError(f"字段 '{field}' 不是字符串类型")
-                
                 clash['proxies'].append(x)
                 clash['proxy-groups'][0]['proxies'].append(x['name'])
                 clash['proxy-groups'][1]['proxies'].append(x['name'])
                 count = count + 1
 
-            except Exception as e:
-                # 任何错误都会导致跳过该节点
+            except:
+                #print('shitwentwrong' + str(x))
                 continue
 
     return clash
