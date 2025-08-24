@@ -40,13 +40,13 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   #- https://proxypool.link/clash/proxies
   #- https://api.v1.mk/sub?target=clash&url=https://proxypool1999.banyunxiaoxi.icu/clash/proxies&insert=false&list=true
   # 25.1.10 add
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml&insert=false&list=true
+  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml&insert=false&list=true
   # 25.3.26 add
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list.meta.yml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Flikify/Free-Node/refs/heads/main/clash.yaml
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/xiaoji235/airport-free/main/clash/naidounode.txt
-  - https://api.v1.mk/sub?target=clash&url=https://fastly.jsdelivr.net/gh/dongchengjie/airport@main/subs/merged/tested_within.yaml
+  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml&insert=false&list=true
+  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list.meta.yml&insert=false&list=true
+  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Flikify/Free-Node/refs/heads/main/clash.yaml
+  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/xiaoji235/airport-free/main/clash/naidounode.txt
+  #- https://api.v1.mk/sub?target=clash&url=https://fastly.jsdelivr.net/gh/dongchengjie/airport@main/subs/merged/tested_within.yaml
   # 25.4.1 add
   - https://proxypool.link/clash/proxies
 # openit
