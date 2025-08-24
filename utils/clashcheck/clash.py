@@ -18,74 +18,109 @@ def push(list, outfile):
              'interval': 300}, {'name': '🌐 Proxy', 'type': 'select', 'proxies': ['automatic']}],
              'rules': ['MATCH,🌐 Proxy']}
     
+    # 创建一个全新的节点列表，确保所有字段类型正确
+    processed_nodes = []
+    
     with maxminddb.open_database('Country.mmdb') as countrify:
-        for i in tqdm(range(int(len(list))), desc="Parse"):
-            x = list[i]
+        for i in tqdm(range(len(list)), desc="Processing"):
+            original_node = list[i]
             
-            # 处理password字段 - 确保是字符串类型
-            password_valid = True
-            if 'password' in x:
-                try:
-                    x['password'] = str(x['password'])
-                except Exception as e:
-                    print(f"无法将password转换为字符串，跳过节点 {i}: {e}")
-                    password_valid = False
-            else:
-                x['password'] = ''
+            # 创建一个新节点，确保所有字段都是正确的类型
+            new_node = {}
             
-            # 处理uuid字段 - 确保是字符串类型
-            uuid_valid = True
-            if 'uuid' in x:
-                try:
-                    x['uuid'] = str(x['uuid'])
-                except Exception as e:
-                    print(f"无法将uuid转换为字符串，跳过节点 {i}: {e}")
-                    uuid_valid = False
-            else:
-                x['uuid'] = ''
+            # 复制所有字段，并确保类型正确
+            for key, value in original_node.items():
+                if key == 'password' or key == 'uuid':
+                    # 强制转换为字符串
+                    try:
+                        new_node[key] = str(value)
+                    except:
+                        # 如果无法转换，跳过此节点
+                        print(f"无法将{key}转换为字符串，跳过节点 {i}")
+                        new_node = None
+                        break
+                else:
+                    new_node[key] = value
             
-            # 如果password或uuid转换失败，跳过此节点
-            if not password_valid or not uuid_valid:
+            # 如果节点无效，跳过
+            if new_node is None:
                 continue
                 
+            # 确保必要的字段存在
+            if 'password' not in new_node:
+                new_node['password'] = ''
+            if 'uuid' not in new_node:
+                new_node['uuid'] = ''
+                
+            # 处理服务器和国家信息
             try:
-                ip = str(socket.gethostbyname(x["server"]))
+                ip = str(socket.gethostbyname(new_node["server"]))
             except:
-                ip = str(x["server"])
+                ip = str(new_node["server"])
+            
             try:
                 country = str(countrify.get(ip)['country']['iso_code'])
             except:
                 country = 'UN'
-            flagcountry = country
+            
+            # 创建节点名称
             try:
-                country_count[country] = country_count[country] + 1
-                x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                country_count[country] = country_count.get(country, 0) + 1
+                new_node['name'] = f"{flag.flag(country)} {country} {count}"
             except:
                 country_count[country] = 1
-                x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                new_node['name'] = f"{flag.flag(country)} {country} {count}"
             
-            # 最终确认password和uuid字段是字符串类型
-            if 'password' in x and not isinstance(x['password'], str):
+            # 最终确认password和uuid字段是字符串
+            if 'password' in new_node and not isinstance(new_node['password'], str):
                 try:
-                    x['password'] = str(x['password'])
+                    new_node['password'] = str(new_node['password'])
                 except:
                     print(f"最终检查时无法转换password，跳过节点 {i}")
                     continue
             
-            if 'uuid' in x and not isinstance(x['uuid'], str):
+            if 'uuid' in new_node and not isinstance(new_node['uuid'], str):
                 try:
-                    x['uuid'] = str(x['uuid'])
+                    new_node['uuid'] = str(new_node['uuid'])
                 except:
                     print(f"最终检查时无法转换uuid，跳过节点 {i}")
                     continue
             
-            clash['proxies'].append(x)
-            clash['proxy-groups'][0]['proxies'].append(x['name'])
-            clash['proxy-groups'][1]['proxies'].append(x['name'])
-            count = count + 1
-
+            # 添加到处理后的节点列表
+            processed_nodes.append(new_node)
+            
+            # 添加到Clash配置
+            clash['proxies'].append(new_node)
+            clash['proxy-groups'][0]['proxies'].append(new_node['name'])
+            clash['proxy-groups'][1]['proxies'].append(new_node['name'])
+            count += 1
+    
+    # 最终验证
+    indices_to_remove = []
+    for i, proxy in enumerate(clash['proxies']):
+        if 'password' in proxy and not isinstance(proxy['password'], str):
+            print(f"发现非字符串password，移除节点 {i}: {proxy.get('name', 'unknown')}")
+            indices_to_remove.append(i)
+    
+    # 逆序移除有问题的代理
+    for i in sorted(indices_to_remove, reverse=True):
+        removed_proxy = clash['proxies'].pop(i)
+        for group in clash['proxy-groups']:
+            if removed_proxy.get('name') in group['proxies']:
+                group['proxies'].remove(removed_proxy.get('name'))
+    
+    # 使用自定义的YAML表示器确保所有字段都是字符串
+    class StringDumper(yaml.SafeDumper):
+        def represent_data(self, data):
+            if isinstance(data, float):
+                return super().represent_data(str(data))
+            return super().represent_data(data)
+    
+    # 写入文件
     with open(outfile, 'w') as writer:
-        yaml.dump(clash, writer, sort_keys=False)
+        yaml.dump(clash, writer, sort_keys=False, Dumper=StringDumper)
+    
+    print(f"成功处理 {len(clash['proxies'])} 个代理节点")
 
 
 def checkenv():
