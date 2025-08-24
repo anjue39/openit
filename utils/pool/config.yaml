@@ -36,11 +36,11 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - http://150.230.195.209:12580/clash/proxies
   - http://155.248.172.106:12580/clash/proxies
   - http://66.42.50.118:12580/clash/proxies
-  - http://140.238.31.152:12580/clash/proxies
-  - https://proxypool.link/clash/proxies
-  - https://api.v1.mk/sub?target=clash&url=https://proxypool1999.banyunxiaoxi.icu/clash/proxies&insert=false&list=true
+  #- http://140.238.31.152:12580/clash/proxies
+  #- https://proxypool.link/clash/proxies
+  #- https://api.v1.mk/sub?target=clash&url=https://proxypool1999.banyunxiaoxi.icu/clash/proxies&insert=false&list=true
   # 25.1.10 add
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml&insert=false&list=true
+  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml&insert=false&list=true
   # 25.3.26 add
   #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml&insert=false&list=true
   #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list.meta.yml&insert=false&list=true
