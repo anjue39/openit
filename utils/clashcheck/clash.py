@@ -96,7 +96,6 @@ def checkuse(clashname, operating_system):
                 print(clashname, str(pid.pid) + " ← kill to continue")
                 exit(1)
 
-
 def filter(config):
     list = config["proxies"]
     ss_supported_ciphers = ['aes-128-gcm', 'aes-256-gcm', 'chacha20-ietf-poly1305'] 
@@ -116,20 +115,30 @@ def filter(config):
                 x = list[i]
                 authentication = ''
                 x['port'] = int(x['port'])
+                
+                # 统一 password 字段为字符串类型 - 移动到更早的位置
+                if 'password' in x:
+                    try:
+                        x['password'] = str(x['password'])
+                    except Exception as e:
+                        print(f"Error processing password for node {x.get('name', 'unknown')}: {e}")
+                        x['password'] = ''  # 如果处理失败，设置为空字符串
+                else:
+                    x['password'] = ''  # 如果字段缺失，设置默认值
+                
                 # 新增逻辑：直接跳过所有 h2/grpc 节点
                 network = x.get('network', 'tcp')  # 获取传输协议类型
                 if network in ['h2', 'grpc']:
-                    continue  # 直接舍弃，不处理后续逻辑              
-                # 统一 password 字段为字符串类型
-                if 'password' in x:
+                    continue  # 直接舍弃，不处理后续逻辑
+                
+                # 统一 uuid 字段为字符串类型（如果有）
+                if 'uuid' in x:
                     try:
-                        # 强制将 password 转为字符串类型
-                        x['password'] = str(x['password'])
+                        x['uuid'] = str(x['uuid'])
                     except Exception as e:
-                        print(f"Error processing password for node {x['name']}: {e}")
-                        x['password'] = ''  # 如果处理失败，设置为空字符串或跳过该节点
-                else:
-                    x['password'] = ''  # 如果字段缺失，设置默认值   
+                        print(f"Error processing uuid for node {x.get('name', 'unknown')}: {e}")
+                        x['uuid'] = ''  # 如果处理失败，设置为空字符串
+                
                 try:
                     ip = str(socket.gethostbyname(x["server"]))
                 except:
@@ -137,7 +146,7 @@ def filter(config):
                 try:
                     country = str(countrify.get(ip)['country']['iso_code'])
                 except:
-                    country = 'UN'                   
+                    country = 'UN'
                 if x['type'] == 'ss':
                     try:
                         if x['cipher'] not in ss_supported_ciphers:
