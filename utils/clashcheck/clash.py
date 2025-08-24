@@ -20,9 +20,11 @@ def push(list, outfile):
     
     # 在开始处理前，先检查原始数据中的password字段类型
     print("检查原始数据中的password字段类型...")
+    problematic_nodes = []
     for i, node in enumerate(list):
         if 'password' in node and not isinstance(node['password'], str):
             print(f"原始节点 {i} 的password字段类型: {type(node['password'])}")
+            problematic_nodes.append(i)
     
     # 创建一个全新的节点列表，确保所有字段类型正确
     processed_nodes = []
@@ -147,6 +149,18 @@ def push(list, outfile):
         matches = re.findall(password_pattern, content)
         if matches:
             print(f"警告: 发现数字类型的password字段: {matches}")
+    
+    # 尝试手动修复输出文件
+    print("尝试手动修复输出文件...")
+    with open(outfile, 'r') as reader:
+        content = reader.read()
+    
+    # 使用正则表达式将所有数字类型的password字段转换为字符串
+    content = re.sub(r'password: (\d+\.?\d*)', r"password: '\1'", content)
+    
+    # 写入修复后的内容
+    with open(outfile, 'w') as writer:
+        writer.write(content)
     
     print(f"成功处理 {len(clash['proxies'])} 个代理节点")
 
