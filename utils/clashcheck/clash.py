@@ -9,6 +9,8 @@ import requests
 from tqdm import tqdm
 from pathlib import Path
 
+# 全局变量来跟踪问题节点
+problematic_nodes = []
 
 def push(list, outfile):
     country_count = {}
@@ -20,146 +22,70 @@ def push(list, outfile):
     with maxminddb.open_database('Country.mmdb') as countrify:
         for i in tqdm(range(int(len(list))), desc="Parse"):
             x = list[i]
-            
-            # 确保所有字段都是正确的类型
             try:
-                # 创建一个新的节点字典，确保所有字段都是正确的类型
-                new_x = {}
+                # 尝试修复字段类型
+                if 'password' in x and not isinstance(x['password'], str):
+                    try:
+                        x['password'] = str(x['password'])
+                    except:
+                        # 如果转换失败，记录问题节点并跳过
+                        problematic_nodes.append({
+                            'index': i,
+                            'node': x,
+                            'error': 'password字段转换失败',
+                            'source': x.get('_source', 'unknown')
+                        })
+                        continue
                 
-                # 复制并转换所有字段
-                for field, value in x.items():
-                    if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server', 'network', 'obfs', 'protocol']:
-                        # 确保字符串字段
-                        if not isinstance(value, str):
-                            try:
-                                new_x[field] = str(value)
-                            except:
-                                print(f"无法转换字段 {field}: {value}")
-                                raise ValueError(f"无法转换字段 {field}")
-                        else:
-                            new_x[field] = value
-                    elif field == 'port':
-                        # 确保端口是整数
-                        if not isinstance(value, int):
-                            try:
-                                new_x[field] = int(value)
-                            except:
-                                print(f"无法转换端口: {value}")
-                                raise ValueError("无法转换端口")
-                        else:
-                            new_x[field] = value
-                    elif field in ['udp', 'tls', 'skip-cert-verify']:
-                        # 确保布尔字段
-                        if not isinstance(value, bool):
-                            try:
-                                if isinstance(value, str):
-                                    if value.lower() in ['true', '1', 'yes']:
-                                        new_x[field] = True
-                                    elif value.lower() in ['false', '0', 'no']:
-                                        new_x[field] = False
-                                    else:
-                                        print(f"无法转换布尔字段 {field}: {value}")
-                                        raise ValueError(f"无效的布尔值: {value}")
-                                else:
-                                    new_x[field] = bool(value)
-                            except:
-                                print(f"无法转换布尔字段 {field}: {value}")
-                                raise ValueError(f"无法转换布尔字段 {field}")
-                        else:
-                            new_x[field] = value
-                    else:
-                        # 其他字段保持不变
-                        new_x[field] = value
+                if 'uuid' in x and not isinstance(x['uuid'], str):
+                    try:
+                        x['uuid'] = str(x['uuid'])
+                    except:
+                        # 如果转换失败，记录问题节点并跳过
+                        problematic_nodes.append({
+                            'index': i,
+                            'node': x,
+                            'error': 'uuid字段转换失败',
+                            'source': x.get('_source', 'unknown')
+                        })
+                        continue
                 
-                # 使用修复后的节点
-                x = new_x
-                
-                # 原有的处理逻辑
+                float(x['password'])
+            except:
                 try:
-                    ip = str(socket.gethostbyname(x["server"]))
+                    float(x['uuid'])
                 except:
-                    ip = str(x["server"])
-                try:
-                    country = str(countrify.get(ip)['country']['iso_code'])
-                except:
-                    country = 'UN'
-                flagcountry = country
-                try:
-                    country_count[country] = country_count[country] + 1
-                    x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                except:
-                    country_count[country] = 1
-                    x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                clash['proxies'].append(x)
-                clash['proxy-groups'][0]['proxies'].append(x['name'])
-                clash['proxy-groups'][1]['proxies'].append(x['name'])
-                count = count + 1
-
-            except Exception as e:
-                print(f"处理节点时出错: {e}")
-                continue
-
-    # 最终验证：确保所有字段都是正确的类型
-    valid_proxies = []
-    for proxy in clash['proxies']:
-        try:
-            # 创建一个新的代理字典，确保所有字段都是正确的类型
-            new_proxy = {}
-            
-            # 复制并转换所有字段
-            for field, value in proxy.items():
-                if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server', 'network', 'obfs', 'protocol']:
-                    # 确保字符串字段
-                    if not isinstance(value, str):
-                        try:
-                            new_proxy[field] = str(value)
-                        except:
-                            print(f"最终验证: 无法转换字段 {field}: {value}")
-                            raise ValueError(f"无法转换字段 {field}")
-                    else:
-                        new_proxy[field] = value
-                elif field == 'port':
-                    # 确保端口是整数
-                    if not isinstance(value, int):
-                        try:
-                            new_proxy[field] = int(value)
-                        except:
-                            print(f"最终验证: 无法转换端口: {value}")
-                            raise ValueError("无法转换端口")
-                    else:
-                        new_proxy[field] = value
-                elif field in ['udp', 'tls', 'skip-cert-verify']:
-                    # 确保布尔字段
-                    if not isinstance(value, bool):
-                        try:
-                            if isinstance(value, str):
-                                if value.lower() in ['true', '1', 'yes']:
-                                    new_proxy[field] = True
-                                elif value.lower() in ['false', '0', 'no']:
-                                    new_proxy[field] = False
-                                else:
-                                    print(f"最终验证: 无法转换布尔字段 {field}: {value}")
-                                    raise ValueError(f"无效的布尔值: {value}")
-                            else:
-                                new_proxy[field] = bool(value)
-                        except:
-                            print(f"最终验证: 无法转换布尔字段 {field}: {value}")
-                            raise ValueError(f"无法转换布尔字段 {field}")
-                    else:
-                        new_proxy[field] = value
-                else:
-                    # 其他字段保持不变
-                    new_proxy[field] = value
-            
-            valid_proxies.append(new_proxy)
-        except Exception as e:
-            print(f"最终验证时跳过节点: {e}")
-            continue
-    
-    clash['proxies'] = valid_proxies
+                    try:
+                        ip = str(socket.gethostbyname(x["server"]))
+                    except:
+                        ip = str(x["server"])
+                    try:
+                        country = str(countrify.get(ip)['country']['iso_code'])
+                    except:
+                        country = 'UN'
+                    flagcountry = country
+                    try:
+                        country_count[country] = country_count[country] + 1
+                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                    except:
+                        country_count[country] = 1
+                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                    clash['proxies'].append(x)
+                    clash['proxy-groups'][0]['proxies'].append(x['name'])
+                    clash['proxy-groups'][1]['proxies'].append(x['name'])
+                    count = count + 1
 
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
+    
+    # 打印问题节点报告
+    if problematic_nodes:
+        print("\n=== 问题节点报告 ===")
+        for problem in problematic_nodes:
+            print(f"节点索引: {problem['index']}")
+            print(f"错误信息: {problem['error']}")
+            print(f"来源: {problem['source']}")
+            print("---")
 
 
 def checkenv():
@@ -226,64 +152,39 @@ def filter(config):
         for i in tqdm(range(int(len(list))), desc="Parse"):
             try:
                 x = list[i]
-                
-                # 创建一个新的节点字典，确保所有字段都是正确的类型
-                new_x = {}
-                
-                # 复制并转换所有字段
-                for field, value in x.items():
-                    if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server', 'network', 'obfs', 'protocol']:
-                        # 确保字符串字段
-                        if not isinstance(value, str):
-                            try:
-                                new_x[field] = str(value)
-                            except:
-                                print(f"无法转换字段 {field}: {value}")
-                                raise ValueError(f"无法转换字段 {field}")
-                        else:
-                            new_x[field] = value
-                    elif field == 'port':
-                        # 确保端口是整数
-                        if not isinstance(value, int):
-                            try:
-                                new_x[field] = int(value)
-                            except:
-                                print(f"无法转换端口: {value}")
-                                raise ValueError("无法转换端口")
-                        else:
-                            new_x[field] = value
-                    elif field in ['udp', 'tls', 'skip-cert-verify']:
-                        # 确保布尔字段
-                        if not isinstance(value, bool):
-                            try:
-                                if isinstance(value, str):
-                                    if value.lower() in ['true', '1', 'yes']:
-                                        new_x[field] = True
-                                    elif value.lower() in ['false', '0', 'no']:
-                                        new_x[field] = False
-                                    else:
-                                        print(f"无法转换布尔字段 {field}: {value}")
-                                        raise ValueError(f"无效的布尔值: {value}")
-                                else:
-                                    new_x[field] = bool(value)
-                            except:
-                                print(f"无法转换布尔字段 {field}: {value}")
-                                raise ValueError(f"无法转换布尔字段 {field}")
-                        else:
-                            new_x[field] = value
-                    else:
-                        # 其他字段保持不变
-                        new_x[field] = value
-                
-                # 使用修复后的节点
-                x = new_x
-                
                 authentication = ''
                 x['port'] = int(x['port'])
                 # 新增逻辑：直接跳过所有 h2/grpc 节点
                 network = x.get('network', 'tcp')  # 获取传输协议类型
                 if network in ['h2', 'grpc']:
                     continue  # 直接舍弃，不处理后续逻辑              
+                
+                # 尝试修复字段类型
+                if 'password' in x and not isinstance(x['password'], str):
+                    try:
+                        x['password'] = str(x['password'])
+                    except:
+                        # 如果转换失败，记录问题节点并跳过
+                        problematic_nodes.append({
+                            'index': i,
+                            'node': x,
+                            'error': 'password字段转换失败',
+                            'source': x.get('_source', 'unknown')
+                        })
+                        continue
+                
+                if 'uuid' in x and not isinstance(x['uuid'], str):
+                    try:
+                        x['uuid'] = str(x['uuid'])
+                    except:
+                        # 如果转换失败，记录问题节点并跳过
+                        problematic_nodes.append({
+                            'index': i,
+                            'node': x,
+                            'error': 'uuid字段转换失败',
+                            'source': x.get('_source', 'unknown')
+                        })
+                        continue
                 
                 try:
                     ip = str(socket.gethostbyname(x["server"]))
@@ -410,7 +311,13 @@ def filter(config):
                 count = count + 1
 
             except Exception as e:
-                print(f"处理节点时出错: {e}")
+                # 记录问题节点
+                problematic_nodes.append({
+                    'index': i,
+                    'node': x,
+                    'error': str(e),
+                    'source': x.get('_source', 'unknown')
+                })
                 continue
 
     return clash
