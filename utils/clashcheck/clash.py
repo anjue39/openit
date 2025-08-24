@@ -23,70 +23,95 @@ def push(list, outfile):
             
             # 确保所有字段都是正确的类型
             try:
-                # 修复password字段
-                if 'password' in x and not isinstance(x['password'], str):
-                    try:
-                        x['password'] = str(x['password'])
-                    except:
-                        # 如果转换失败，跳过该节点
-                        continue
-                
-                # 修复uuid字段
-                if 'uuid' in x and not isinstance(x['uuid'], str):
-                    try:
-                        x['uuid'] = str(x['uuid'])
-                    except:
-                        # 如果转换失败，跳过该节点
-                        continue
-                
-                # 修复其他可能为数字的字段
-                for field in ['cipher', 'type', 'name', 'server']:
-                    if field in x and not isinstance(x[field], str):
-                        try:
-                            x[field] = str(x[field])
-                        except:
-                            # 如果转换失败，跳过该节点
-                            continue
-                
-                # 确保port字段是整数
-                if 'port' in x and not isinstance(x['port'], int):
-                    try:
-                        x['port'] = int(x['port'])
-                    except:
-                        # 如果转换失败，跳过该节点
-                        continue
+                # 修复所有字段类型
+                for field in x.keys():
+                    if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server']:
+                        if not isinstance(x[field], str):
+                            try:
+                                x[field] = str(x[field])
+                            except Exception as e:
+                                print(f"无法转换字段 {field}: {e}")
+                                raise e
+                    elif field == 'port':
+                        if not isinstance(x[field], int):
+                            try:
+                                x[field] = int(x[field])
+                            except Exception as e:
+                                print(f"无法转换端口: {e}")
+                                raise e
+                    elif field in ['udp', 'tls', 'skip-cert-verify']:
+                        if not isinstance(x[field], bool):
+                            try:
+                                # 尝试将字符串转换为布尔值
+                                if isinstance(x[field], str):
+                                    if x[field].lower() in ['true', '1', 'yes']:
+                                        x[field] = True
+                                    elif x[field].lower() in ['false', '0', 'no']:
+                                        x[field] = False
+                                    else:
+                                        print(f"无法转换布尔字段 {field}: {x[field]}")
+                                        raise ValueError(f"无效的布尔值: {x[field]}")
+                                else:
+                                    x[field] = bool(x[field])
+                            except Exception as e:
+                                print(f"无法转换布尔字段 {field}: {e}")
+                                raise e
                 
                 # 原有的处理逻辑
                 try:
-                    float(x['password'])
+                    ip = str(socket.gethostbyname(x["server"]))
                 except:
-                    try:
-                        float(x['uuid'])
-                    except:
-                        try:
-                            ip = str(socket.gethostbyname(x["server"]))
-                        except:
-                            ip = str(x["server"])
-                        try:
-                            country = str(countrify.get(ip)['country']['iso_code'])
-                        except:
-                            country = 'UN'
-                        flagcountry = country
-                        try:
-                            country_count[country] = country_count[country] + 1
-                            x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                        except:
-                            country_count[country] = 1
-                            x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                        clash['proxies'].append(x)
-                        clash['proxy-groups'][0]['proxies'].append(x['name'])
-                        clash['proxy-groups'][1]['proxies'].append(x['name'])
-                        count = count + 1
+                    ip = str(x["server"])
+                try:
+                    country = str(countrify.get(ip)['country']['iso_code'])
+                except:
+                    country = 'UN'
+                flagcountry = country
+                try:
+                    country_count[country] = country_count[country] + 1
+                    x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                except:
+                    country_count[country] = 1
+                    x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                clash['proxies'].append(x)
+                clash['proxy-groups'][0]['proxies'].append(x['name'])
+                clash['proxy-groups'][1]['proxies'].append(x['name'])
+                count = count + 1
 
             except Exception as e:
-                # 打印错误信息以便调试
                 print(f"处理节点时出错: {e}")
                 continue
+
+    # 最终验证：确保所有字段都是正确的类型
+    valid_proxies = []
+    for proxy in clash['proxies']:
+        try:
+            # 确保所有字段都是正确的类型
+            for field in proxy.keys():
+                if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server']:
+                    if not isinstance(proxy[field], str):
+                        proxy[field] = str(proxy[field])
+                elif field == 'port':
+                    if not isinstance(proxy[field], int):
+                        proxy[field] = int(proxy[field])
+                elif field in ['udp', 'tls', 'skip-cert-verify']:
+                    if not isinstance(proxy[field], bool):
+                        if isinstance(proxy[field], str):
+                            if proxy[field].lower() in ['true', '1', 'yes']:
+                                proxy[field] = True
+                            elif proxy[field].lower() in ['false', '0', 'no']:
+                                proxy[field] = False
+                            else:
+                                raise ValueError(f"无效的布尔值: {proxy[field]}")
+                        else:
+                            proxy[field] = bool(proxy[field])
+            
+            valid_proxies.append(proxy)
+        except Exception as e:
+            print(f"最终验证时跳过节点: {e}")
+            continue
+    
+    clash['proxies'] = valid_proxies
 
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
@@ -158,30 +183,38 @@ def filter(config):
                 x = list[i]
                 
                 # 确保所有字段都是正确的类型
-                # 修复password字段
-                if 'password' in x and not isinstance(x['password'], str):
-                    try:
-                        x['password'] = str(x['password'])
-                    except:
-                        # 如果转换失败，跳过该节点
-                        continue
-                
-                # 修复uuid字段
-                if 'uuid' in x and not isinstance(x['uuid'], str):
-                    try:
-                        x['uuid'] = str(x['uuid'])
-                    except:
-                        # 如果转换失败，跳过该节点
-                        continue
-                
-                # 修复其他可能为数字的字段
-                for field in ['cipher', 'type', 'name', 'server']:
-                    if field in x and not isinstance(x[field], str):
-                        try:
-                            x[field] = str(x[field])
-                        except:
-                            # 如果转换失败，跳过该节点
-                            continue
+                for field in x.keys():
+                    if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server']:
+                        if not isinstance(x[field], str):
+                            try:
+                                x[field] = str(x[field])
+                            except Exception as e:
+                                print(f"无法转换字段 {field}: {e}")
+                                raise e
+                    elif field == 'port':
+                        if not isinstance(x[field], int):
+                            try:
+                                x[field] = int(x[field])
+                            except Exception as e:
+                                print(f"无法转换端口: {e}")
+                                raise e
+                    elif field in ['udp', 'tls', 'skip-cert-verify']:
+                        if not isinstance(x[field], bool):
+                            try:
+                                # 尝试将字符串转换为布尔值
+                                if isinstance(x[field], str):
+                                    if x[field].lower() in ['true', '1', 'yes']:
+                                        x[field] = True
+                                    elif x[field].lower() in ['false', '0', 'no']:
+                                        x[field] = False
+                                    else:
+                                        print(f"无法转换布尔字段 {field}: {x[field]}")
+                                        raise ValueError(f"无效的布尔值: {x[field]}")
+                                else:
+                                    x[field] = bool(x[field])
+                            except Exception as e:
+                                print(f"无法转换布尔字段 {field}: {e}")
+                                raise e
                 
                 authentication = ''
                 x['port'] = int(x['port'])
@@ -315,7 +348,6 @@ def filter(config):
                 count = count + 1
 
             except Exception as e:
-                # 打印错误信息以便调试
                 print(f"处理节点时出错: {e}")
                 continue
 
