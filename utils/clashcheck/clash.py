@@ -18,108 +18,76 @@ def push(list, outfile):
              'interval': 300}, {'name': '🌐 Proxy', 'type': 'select', 'proxies': ['automatic']}],
              'rules': ['MATCH,🌐 Proxy']}
     
-    # 创建一个新列表，确保所有字段类型正确
-    processed_list = []
-    
-    for i, node in enumerate(tqdm(list, desc="Pre-processing")):
-        # 创建节点的深拷贝，避免修改原始数据
-        processed_node = node.copy()
-        
-        # 确保所有字段都是正确的类型
-        try:
-            # 处理password字段
-            if 'password' in processed_node:
-                if not isinstance(processed_node['password'], str):
-                    processed_node['password'] = str(processed_node['password'])
-            
-            # 处理uuid字段
-            if 'uuid' in processed_node:
-                if not isinstance(processed_node['uuid'], str):
-                    processed_node['uuid'] = str(processed_node['uuid'])
-            
-            # 处理port字段
-            if 'port' in processed_node:
-                if not isinstance(processed_node['port'], int):
-                    processed_node['port'] = int(processed_node['port'])
-            
-            # 处理server字段
-            if 'server' in processed_node:
-                if not isinstance(processed_node['server'], str):
-                    processed_node['server'] = str(processed_node['server'])
-            
-            processed_list.append(processed_node)
-            
-        except Exception as e:
-            print(f"Error processing node {i}: {e}")
-            continue
-    
     with maxminddb.open_database('Country.mmdb') as countrify:
-        for i, x in enumerate(tqdm(processed_list, desc="Processing")):
-            try:
-                # 再次确认password字段是字符串
-                if 'password' in x and not isinstance(x['password'], str):
+        for i in tqdm(range(int(len(list))), desc="Parse"):
+            x = list[i]
+            
+            # 处理password字段 - 确保是字符串类型
+            password_valid = True
+            if 'password' in x:
+                try:
                     x['password'] = str(x['password'])
-                
-                # 获取IP和国家信息
+                except Exception as e:
+                    print(f"无法将password转换为字符串，跳过节点 {i}: {e}")
+                    password_valid = False
+            else:
+                x['password'] = ''
+            
+            # 处理uuid字段 - 确保是字符串类型
+            uuid_valid = True
+            if 'uuid' in x:
                 try:
-                    ip = str(socket.gethostbyname(x["server"]))
-                except:
-                    ip = str(x["server"])
-                
-                try:
-                    country = str(countrify.get(ip)['country']['iso_code'])
-                except:
-                    country = 'UN'
-                
-                # 创建节点名称
-                flagcountry = country
-                try:
-                    country_count[country] = country_count.get(country, 0) + 1
-                    x['name'] = f"{flag.flag(flagcountry)} {country} {count}"
-                except:
-                    country_count[country] = 1
-                    x['name'] = f"{flag.flag(flagcountry)} {country} {count}"
-                
-                # 最终确认password字段是字符串
-                if 'password' in x and not isinstance(x['password'], str):
-                    x['password'] = str(x['password'])
-                
-                # 添加到Clash配置
-                clash['proxies'].append(x)
-                clash['proxy-groups'][0]['proxies'].append(x['name'])
-                clash['proxy-groups'][1]['proxies'].append(x['name'])
-                count += 1
-                
-            except Exception as e:
-                print(f"Error adding node {i} to clash config: {e}")
+                    x['uuid'] = str(x['uuid'])
+                except Exception as e:
+                    print(f"无法将uuid转换为字符串，跳过节点 {i}: {e}")
+                    uuid_valid = False
+            else:
+                x['uuid'] = ''
+            
+            # 如果password或uuid转换失败，跳过此节点
+            if not password_valid or not uuid_valid:
                 continue
-    
-    # 最终验证和修复
-    for i, proxy in enumerate(clash['proxies']):
-        # 检查并修复password字段
-        if 'password' in proxy and not isinstance(proxy['password'], str):
-            print(f"Final conversion for proxy {i}: {proxy.get('name', 'unknown')}")
+                
             try:
-                proxy['password'] = str(proxy['password'])
-            except Exception as e:
-                print(f"Failed to convert password for proxy {i}: {e}")
-                # 移除有问题的代理
-                clash['proxies'].pop(i)
-                # 从proxy-groups中移除
-                for group in clash['proxy-groups']:
-                    if proxy.get('name') in group['proxies']:
-                        group['proxies'].remove(proxy.get('name'))
-    
-    # 写入文件前再次检查
-    for proxy in clash['proxies']:
-        if 'password' in proxy and not isinstance(proxy['password'], str):
-            print(f"WARNING: Proxy {proxy.get('name', 'unknown')} still has non-string password: {type(proxy['password'])}")
-    
-    # 写入文件
+                ip = str(socket.gethostbyname(x["server"]))
+            except:
+                ip = str(x["server"])
+            try:
+                country = str(countrify.get(ip)['country']['iso_code'])
+            except:
+                country = 'UN'
+            flagcountry = country
+            try:
+                country_count[country] = country_count[country] + 1
+                x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+            except:
+                country_count[country] = 1
+                x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+            
+            # 最终确认password和uuid字段是字符串类型
+            if 'password' in x and not isinstance(x['password'], str):
+                try:
+                    x['password'] = str(x['password'])
+                except:
+                    print(f"最终检查时无法转换password，跳过节点 {i}")
+                    continue
+            
+            if 'uuid' in x and not isinstance(x['uuid'], str):
+                try:
+                    x['uuid'] = str(x['uuid'])
+                except:
+                    print(f"最终检查时无法转换uuid，跳过节点 {i}")
+                    continue
+            
+            clash['proxies'].append(x)
+            clash['proxy-groups'][0]['proxies'].append(x['name'])
+            clash['proxy-groups'][1]['proxies'].append(x['name'])
+            count = count + 1
+
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
-    
-    print(f"Successfully processed {len(clash['proxies'])} proxies")
+
+
 def checkenv():
     operating_system = str(platform.system() + '/' +  platform.machine() + ' with ' + platform.node())
     print('Try to run Clash on '+ operating_system)
@@ -166,6 +134,7 @@ def checkuse(clashname, operating_system):
                 print(clashname, str(pid.pid) + " ← kill to continue")
                 exit(1)
 
+
 def filter(config):
     list = config["proxies"]
     ss_supported_ciphers = ['aes-128-gcm', 'aes-256-gcm', 'chacha20-ietf-poly1305'] 
@@ -186,28 +155,36 @@ def filter(config):
                 authentication = ''
                 x['port'] = int(x['port'])
                 
-                # 统一 password 字段为字符串类型 - 移动到更早的位置
+                # 处理password字段 - 确保是字符串类型
+                password_valid = True
                 if 'password' in x:
                     try:
                         x['password'] = str(x['password'])
                     except Exception as e:
-                        print(f"Error processing password for node {x.get('name', 'unknown')}: {e}")
-                        x['password'] = ''  # 如果处理失败，设置为空字符串
+                        print(f"无法将password转换为字符串，跳过节点 {i}: {e}")
+                        password_valid = False
                 else:
-                    x['password'] = ''  # 如果字段缺失，设置默认值
+                    x['password'] = ''
+                
+                # 处理uuid字段 - 确保是字符串类型
+                uuid_valid = True
+                if 'uuid' in x:
+                    try:
+                        x['uuid'] = str(x['uuid'])
+                    except Exception as e:
+                        print(f"无法将uuid转换为字符串，跳过节点 {i}: {e}")
+                        uuid_valid = False
+                else:
+                    x['uuid'] = ''
+                
+                # 如果password或uuid转换失败，跳过此节点
+                if not password_valid or not uuid_valid:
+                    continue
                 
                 # 新增逻辑：直接跳过所有 h2/grpc 节点
                 network = x.get('network', 'tcp')  # 获取传输协议类型
                 if network in ['h2', 'grpc']:
                     continue  # 直接舍弃，不处理后续逻辑
-                
-                # 统一 uuid 字段为字符串类型（如果有）
-                if 'uuid' in x:
-                    try:
-                        x['uuid'] = str(x['uuid'])
-                    except Exception as e:
-                        print(f"Error processing uuid for node {x.get('name', 'unknown')}: {e}")
-                        x['uuid'] = ''  # 如果处理失败，设置为空字符串
                 
                 try:
                     ip = str(socket.gethostbyname(x["server"]))
@@ -216,14 +193,12 @@ def filter(config):
                 try:
                     country = str(countrify.get(ip)['country']['iso_code'])
                 except:
-                    country = 'UN'
+                    country = 'UN'                   
                 if x['type'] == 'ss':
                     try:
                         if x['cipher'] not in ss_supported_ciphers:
-                            ss_omit_cipher_unsupported = ss_omit_cipher_unsupported + 1
                             continue
                         if ip in iplist:
-                            ss_omit_ip_dupe = ss_omit_ip_dupe + 1
                             continue
                         else:
                             iplist[ip] = []
@@ -330,13 +305,28 @@ def filter(config):
                         iplist[ip] = []
                         iplist[ip].append(x['port'])
 
+                # 最终确认password和uuid字段是字符串类型
+                if 'password' in x and not isinstance(x['password'], str):
+                    try:
+                        x['password'] = str(x['password'])
+                    except:
+                        print(f"最终检查时无法转换password，跳过节点 {i}")
+                        continue
+                
+                if 'uuid' in x and not isinstance(x['uuid'], str):
+                    try:
+                        x['uuid'] = str(x['uuid'])
+                    except:
+                        print(f"最终检查时无法转换uuid，跳过节点 {i}")
+                        continue
+
                 clash['proxies'].append(x)
                 clash['proxy-groups'][0]['proxies'].append(x['name'])
                 clash['proxy-groups'][1]['proxies'].append(x['name'])
                 count = count + 1
 
-            except:
-                #print('shitwentwrong' + str(x))
+            except Exception as e:
+                print(f'处理节点时出错 {i}: {e}')
                 continue
 
     return clash
