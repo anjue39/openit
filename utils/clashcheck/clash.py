@@ -18,79 +18,108 @@ def push(list, outfile):
              'interval': 300}, {'name': '🌐 Proxy', 'type': 'select', 'proxies': ['automatic']}],
              'rules': ['MATCH,🌐 Proxy']}
     
-    # 预处理所有节点，确保字段类型正确
-    for i in tqdm(range(len(list)), desc="Pre-processing"):
-        x = list[i]
+    # 创建一个新列表，确保所有字段类型正确
+    processed_list = []
+    
+    for i, node in enumerate(tqdm(list, desc="Pre-processing")):
+        # 创建节点的深拷贝，避免修改原始数据
+        processed_node = node.copy()
         
-        # 确保所有必要字段存在且类型正确
-        if 'password' in x:
-            try:
-                x['password'] = str(x['password'])
-            except Exception as e:
-                print(f"Error processing password for node {i}: {e}")
-                x['password'] = ''
-        else:
-            x['password'] = ''
+        # 确保所有字段都是正确的类型
+        try:
+            # 处理password字段
+            if 'password' in processed_node:
+                if not isinstance(processed_node['password'], str):
+                    processed_node['password'] = str(processed_node['password'])
             
-        if 'uuid' in x:
-            try:
-                x['uuid'] = str(x['uuid'])
-            except Exception as e:
-                print(f"Error processing uuid for node {i}: {e}")
-                x['uuid'] = ''
-                
-        # 确保端口是整数
-        if 'port' in x:
-            try:
-                x['port'] = int(x['port'])
-            except Exception as e:
-                print(f"Error processing port for node {i}: {e}")
-                x['port'] = 0
+            # 处理uuid字段
+            if 'uuid' in processed_node:
+                if not isinstance(processed_node['uuid'], str):
+                    processed_node['uuid'] = str(processed_node['uuid'])
+            
+            # 处理port字段
+            if 'port' in processed_node:
+                if not isinstance(processed_node['port'], int):
+                    processed_node['port'] = int(processed_node['port'])
+            
+            # 处理server字段
+            if 'server' in processed_node:
+                if not isinstance(processed_node['server'], str):
+                    processed_node['server'] = str(processed_node['server'])
+            
+            processed_list.append(processed_node)
+            
+        except Exception as e:
+            print(f"Error processing node {i}: {e}")
+            continue
     
     with maxminddb.open_database('Country.mmdb') as countrify:
-        for i in tqdm(range(len(list)), desc="Processing"):
-            x = list[i]
-            
-            # 跳过无效节点
-            if x.get('port', 0) <= 0:
+        for i, x in enumerate(tqdm(processed_list, desc="Processing")):
+            try:
+                # 再次确认password字段是字符串
+                if 'password' in x and not isinstance(x['password'], str):
+                    x['password'] = str(x['password'])
+                
+                # 获取IP和国家信息
+                try:
+                    ip = str(socket.gethostbyname(x["server"]))
+                except:
+                    ip = str(x["server"])
+                
+                try:
+                    country = str(countrify.get(ip)['country']['iso_code'])
+                except:
+                    country = 'UN'
+                
+                # 创建节点名称
+                flagcountry = country
+                try:
+                    country_count[country] = country_count.get(country, 0) + 1
+                    x['name'] = f"{flag.flag(flagcountry)} {country} {count}"
+                except:
+                    country_count[country] = 1
+                    x['name'] = f"{flag.flag(flagcountry)} {country} {count}"
+                
+                # 最终确认password字段是字符串
+                if 'password' in x and not isinstance(x['password'], str):
+                    x['password'] = str(x['password'])
+                
+                # 添加到Clash配置
+                clash['proxies'].append(x)
+                clash['proxy-groups'][0]['proxies'].append(x['name'])
+                clash['proxy-groups'][1]['proxies'].append(x['name'])
+                count += 1
+                
+            except Exception as e:
+                print(f"Error adding node {i} to clash config: {e}")
                 continue
-                
-            try:
-                ip = str(socket.gethostbyname(x["server"]))
-            except:
-                ip = str(x["server"])
-                
-            try:
-                country = str(countrify.get(ip)['country']['iso_code'])
-            except:
-                country = 'UN'
-                
-            flagcountry = country
-            try:
-                country_count[country] = country_count.get(country, 0) + 1
-                x['name'] = f"{flag.flag(flagcountry)} {country} {count}"
-            except:
-                country_count[country] = 1
-                x['name'] = f"{flag.flag(flagcountry)} {country} {count}"
-            
-            # 确保最终password是字符串
-            if 'password' in x and not isinstance(x['password'], str):
-                x['password'] = str(x['password'])
-                
-            clash['proxies'].append(x)
-            clash['proxy-groups'][0]['proxies'].append(x['name'])
-            clash['proxy-groups'][1]['proxies'].append(x['name'])
-            count += 1
-
-    # 最终验证
+    
+    # 最终验证和修复
     for i, proxy in enumerate(clash['proxies']):
+        # 检查并修复password字段
         if 'password' in proxy and not isinstance(proxy['password'], str):
             print(f"Final conversion for proxy {i}: {proxy.get('name', 'unknown')}")
-            proxy['password'] = str(proxy['password'])
-
+            try:
+                proxy['password'] = str(proxy['password'])
+            except Exception as e:
+                print(f"Failed to convert password for proxy {i}: {e}")
+                # 移除有问题的代理
+                clash['proxies'].pop(i)
+                # 从proxy-groups中移除
+                for group in clash['proxy-groups']:
+                    if proxy.get('name') in group['proxies']:
+                        group['proxies'].remove(proxy.get('name'))
+    
+    # 写入文件前再次检查
+    for proxy in clash['proxies']:
+        if 'password' in proxy and not isinstance(proxy['password'], str):
+            print(f"WARNING: Proxy {proxy.get('name', 'unknown')} still has non-string password: {type(proxy['password'])}")
+    
+    # 写入文件
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
-
+    
+    print(f"Successfully processed {len(clash['proxies'])} proxies")
 def checkenv():
     operating_system = str(platform.system() + '/' +  platform.machine() + ' with ' + platform.node())
     print('Try to run Clash on '+ operating_system)
