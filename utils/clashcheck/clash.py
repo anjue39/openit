@@ -9,8 +9,6 @@ import requests
 from tqdm import tqdm
 from pathlib import Path
 
-# 全局变量来跟踪问题节点
-problematic_nodes = []
 
 def push(list, outfile):
     country_count = {}
@@ -23,33 +21,6 @@ def push(list, outfile):
         for i in tqdm(range(int(len(list))), desc="Parse"):
             x = list[i]
             try:
-                # 尝试修复字段类型
-                if 'password' in x and not isinstance(x['password'], str):
-                    try:
-                        x['password'] = str(x['password'])
-                    except:
-                        # 如果转换失败，记录问题节点并跳过
-                        problematic_nodes.append({
-                            'index': i,
-                            'node': x,
-                            'error': 'password字段转换失败',
-                            'source': x.get('_source', 'unknown')
-                        })
-                        continue
-                
-                if 'uuid' in x and not isinstance(x['uuid'], str):
-                    try:
-                        x['uuid'] = str(x['uuid'])
-                    except:
-                        # 如果转换失败，记录问题节点并跳过
-                        problematic_nodes.append({
-                            'index': i,
-                            'node': x,
-                            'error': 'uuid字段转换失败',
-                            'source': x.get('_source', 'unknown')
-                        })
-                        continue
-                
                 float(x['password'])
             except:
                 try:
@@ -77,15 +48,6 @@ def push(list, outfile):
 
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
-    
-    # 打印问题节点报告
-    if problematic_nodes:
-        print("\n=== 问题节点报告 ===")
-        for problem in problematic_nodes:
-            print(f"节点索引: {problem['index']}")
-            print(f"错误信息: {problem['error']}")
-            print(f"来源: {problem['source']}")
-            print("---")
 
 
 def checkenv():
@@ -158,34 +120,16 @@ def filter(config):
                 network = x.get('network', 'tcp')  # 获取传输协议类型
                 if network in ['h2', 'grpc']:
                     continue  # 直接舍弃，不处理后续逻辑              
-                
-                # 尝试修复字段类型
-                if 'password' in x and not isinstance(x['password'], str):
+                # 统一 password 字段为字符串类型
+                if 'password' in x:
                     try:
+                        # 强制将 password 转为字符串类型
                         x['password'] = str(x['password'])
-                    except:
-                        # 如果转换失败，记录问题节点并跳过
-                        problematic_nodes.append({
-                            'index': i,
-                            'node': x,
-                            'error': 'password字段转换失败',
-                            'source': x.get('_source', 'unknown')
-                        })
-                        continue
-                
-                if 'uuid' in x and not isinstance(x['uuid'], str):
-                    try:
-                        x['uuid'] = str(x['uuid'])
-                    except:
-                        # 如果转换失败，记录问题节点并跳过
-                        problematic_nodes.append({
-                            'index': i,
-                            'node': x,
-                            'error': 'uuid字段转换失败',
-                            'source': x.get('_source', 'unknown')
-                        })
-                        continue
-                
+                    except Exception as e:
+                        print(f"Error processing password for node {x['name']}: {e}")
+                        x['password'] = ''  # 如果处理失败，设置为空字符串或跳过该节点
+                else:
+                    x['password'] = ''  # 如果字段缺失，设置默认值   
                 try:
                     ip = str(socket.gethostbyname(x["server"]))
                 except:
@@ -197,8 +141,10 @@ def filter(config):
                 if x['type'] == 'ss':
                     try:
                         if x['cipher'] not in ss_supported_ciphers:
+                            ss_omit_cipher_unsupported = ss_omit_cipher_unsupported + 1
                             continue
                         if ip in iplist:
+                            ss_omit_ip_dupe = ss_omit_ip_dupe + 1
                             continue
                         else:
                             iplist[ip] = []
@@ -310,14 +256,8 @@ def filter(config):
                 clash['proxy-groups'][1]['proxies'].append(x['name'])
                 count = count + 1
 
-            except Exception as e:
-                # 记录问题节点
-                problematic_nodes.append({
-                    'index': i,
-                    'node': x,
-                    'error': str(e),
-                    'source': x.get('_source', 'unknown')
-                })
+            except:
+                #print('shitwentwrong' + str(x))
                 continue
 
     return clash
