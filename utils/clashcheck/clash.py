@@ -20,31 +20,68 @@ def push(list, outfile):
     with maxminddb.open_database('Country.mmdb') as countrify:
         for i in tqdm(range(int(len(list))), desc="Parse"):
             x = list[i]
+            
+            # 使用try-except包装整个节点处理过程
             try:
-                float(x['password'])
-            except:
+                # 确保所有字段都是正确的类型
+                # 修复password字段
+                if 'password' in x and not isinstance(x['password'], str):
+                    try:
+                        x['password'] = str(x['password'])
+                    except:
+                        # 如果转换失败，跳过该节点
+                        raise ValueError("password字段转换失败")
+                
+                # 修复uuid字段
+                if 'uuid' in x and not isinstance(x['uuid'], str):
+                    try:
+                        x['uuid'] = str(x['uuid'])
+                    except:
+                        # 如果转换失败，跳过该节点
+                        raise ValueError("uuid字段转换失败")
+                
+                # 修复其他可能为数字的字段
+                for field in ['cipher', 'type', 'name', 'server']:
+                    if field in x and not isinstance(x[field], str):
+                        try:
+                            x[field] = str(x[field])
+                        except:
+                            # 如果转换失败，跳过该节点
+                            raise ValueError(f"{field}字段转换失败")
+                
+                # 确保port字段是整数
+                if 'port' in x and not isinstance(x['port'], int):
+                    try:
+                        x['port'] = int(x['port'])
+                    except:
+                        # 如果转换失败，跳过该节点
+                        raise ValueError("port字段转换失败")
+                
+                # 原有的处理逻辑
                 try:
-                    float(x['uuid'])
+                    ip = str(socket.gethostbyname(x["server"]))
                 except:
-                    try:
-                        ip = str(socket.gethostbyname(x["server"]))
-                    except:
-                        ip = str(x["server"])
-                    try:
-                        country = str(countrify.get(ip)['country']['iso_code'])
-                    except:
-                        country = 'UN'
-                    flagcountry = country
-                    try:
-                        country_count[country] = country_count[country] + 1
-                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                    except:
-                        country_count[country] = 1
-                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                    clash['proxies'].append(x)
-                    clash['proxy-groups'][0]['proxies'].append(x['name'])
-                    clash['proxy-groups'][1]['proxies'].append(x['name'])
-                    count = count + 1
+                    ip = str(x["server"])
+                try:
+                    country = str(countrify.get(ip)['country']['iso_code'])
+                except:
+                    country = 'UN'
+                flagcountry = country
+                try:
+                    country_count[country] = country_count[country] + 1
+                    x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                except:
+                    country_count[country] = 1
+                    x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                clash['proxies'].append(x)
+                clash['proxy-groups'][0]['proxies'].append(x['name'])
+                clash['proxy-groups'][1]['proxies'].append(x['name'])
+                count = count + 1
+                
+            except Exception as e:
+                # 任何错误都会导致跳过该节点
+                # 不打印错误信息，直接跳过
+                continue
 
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
@@ -112,24 +149,43 @@ def filter(config):
              'rules': ['MATCH,🌐 Proxy']}
     with maxminddb.open_database('Country.mmdb') as countrify:
         for i in tqdm(range(int(len(list))), desc="Parse"):
+            # 使用try-except包装整个节点处理过程
             try:
                 x = list[i]
+                
+                # 确保所有字段都是正确的类型
+                # 修复password字段
+                if 'password' in x and not isinstance(x['password'], str):
+                    try:
+                        x['password'] = str(x['password'])
+                    except:
+                        # 如果转换失败，跳过该节点
+                        raise ValueError("password字段转换失败")
+                
+                # 修复uuid字段
+                if 'uuid' in x and not isinstance(x['uuid'], str):
+                    try:
+                        x['uuid'] = str(x['uuid'])
+                    except:
+                        # 如果转换失败，跳过该节点
+                        raise ValueError("uuid字段转换失败")
+                
+                # 修复其他可能为数字的字段
+                for field in ['cipher', 'type', 'name', 'server']:
+                    if field in x and not isinstance(x[field], str):
+                        try:
+                            x[field] = str(x[field])
+                        except:
+                            # 如果转换失败，跳过该节点
+                            raise ValueError(f"{field}字段转换失败")
+                
                 authentication = ''
                 x['port'] = int(x['port'])
                 # 新增逻辑：直接跳过所有 h2/grpc 节点
                 network = x.get('network', 'tcp')  # 获取传输协议类型
                 if network in ['h2', 'grpc']:
                     continue  # 直接舍弃，不处理后续逻辑              
-                # 统一 password 字段为字符串类型
-                if 'password' in x:
-                    try:
-                        # 强制将 password 转为字符串类型
-                        x['password'] = str(x['password'])
-                    except Exception as e:
-                        print(f"Error processing password for node {x['name']}: {e}")
-                        x['password'] = ''  # 如果处理失败，设置为空字符串或跳过该节点
-                else:
-                    x['password'] = ''  # 如果字段缺失，设置默认值   
+                
                 try:
                     ip = str(socket.gethostbyname(x["server"]))
                 except:
@@ -141,10 +197,8 @@ def filter(config):
                 if x['type'] == 'ss':
                     try:
                         if x['cipher'] not in ss_supported_ciphers:
-                            ss_omit_cipher_unsupported = ss_omit_cipher_unsupported + 1
                             continue
                         if ip in iplist:
-                            ss_omit_ip_dupe = ss_omit_ip_dupe + 1
                             continue
                         else:
                             iplist[ip] = []
@@ -256,8 +310,9 @@ def filter(config):
                 clash['proxy-groups'][1]['proxies'].append(x['name'])
                 count = count + 1
 
-            except:
-                #print('shitwentwrong' + str(x))
+            except Exception as e:
+                # 任何错误都会导致跳过该节点
+                # 不打印错误信息，直接跳过
                 continue
 
     return clash
