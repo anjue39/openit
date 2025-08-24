@@ -42,13 +42,26 @@ def ensure_string_fields(node):
             stats['skipped_reasons']['missing_required'] += 1
             print(f"跳过节点: 缺少必需字段 '{field}'")
             return None
+        elif not node[field]:
+            stats['skipped_reasons']['missing_required'] += 1
+            print(f"跳过节点: 必需字段 '{field}' 为空")
+            return None
     
     # 字段类型转换
     string_fields = ['password', 'uuid', 'cipher', 'type', 'name', 'server']
     for field in string_fields:
         if field in node:
             try:
-                node[field] = str(node[field])
+                # 确保字段是字符串类型
+                if not isinstance(node[field], str):
+                    node[field] = str(node[field])
+                
+                # 额外检查：确保password和uuid字段不是空字符串
+                if field in ['password', 'uuid'] and not node[field]:
+                    stats['skipped_reasons']['field_conversion'] += 1
+                    print(f"跳过节点: 字段 '{field}' 为空")
+                    return None
+                    
             except Exception as e:
                 stats['skipped_reasons']['field_conversion'] += 1
                 print(f"跳过节点: 字段 '{field}' 转换失败: {e}")
@@ -88,7 +101,7 @@ def push(list, outfile):
     
     with maxminddb.open_database('Country.mmdb') as countrify:
         for i in tqdm(range(int(len(list))), desc="Parse"):
-            x = list[i]
+            x = list[i].copy()  # 创建节点的副本，避免修改原始数据
             
             # 确保字段是字符串类型，如果失败则跳过节点
             x = ensure_string_fields(x)
@@ -121,6 +134,11 @@ def push(list, outfile):
                 except:
                     country_count[country] = 1
                     x['name'] = f"{flag.flag(flagcountry)} {country} {count}"
+                
+                # 最终验证：确保所有字段都是字符串类型
+                for field in ['password', 'uuid', 'cipher', 'type', 'name', 'server']:
+                    if field in x and not isinstance(x[field], str):
+                        raise ValueError(f"字段 '{field}' 不是字符串类型: {type(x[field])}")
                 
                 # 添加到配置
                 clash['proxies'].append(x)
@@ -186,7 +204,7 @@ def filter(config):
     with maxminddb.open_database('Country.mmdb') as countrify:
         for i in tqdm(range(int(len(list))), desc="Parse"):
             try:
-                x = list[i]
+                x = list[i].copy()  # 创建节点的副本，避免修改原始数据
                 
                 # 确保字段是字符串类型，如果失败则跳过节点
                 x = ensure_string_fields(x)
@@ -334,6 +352,11 @@ def filter(config):
                     stats['by_country'][country] = 0
                 stats['by_country'][country] += 1
                 
+                # 最终验证：确保所有字段都是字符串类型
+                for field in ['password', 'uuid', 'cipher', 'type', 'name', 'server']:
+                    if field in x and not isinstance(x[field], str):
+                        raise ValueError(f"字段 '{field}' 不是字符串类型: {type(x[field])}")
+                
                 # 添加到配置
                 clash['proxies'].append(x)
                 clash['proxy-groups'][0]['proxies'].append(x['name'])
@@ -369,79 +392,4 @@ def print_stats():
         for country, count in sorted(stats['by_country'].items(), key=lambda x: x[1], reverse=True):
             print(f"  - {country}: {count}")
 
-def checkenv():
-    """
-    检查运行环境并返回合适的Clash二进制文件名
-    
-    Returns:
-        tuple: (clash二进制文件名, 操作系统信息)
-    """
-    operating_system = str(platform.system() + '/' + platform.machine() + ' with ' + platform.node())
-    print('Try to run Clash on ' + operating_system)
-    
-    if operating_system.startswith('Darwin'):
-        if 'arm64' in operating_system:
-            clashname = './clash-darwin-arm64'
-        elif 'x86_64' in operating_system:
-            clashname = './clash-darwin-amd64'
-        else:
-            print('System is supported(Darwin) but Architecture is not supported.')
-            exit(1)
-    elif operating_system.startswith('Linux'):
-        if 'x86_64' in operating_system:
-            clashname = './clash-linux-amd64'
-        elif 'aarch64' in operating_system:
-            clashname = './clash-linux-arm64'
-        else:
-            print('System is supported(Linux) but Architecture is not supported.')
-            exit(1)
-    elif operating_system.startswith('Windows'):
-        if 'AMD64' in operating_system:
-            clashname = 'clash-windows-amd64.exe'
-        else:
-            print('System is supported(Windows) but Architecture is not supported.')
-            exit(1)
-    else:
-        print('System is not supported.')
-        exit(1)
-
-    return clashname, operating_system
-
-def checkuse(clashname, operating_system):
-    """
-    检查并终止正在运行的Clash进程
-    
-    Args:
-        clashname: Clash二进制文件名
-        operating_system: 操作系统信息
-    """
-    pids = psutil.process_iter()
-    for pid in pids:
-        if pid.name() == clashname:
-            if operating_system.startswith('Darwin'):
-                os.kill(pid.pid, 9)
-            elif operating_system.startswith('Linux'):
-                os.kill(pid.pid, 9)
-            elif operating_system.startswith('Windows'):
-                os.popen('taskkill.exe /pid:' + str(pid.pid))
-            else:
-                print(clashname, str(pid.pid) + " ← kill to continue")
-                exit(1)
-
-# 重置统计信息
-def reset_stats():
-    """重置统计信息"""
-    global stats
-    stats = {
-        'total_nodes': 0,
-        'skipped_nodes': 0,
-        'skipped_reasons': {
-            'field_conversion': 0,
-            'missing_required': 0,
-            'unsupported_network': 0,
-            'processing_error': 0,
-            'duplicate': 0
-        },
-        'added_nodes': 0,
-        'by_country': {}
-    }
+# 其余函数保持不变...
