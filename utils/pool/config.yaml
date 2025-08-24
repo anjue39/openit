@@ -1,52 +1,52 @@
 sub: #远程Clash配置文件，注有#的是失效的链接
 # proxypool节点池
  # 小火箭
-  #- https://www.xrayvip.com/free.yaml #同上，https://t.me/xrayfree 目前主力clash订阅链接
+  - https://www.xrayvip.com/free.yaml #同上，https://t.me/xrayfree 目前主力clash订阅链接
  # https开头
-  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg #每天更新，注意看抓取速度
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg #每天更新，注意看抓取速度
  # GitHub托管clash订阅链接
-  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml #clash公益免费节点订阅每天更新
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml #clash公益免费节点订阅每天更新
  # GitHub托管b64订阅链接
 # - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/freefq/free/master/v2 #freev2，不怎么更新了，最新是2月份的，后期可关注🚩
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2 #v2rayfree，这个可以推荐朋友免费用
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2 #v2rayfree，这个可以推荐朋友免费用🚩
  # GitLab托管b64订阅链接
  # 订阅转换模版
 # - https://api.v1.mk/sub?target=clash&url=http://weoknow.com/data/dayupdate/1/z.yaml
 # - https://raw.githubusercontent.com/anjue39/PoolActions/main/subscribe/clash.yaml
   - https://api.v1.mk/sub?target=clash&url=http://weoknow.com/data/dayupdate/1/z1.txt&insert=false&list=true
-  #- https://api.v1.mk/sub?target=clash&url=http://weoknow.com/data/dayupdate/2/z1.txt&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=http://weoknow.com/data/dayupdate/2/z1.txt&insert=false&list=true
 # - http://weoknow.com/data/dayupdate/1/z.yaml
 # - http://weoknow.com/data/dayupdate/2/z.yaml
-  #- https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml #不错的免费站点，每天更新，里面有大量合并的节点，有list源
+  - https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml #不错的免费站点，每天更新，里面有大量合并的节点，有list源
 # now
-  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub #🐱
-  #- https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml #🐱有一个月没更新了，没事看一下
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub #🐱
+  - https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml #🐱有一个月没更新了，没事看一下
 #- https://raw.githubusercontent.com/ronghuaxueleng/get_v2/main/pub/changfengoss.yaml #🚩长风的
 #- https://raw.githubusercontent.com/ronghuaxueleng/get_v2/main/pub/combine.yaml #🚩
- # - https://api.v1.mk/sub?target=clash&url=https://jiang.netlify.app&insert=false&list=true #🚩二爷翻墙
+  - https://api.v1.mk/sub?target=clash&url=https://jiang.netlify.app&insert=false&list=true #🚩二爷翻墙
   # 23.9.16 add
-  #- http://150.230.195.209:12580/clash/proxies
+  - http://150.230.195.209:12580/clash/proxies
   # 24.5.16 add
-  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml
   # 24.10.23 add
-  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
-  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
   # 25.1.2 add
-  #- http://141.147.161.50:12580/clash/proxies
-  #- http://150.230.195.209:12580/clash/proxies
-  #- http://155.248.172.106:12580/clash/proxies
-  #- http://66.42.50.118:12580/clash/proxies
-  #- http://140.238.31.152:12580/clash/proxies
-  #- https://proxypool.link/clash/proxies
-  #- https://api.v1.mk/sub?target=clash&url=https://proxypool1999.banyunxiaoxi.icu/clash/proxies&insert=false&list=true
+  - http://141.147.161.50:12580/clash/proxies
+  - http://150.230.195.209:12580/clash/proxies
+  - http://155.248.172.106:12580/clash/proxies
+  - http://66.42.50.118:12580/clash/proxies
+  - http://140.238.31.152:12580/clash/proxies
+  - https://proxypool.link/clash/proxies
+  - https://api.v1.mk/sub?target=clash&url=https://proxypool1999.banyunxiaoxi.icu/clash/proxies&insert=false&list=true
   # 25.1.10 add
-  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml&insert=false&list=true
   # 25.3.26 add
-  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml&insert=false&list=true
-  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list.meta.yml&insert=false&list=true
-  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Flikify/Free-Node/refs/heads/main/clash.yaml
-  #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/xiaoji235/airport-free/main/clash/naidounode.txt
-  #- https://api.v1.mk/sub?target=clash&url=https://fastly.jsdelivr.net/gh/dongchengjie/airport@main/subs/merged/tested_within.yaml
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list.meta.yml&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Flikify/Free-Node/refs/heads/main/clash.yaml
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/xiaoji235/airport-free/main/clash/naidounode.txt
+  - https://api.v1.mk/sub?target=clash&url=https://fastly.jsdelivr.net/gh/dongchengjie/airport@main/subs/merged/tested_within.yaml
   # 25.4.1 add
   #- https://proxypool.link/clash/proxies
 # openit
