@@ -18,6 +18,12 @@ def push(list, outfile):
              'interval': 300}, {'name': '🌐 Proxy', 'type': 'select', 'proxies': ['automatic']}],
              'rules': ['MATCH,🌐 Proxy']}
     
+    # 在开始处理前，先检查原始数据中的password字段类型
+    print("检查原始数据中的password字段类型...")
+    for i, node in enumerate(list):
+        if 'password' in node and not isinstance(node['password'], str):
+            print(f"原始节点 {i} 的password字段类型: {type(node['password'])}")
+    
     # 创建一个全新的节点列表，确保所有字段类型正确
     processed_nodes = []
     
@@ -30,16 +36,22 @@ def push(list, outfile):
             
             # 复制所有字段，并确保类型正确
             for key, value in original_node.items():
+                # 特殊处理password和uuid字段
                 if key == 'password' or key == 'uuid':
                     # 强制转换为字符串
                     try:
-                        new_node[key] = str(value)
-                    except:
+                        # 使用更严格的方法确保是字符串
+                        if isinstance(value, (int, float)):
+                            new_node[key] = str(int(value)) if isinstance(value, int) else str(float(value))
+                        else:
+                            new_node[key] = str(value)
+                    except Exception as e:
                         # 如果无法转换，跳过此节点
-                        print(f"无法将{key}转换为字符串，跳过节点 {i}")
+                        print(f"无法将{key}转换为字符串，跳过节点 {i}: {e}")
                         new_node = None
                         break
                 else:
+                    # 对于其他字段，直接复制
                     new_node[key] = value
             
             # 如果节点无效，跳过
@@ -75,6 +87,7 @@ def push(list, outfile):
             if 'password' in new_node and not isinstance(new_node['password'], str):
                 try:
                     new_node['password'] = str(new_node['password'])
+                    print(f"最终检查时强制转换password，节点 {i}")
                 except:
                     print(f"最终检查时无法转换password，跳过节点 {i}")
                     continue
@@ -82,6 +95,7 @@ def push(list, outfile):
             if 'uuid' in new_node and not isinstance(new_node['uuid'], str):
                 try:
                     new_node['uuid'] = str(new_node['uuid'])
+                    print(f"最终检查时强制转换uuid，节点 {i}")
                 except:
                     print(f"最终检查时无法转换uuid，跳过节点 {i}")
                     continue
@@ -100,6 +114,7 @@ def push(list, outfile):
     for i, proxy in enumerate(clash['proxies']):
         if 'password' in proxy and not isinstance(proxy['password'], str):
             print(f"发现非字符串password，移除节点 {i}: {proxy.get('name', 'unknown')}")
+            print(f"password值: {proxy['password']}, 类型: {type(proxy['password'])}")
             indices_to_remove.append(i)
     
     # 逆序移除有问题的代理
@@ -109,16 +124,29 @@ def push(list, outfile):
             if removed_proxy.get('name') in group['proxies']:
                 group['proxies'].remove(removed_proxy.get('name'))
     
-    # 使用自定义的YAML表示器确保所有字段都是字符串
-    class StringDumper(yaml.SafeDumper):
+    # 创建一个自定义的YAML序列化器，确保所有字段都是字符串
+    class StrictStringDumper(yaml.SafeDumper):
         def represent_data(self, data):
-            if isinstance(data, float):
+            # 如果数据是数字类型，转换为字符串
+            if isinstance(data, (int, float)):
                 return super().represent_data(str(data))
+            # 对于其他类型，使用默认表示方法
             return super().represent_data(data)
     
     # 写入文件
     with open(outfile, 'w') as writer:
-        yaml.dump(clash, writer, sort_keys=False, Dumper=StringDumper)
+        yaml.dump(clash, writer, sort_keys=False, Dumper=StrictStringDumper)
+    
+    # 验证输出文件
+    print("验证输出文件...")
+    with open(outfile, 'r') as reader:
+        content = reader.read()
+        # 检查是否有数字类型的password字段
+        import re
+        password_pattern = r'password: (\d+\.?\d*)'
+        matches = re.findall(password_pattern, content)
+        if matches:
+            print(f"警告: 发现数字类型的password字段: {matches}")
     
     print(f"成功处理 {len(clash['proxies'])} 个代理节点")
 
