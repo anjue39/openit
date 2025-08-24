@@ -20,8 +20,10 @@ def push(list, outfile):
     with maxminddb.open_database('Country.mmdb') as countrify:
         for i in tqdm(range(int(len(list))), desc="Parse"):
             x = list[i]
+            
+            # 确保所有字段都是正确的类型
             try:
-                # 尝试修复字段类型
+                # 修复password字段
                 if 'password' in x and not isinstance(x['password'], str):
                     try:
                         x['password'] = str(x['password'])
@@ -29,6 +31,7 @@ def push(list, outfile):
                         # 如果转换失败，跳过该节点
                         continue
                 
+                # 修复uuid字段
                 if 'uuid' in x and not isinstance(x['uuid'], str):
                     try:
                         x['uuid'] = str(x['uuid'])
@@ -36,30 +39,54 @@ def push(list, outfile):
                         # 如果转换失败，跳过该节点
                         continue
                 
-                float(x['password'])
-            except:
+                # 修复其他可能为数字的字段
+                for field in ['cipher', 'type', 'name', 'server']:
+                    if field in x and not isinstance(x[field], str):
+                        try:
+                            x[field] = str(x[field])
+                        except:
+                            # 如果转换失败，跳过该节点
+                            continue
+                
+                # 确保port字段是整数
+                if 'port' in x and not isinstance(x['port'], int):
+                    try:
+                        x['port'] = int(x['port'])
+                    except:
+                        # 如果转换失败，跳过该节点
+                        continue
+                
+                # 原有的处理逻辑
                 try:
-                    float(x['uuid'])
+                    float(x['password'])
                 except:
                     try:
-                        ip = str(socket.gethostbyname(x["server"]))
+                        float(x['uuid'])
                     except:
-                        ip = str(x["server"])
-                    try:
-                        country = str(countrify.get(ip)['country']['iso_code'])
-                    except:
-                        country = 'UN'
-                    flagcountry = country
-                    try:
-                        country_count[country] = country_count[country] + 1
-                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                    except:
-                        country_count[country] = 1
-                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                    clash['proxies'].append(x)
-                    clash['proxy-groups'][0]['proxies'].append(x['name'])
-                    clash['proxy-groups'][1]['proxies'].append(x['name'])
-                    count = count + 1
+                        try:
+                            ip = str(socket.gethostbyname(x["server"]))
+                        except:
+                            ip = str(x["server"])
+                        try:
+                            country = str(countrify.get(ip)['country']['iso_code'])
+                        except:
+                            country = 'UN'
+                        flagcountry = country
+                        try:
+                            country_count[country] = country_count[country] + 1
+                            x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                        except:
+                            country_count[country] = 1
+                            x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                        clash['proxies'].append(x)
+                        clash['proxy-groups'][0]['proxies'].append(x['name'])
+                        clash['proxy-groups'][1]['proxies'].append(x['name'])
+                        count = count + 1
+
+            except Exception as e:
+                # 打印错误信息以便调试
+                print(f"处理节点时出错: {e}")
+                continue
 
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
@@ -129,14 +156,9 @@ def filter(config):
         for i in tqdm(range(int(len(list))), desc="Parse"):
             try:
                 x = list[i]
-                authentication = ''
-                x['port'] = int(x['port'])
-                # 新增逻辑：直接跳过所有 h2/grpc 节点
-                network = x.get('network', 'tcp')  # 获取传输协议类型
-                if network in ['h2', 'grpc']:
-                    continue  # 直接舍弃，不处理后续逻辑              
                 
-                # 尝试修复字段类型
+                # 确保所有字段都是正确的类型
+                # 修复password字段
                 if 'password' in x and not isinstance(x['password'], str):
                     try:
                         x['password'] = str(x['password'])
@@ -144,12 +166,29 @@ def filter(config):
                         # 如果转换失败，跳过该节点
                         continue
                 
+                # 修复uuid字段
                 if 'uuid' in x and not isinstance(x['uuid'], str):
                     try:
                         x['uuid'] = str(x['uuid'])
                     except:
                         # 如果转换失败，跳过该节点
                         continue
+                
+                # 修复其他可能为数字的字段
+                for field in ['cipher', 'type', 'name', 'server']:
+                    if field in x and not isinstance(x[field], str):
+                        try:
+                            x[field] = str(x[field])
+                        except:
+                            # 如果转换失败，跳过该节点
+                            continue
+                
+                authentication = ''
+                x['port'] = int(x['port'])
+                # 新增逻辑：直接跳过所有 h2/grpc 节点
+                network = x.get('network', 'tcp')  # 获取传输协议类型
+                if network in ['h2', 'grpc']:
+                    continue  # 直接舍弃，不处理后续逻辑              
                 
                 try:
                     ip = str(socket.gethostbyname(x["server"]))
@@ -275,8 +314,9 @@ def filter(config):
                 clash['proxy-groups'][1]['proxies'].append(x['name'])
                 count = count + 1
 
-            except:
-                #print('shitwentwrong' + str(x))
+            except Exception as e:
+                # 打印错误信息以便调试
+                print(f"处理节点时出错: {e}")
                 continue
 
     return clash
