@@ -23,39 +23,56 @@ def push(list, outfile):
             
             # 确保所有字段都是正确的类型
             try:
-                # 修复所有字段类型
-                for field in x.keys():
-                    if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server']:
-                        if not isinstance(x[field], str):
+                # 创建一个新的节点字典，确保所有字段都是正确的类型
+                new_x = {}
+                
+                # 复制并转换所有字段
+                for field, value in x.items():
+                    if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server', 'network', 'obfs', 'protocol']:
+                        # 确保字符串字段
+                        if not isinstance(value, str):
                             try:
-                                x[field] = str(x[field])
-                            except Exception as e:
-                                print(f"无法转换字段 {field}: {e}")
-                                raise e
+                                new_x[field] = str(value)
+                            except:
+                                print(f"无法转换字段 {field}: {value}")
+                                raise ValueError(f"无法转换字段 {field}")
+                        else:
+                            new_x[field] = value
                     elif field == 'port':
-                        if not isinstance(x[field], int):
+                        # 确保端口是整数
+                        if not isinstance(value, int):
                             try:
-                                x[field] = int(x[field])
-                            except Exception as e:
-                                print(f"无法转换端口: {e}")
-                                raise e
+                                new_x[field] = int(value)
+                            except:
+                                print(f"无法转换端口: {value}")
+                                raise ValueError("无法转换端口")
+                        else:
+                            new_x[field] = value
                     elif field in ['udp', 'tls', 'skip-cert-verify']:
-                        if not isinstance(x[field], bool):
+                        # 确保布尔字段
+                        if not isinstance(value, bool):
                             try:
-                                # 尝试将字符串转换为布尔值
-                                if isinstance(x[field], str):
-                                    if x[field].lower() in ['true', '1', 'yes']:
-                                        x[field] = True
-                                    elif x[field].lower() in ['false', '0', 'no']:
-                                        x[field] = False
+                                if isinstance(value, str):
+                                    if value.lower() in ['true', '1', 'yes']:
+                                        new_x[field] = True
+                                    elif value.lower() in ['false', '0', 'no']:
+                                        new_x[field] = False
                                     else:
-                                        print(f"无法转换布尔字段 {field}: {x[field]}")
-                                        raise ValueError(f"无效的布尔值: {x[field]}")
+                                        print(f"无法转换布尔字段 {field}: {value}")
+                                        raise ValueError(f"无效的布尔值: {value}")
                                 else:
-                                    x[field] = bool(x[field])
-                            except Exception as e:
-                                print(f"无法转换布尔字段 {field}: {e}")
-                                raise e
+                                    new_x[field] = bool(value)
+                            except:
+                                print(f"无法转换布尔字段 {field}: {value}")
+                                raise ValueError(f"无法转换布尔字段 {field}")
+                        else:
+                            new_x[field] = value
+                    else:
+                        # 其他字段保持不变
+                        new_x[field] = value
+                
+                # 使用修复后的节点
+                x = new_x
                 
                 # 原有的处理逻辑
                 try:
@@ -86,27 +103,55 @@ def push(list, outfile):
     valid_proxies = []
     for proxy in clash['proxies']:
         try:
-            # 确保所有字段都是正确的类型
-            for field in proxy.keys():
-                if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server']:
-                    if not isinstance(proxy[field], str):
-                        proxy[field] = str(proxy[field])
-                elif field == 'port':
-                    if not isinstance(proxy[field], int):
-                        proxy[field] = int(proxy[field])
-                elif field in ['udp', 'tls', 'skip-cert-verify']:
-                    if not isinstance(proxy[field], bool):
-                        if isinstance(proxy[field], str):
-                            if proxy[field].lower() in ['true', '1', 'yes']:
-                                proxy[field] = True
-                            elif proxy[field].lower() in ['false', '0', 'no']:
-                                proxy[field] = False
-                            else:
-                                raise ValueError(f"无效的布尔值: {proxy[field]}")
-                        else:
-                            proxy[field] = bool(proxy[field])
+            # 创建一个新的代理字典，确保所有字段都是正确的类型
+            new_proxy = {}
             
-            valid_proxies.append(proxy)
+            # 复制并转换所有字段
+            for field, value in proxy.items():
+                if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server', 'network', 'obfs', 'protocol']:
+                    # 确保字符串字段
+                    if not isinstance(value, str):
+                        try:
+                            new_proxy[field] = str(value)
+                        except:
+                            print(f"最终验证: 无法转换字段 {field}: {value}")
+                            raise ValueError(f"无法转换字段 {field}")
+                    else:
+                        new_proxy[field] = value
+                elif field == 'port':
+                    # 确保端口是整数
+                    if not isinstance(value, int):
+                        try:
+                            new_proxy[field] = int(value)
+                        except:
+                            print(f"最终验证: 无法转换端口: {value}")
+                            raise ValueError("无法转换端口")
+                    else:
+                        new_proxy[field] = value
+                elif field in ['udp', 'tls', 'skip-cert-verify']:
+                    # 确保布尔字段
+                    if not isinstance(value, bool):
+                        try:
+                            if isinstance(value, str):
+                                if value.lower() in ['true', '1', 'yes']:
+                                    new_proxy[field] = True
+                                elif value.lower() in ['false', '0', 'no']:
+                                    new_proxy[field] = False
+                                else:
+                                    print(f"最终验证: 无法转换布尔字段 {field}: {value}")
+                                    raise ValueError(f"无效的布尔值: {value}")
+                            else:
+                                new_proxy[field] = bool(value)
+                        except:
+                            print(f"最终验证: 无法转换布尔字段 {field}: {value}")
+                            raise ValueError(f"无法转换布尔字段 {field}")
+                    else:
+                        new_proxy[field] = value
+                else:
+                    # 其他字段保持不变
+                    new_proxy[field] = value
+            
+            valid_proxies.append(new_proxy)
         except Exception as e:
             print(f"最终验证时跳过节点: {e}")
             continue
@@ -182,39 +227,56 @@ def filter(config):
             try:
                 x = list[i]
                 
-                # 确保所有字段都是正确的类型
-                for field in x.keys():
-                    if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server']:
-                        if not isinstance(x[field], str):
+                # 创建一个新的节点字典，确保所有字段都是正确的类型
+                new_x = {}
+                
+                # 复制并转换所有字段
+                for field, value in x.items():
+                    if field in ['password', 'uuid', 'cipher', 'type', 'name', 'server', 'network', 'obfs', 'protocol']:
+                        # 确保字符串字段
+                        if not isinstance(value, str):
                             try:
-                                x[field] = str(x[field])
-                            except Exception as e:
-                                print(f"无法转换字段 {field}: {e}")
-                                raise e
+                                new_x[field] = str(value)
+                            except:
+                                print(f"无法转换字段 {field}: {value}")
+                                raise ValueError(f"无法转换字段 {field}")
+                        else:
+                            new_x[field] = value
                     elif field == 'port':
-                        if not isinstance(x[field], int):
+                        # 确保端口是整数
+                        if not isinstance(value, int):
                             try:
-                                x[field] = int(x[field])
-                            except Exception as e:
-                                print(f"无法转换端口: {e}")
-                                raise e
+                                new_x[field] = int(value)
+                            except:
+                                print(f"无法转换端口: {value}")
+                                raise ValueError("无法转换端口")
+                        else:
+                            new_x[field] = value
                     elif field in ['udp', 'tls', 'skip-cert-verify']:
-                        if not isinstance(x[field], bool):
+                        # 确保布尔字段
+                        if not isinstance(value, bool):
                             try:
-                                # 尝试将字符串转换为布尔值
-                                if isinstance(x[field], str):
-                                    if x[field].lower() in ['true', '1', 'yes']:
-                                        x[field] = True
-                                    elif x[field].lower() in ['false', '0', 'no']:
-                                        x[field] = False
+                                if isinstance(value, str):
+                                    if value.lower() in ['true', '1', 'yes']:
+                                        new_x[field] = True
+                                    elif value.lower() in ['false', '0', 'no']:
+                                        new_x[field] = False
                                     else:
-                                        print(f"无法转换布尔字段 {field}: {x[field]}")
-                                        raise ValueError(f"无效的布尔值: {x[field]}")
+                                        print(f"无法转换布尔字段 {field}: {value}")
+                                        raise ValueError(f"无效的布尔值: {value}")
                                 else:
-                                    x[field] = bool(x[field])
-                            except Exception as e:
-                                print(f"无法转换布尔字段 {field}: {e}")
-                                raise e
+                                    new_x[field] = bool(value)
+                            except:
+                                print(f"无法转换布尔字段 {field}: {value}")
+                                raise ValueError(f"无法转换布尔字段 {field}")
+                        else:
+                            new_x[field] = value
+                    else:
+                        # 其他字段保持不变
+                        new_x[field] = value
+                
+                # 使用修复后的节点
+                x = new_x
                 
                 authentication = ''
                 x['port'] = int(x['port'])
