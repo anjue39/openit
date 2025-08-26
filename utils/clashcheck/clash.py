@@ -17,47 +17,34 @@ def push(list, outfile):
             {'name': 'automatic', 'type': 'url-test', 'proxies': [], 'url': 'https://www.google.com/favicon.ico',
              'interval': 300}, {'name': '🌐 Proxy', 'type': 'select', 'proxies': ['automatic']}],
              'rules': ['MATCH,🌐 Proxy']}
-    
     with maxminddb.open_database('Country.mmdb') as countrify:
         for i in tqdm(range(int(len(list))), desc="Parse"):
             x = list[i]
-            
-            # 确保password字段是字符串类型
-            if 'password' in x:
+            try:
+                float(x['password'])
+            except:
                 try:
-                    x['password'] = str(x['password'])
+                    float(x['uuid'])
                 except:
-                    # 如果无法转换为字符串，跳过此节点
-                    continue
-            
-            # 确保uuid字段是字符串类型
-            if 'uuid' in x:
-                try:
-                    x['uuid'] = str(x['uuid'])
-                except:
-                    # 如果无法转换为字符串，跳过此节点
-                    continue
-            
-            try:
-                ip = str(socket.gethostbyname(x["server"]))
-            except:
-                ip = str(x["server"])
-            try:
-                country = str(countrify.get(ip)['country']['iso_code'])
-            except:
-                country = 'UN'
-            flagcountry = country
-            try:
-                country_count[country] = country_count[country] + 1
-                x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-            except:
-                country_count[country] = 1
-                x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-            
-            clash['proxies'].append(x)
-            clash['proxy-groups'][0]['proxies'].append(x['name'])
-            clash['proxy-groups'][1]['proxies'].append(x['name'])
-            count = count + 1
+                    try:
+                        ip = str(socket.gethostbyname(x["server"]))
+                    except:
+                        ip = str(x["server"])
+                    try:
+                        country = str(countrify.get(ip)['country']['iso_code'])
+                    except:
+                        country = 'UN'
+                    flagcountry = country
+                    try:
+                        country_count[country] = country_count[country] + 1
+                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                    except:
+                        country_count[country] = 1
+                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                    clash['proxies'].append(x)
+                    clash['proxy-groups'][0]['proxies'].append(x['name'])
+                    clash['proxy-groups'][1]['proxies'].append(x['name'])
+                    count = count + 1
 
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
