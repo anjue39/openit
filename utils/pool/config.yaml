@@ -49,11 +49,9 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - https://api.v1.mk/sub?target=clash&url=https://fastly.jsdelivr.net/gh/dongchengjie/airport@main/subs/merged/tested_within.yaml
   # 25.4.1 add
   #- https://proxypool.link/clash/proxies
-# openit
-# - https://raw.githubusercontent.com/yu-steven/openit/main/Clash.yaml #回环订阅
-# - https://raw.githubusercontent.com/yu-steven/openit/main/utils/pool/pool.yaml #入库订阅
-# openit
-# - https://raw.githubusercontent.com/anjue39/openit/main/Clash.yaml #回环订阅
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/wenode.yaml&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity.yml&insert=false&list=true
 # - https://raw.githubusercontent.com/anjue39/openit/main/utils/pool/pool.yaml #入库订阅
 # TopPreeProxy
 # - https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/sub/sub_merge_clash.yaml
