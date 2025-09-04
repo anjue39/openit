@@ -63,7 +63,6 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.txt&insert=false&list=true
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml&insert=false&list=true
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/moneyfly1/collectSub/main/output/all.txt&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/10ium/free-config/main/free-mihomo-sub/MahsaNetConfigTopic.yaml&insert=false&list=true
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/lagzian/SS-Collector/main/mix_clash.yaml&insert=false&list=true
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/sub.txt&insert=false&list=true
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml&insert=false&list=true
