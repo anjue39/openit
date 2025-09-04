@@ -58,10 +58,16 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml&insert=false&list=true
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/ts-sf/fly/main/clash&insert=false&list=true
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/baip01/clash/main/clash&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yml&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/ssrsub/ssr/master/clash.yaml&insert=false&list=true
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/chongdong1230/dxz/main/clash&insert=false&list=true
   - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.txt&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/hkaa0/permalink/main/proxy/clash&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/moneyfly1/collectSub/main/output/all.txt&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/10ium/free-config/main/free-mihomo-sub/MahsaNetConfigTopic.yaml&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/lagzian/SS-Collector/main/mix_clash.yaml&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/sub.txt&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml&insert=false&list=true
+  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Misaka-blog/chromego_merge/main/sub/merged_proxies_new.yaml&insert=false&list=true
 # openit
 # - https://raw.githubusercontent.com/yu-steven/openit/main/Clash.yaml #回环订阅
 # - https://raw.githubusercontent.com/yu-steven/openit/main/utils/pool/pool.yaml #入库订阅
