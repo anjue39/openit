@@ -198,229 +198,229 @@ dns:
 proxies:
   - {name: AE 1 → anjue, server: 89.31.120.192, port: 443, type: vmess, uuid: 44537595-9ccc-4b83-8936-5f9ad3229019, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: AE 2 → anjue, server: 89.31.120.192, port: 443, type: vmess, uuid: 44537595-9ccc-4b83-8936-5f9ad3229019, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AM 1 → anjue, server: 185.162.231.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: AM 2 → anjue, server: 185.162.229.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: AM 3 → anjue, server: 188.164.158.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: AM 4 → anjue, server: 188.164.159.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: AM 5 → anjue, server: 185.162.230.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: AM 6 → anjue, server: 185.162.228.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: AM 7 → anjue, server: 188.164.158.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: AM 8 → anjue, server: 188.164.159.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%F0%9F%87%A8%F0%9F%87%B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: AT 1 → anjue, server: 212.183.88.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: AT 2 → anjue, server: 212.183.88.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: AM 1 → anjue, server: 188.164.159.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: AM 2 → anjue, server: 185.162.229.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: AM 3 → anjue, server: 188.164.159.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: AM 4 → anjue, server: 185.162.228.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: AM 5 → anjue, server: 188.164.158.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: AM 6 → anjue, server: 188.164.158.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525252525F0%252525252525259F%2525252525252587%25252525252525A8%25252525252525F0%252525252525259F%2525252525252587%25252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: AM 7 → anjue, server: 185.162.231.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: AM 8 → anjue, server: 185.162.230.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: AT 1 → anjue, server: 212.183.88.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: AT 2 → anjue, server: 212.183.88.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
   - {name: AT 3 → anjue, server: 152.53.165.218, port: 32158, type: vmess, uuid: b44ecf62-d313-4f32-8e77-62c0d8dd18ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: BR 1 → anjue, server: 185.159.247.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: CH 1 → anjue, server: 185.18.250.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: "%252525252FTelegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3", headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: CR 1 → anjue, server: 190.93.246.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: CR 2 → anjue, server: 190.93.246.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: CR 3 → anjue, server: 190.93.247.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: CR 4 → anjue, server: 190.93.247.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: CY 1 → anjue, server: 195.85.59.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: CY 2 → anjue, server: 185.18.184.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: CY 3 → anjue, server: 195.85.59.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: CZ 1 → anjue, server: 185.149.135.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: CZ 2 → anjue, server: 195.85.23.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: CZ 3 → anjue, server: 195.85.23.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: HR 1 → anjue, server: 213.182.199.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: HR 2 → anjue, server: 213.182.199.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: HU 1 → anjue, server: 193.124.18.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: HU 2 → anjue, server: 193.124.18.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: IR 1 → anjue, server: 151.242.251.131, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: QCXDxuDlTTMD7jtgHUjIoj, udp: true}
-  - {name: KZ 1 → anjue, server: 195.245.221.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: KZ 2 → anjue, server: 194.76.18.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: KZ 3 → anjue, server: 185.176.26.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: "%2525252FTelegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3", headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: KZ 4 → anjue, server: 194.76.18.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: KZ 5 → anjue, server: 195.245.221.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: KZ 6 → anjue, server: 194.59.5.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: KZ 7 → anjue, server: 194.59.5.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%F0%9F%87%A8%F0%9F%87%B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: LU 1 → anjue, server: 188.42.88.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: LU 2 → anjue, server: 188.42.89.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: MT 1 → anjue, server: 193.227.99.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: MT 2 → anjue, server: 193.227.99.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇦🇺 AU 1 → anjue, server: 192.65.217.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇦🇺 AU 2 → anjue, server: 185.207.198.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇦🇺 AU 3 → anjue, server: 192.65.217.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇦🇺 AU 4 → anjue, server: 185.207.197.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇦🇺 AU 5 → anjue, server: 185.207.199.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇦🇺 AU 6 → anjue, server: 185.207.196.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: AT 4 → anjue, server: 152.53.165.218, port: 32158, type: vmess, uuid: b44ecf62-d313-4f32-8e77-62c0d8dd18ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: BR 1 → anjue, server: 185.159.247.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: CH 1 → anjue, server: 185.18.250.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: "%25252525252FTelegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3", headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: CR 1 → anjue, server: 190.93.247.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: CR 2 → anjue, server: 190.93.247.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: CR 3 → anjue, server: 190.93.246.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: CR 4 → anjue, server: 190.93.246.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: CY 1 → anjue, server: 195.85.59.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: CY 2 → anjue, server: 195.85.59.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: CY 3 → anjue, server: 185.18.184.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: CZ 1 → anjue, server: 195.85.23.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: CZ 2 → anjue, server: 185.149.135.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: CZ 3 → anjue, server: 195.85.23.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: HR 1 → anjue, server: 213.182.199.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525252525F0%252525252525259F%2525252525252587%25252525252525A8%25252525252525F0%252525252525259F%2525252525252587%25252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: HR 2 → anjue, server: 213.182.199.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: HU 1 → anjue, server: 193.124.18.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: HU 2 → anjue, server: 193.124.18.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: KZ 1 → anjue, server: 195.245.221.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: KZ 2 → anjue, server: 194.76.18.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: KZ 3 → anjue, server: 185.176.26.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: "%252525252FTelegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3", headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: KZ 4 → anjue, server: 194.59.5.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: KZ 5 → anjue, server: 194.59.5.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: KZ 6 → anjue, server: 195.245.221.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: KZ 7 → anjue, server: 194.76.18.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: LT 1 → anjue, server: 45.87.175.171, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
+  - {name: LU 1 → anjue, server: 188.42.88.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: LU 2 → anjue, server: 188.42.89.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: MT 1 → anjue, server: 193.227.99.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: MT 2 → anjue, server: 193.227.99.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇦🇺 AU 1 → anjue, server: 185.207.196.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇦🇺 AU 2 → anjue, server: 185.207.198.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇦🇺 AU 3 → anjue, server: 185.207.197.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇦🇺 AU 4 → anjue, server: 192.65.217.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇦🇺 AU 5 → anjue, server: 192.65.217.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇦🇺 AU 6 → anjue, server: 185.207.199.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525252525F0%252525252525259F%2525252525252587%25252525252525A8%25252525252525F0%252525252525259F%2525252525252587%25252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
   - {name: 🇦🇺 AU 7 → anjue, server: 103.57.249.204, port: 443, type: vmess, uuid: f13143a7-542d-49ec-9428-098142b6977c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇺 AU 8 → anjue, server: 103.57.249.204, port: 443, type: vmess, uuid: f13143a7-542d-49ec-9428-098142b6977c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇦 CA 1 → anjue, server: 142.4.216.225, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: JIhN6rBKkaEboLNXVSv5rq, udp: true}
   - {name: 🇨🇦 CA 2 → anjue, server: 15.235.50.172, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇨🇦 CA 3 → anjue, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇨🇦 CA 4 → anjue, server: 15.235.83.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: mankadmu.com}}, udp: true}
+  - {name: 🇨🇦 CA 3 → anjue, server: 15.235.83.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: mankadmu.com}}, udp: true}
+  - {name: 🇨🇦 CA 4 → anjue, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
   - {name: 🇨🇦 CA 5 → anjue, server: 15.235.83.228, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
   - {name: 🇨🇦 CA 6 → anjue, server: 51.79.102.253, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}, udp: true}
-  - {name: 🇨🇳 TW 1 → anjue, server: 114.46.85.6, port: 10076, type: ss, cipher: chacha20-ietf-poly1305, password: e7aa8909-a34b-4b6a-bf86-9d7d144b58e9, udp: true}
+  - {name: 🇨🇳 TW 1 → anjue, server: 1.170.23.235, port: 10096, type: ss, cipher: chacha20-ietf-poly1305, password: c8aa7c4c-6426-4fb2-b2ab-2bd4ef46c4dd, udp: true}
   - {name: 🇨🇳 TW 2 → anjue, server: 114.46.69.142, port: 10078, type: ss, cipher: chacha20-ietf-poly1305, password: 7b82a211-c7f8-4a1f-9123-025d78cd42e4, udp: true}
-  - {name: 🇨🇳 TW 3 → anjue, server: 1.165.104.235, port: 10041, type: ss, cipher: chacha20-ietf-poly1305, password: ce564423-e307-45d8-9942-1dbdb6c6e8ef, udp: true}
-  - {name: 🇨🇳 TW 4 → anjue, server: 1.170.23.235, port: 10096, type: ss, cipher: chacha20-ietf-poly1305, password: c8aa7c4c-6426-4fb2-b2ab-2bd4ef46c4dd, udp: true}
-  - {name: 🇨🇳 TW 6 → anjue, server: 125.231.70.82, port: 10079, type: ss, cipher: chacha20-ietf-poly1305, password: 0de6dbb6-daf7-4869-aca5-f470f1fa6814, udp: true}
+  - {name: 🇨🇳 TW 3 → anjue, server: 125.231.70.82, port: 10079, type: ss, cipher: chacha20-ietf-poly1305, password: 0de6dbb6-daf7-4869-aca5-f470f1fa6814, udp: true}
+  - {name: 🇨🇳 TW 4 → anjue, server: 1.165.104.235, port: 10041, type: ss, cipher: chacha20-ietf-poly1305, password: ce564423-e307-45d8-9942-1dbdb6c6e8ef, udp: true}
+  - {name: 🇨🇳 TW 5 → anjue, server: 114.46.85.6, port: 10076, type: ss, cipher: chacha20-ietf-poly1305, password: e7aa8909-a34b-4b6a-bf86-9d7d144b58e9, udp: true}
+  - {name: 🇨🇳 TW 6 → anjue, server: 36.234.96.151, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: dfe2c66e-d6b9-4935-bab6-e89fc0bee005, udp: true}
   - {name: 🇨🇳 TW 7 → anjue, server: 45.121.48.174, port: 20788, type: vmess, uuid: bfc630aa-4598-4481-9338-cac15e3e6b65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW 8 → anjue, server: 1.170.35.61, port: 10084, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8eb657-3d4e-49d9-ac16-2968c5e8d1a3, udp: true}
-  - {name: 🇨🇳 TW 9 → anjue, server: 36.234.96.151, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: dfe2c66e-d6b9-4935-bab6-e89fc0bee005, udp: true}
-  - {name: 🇩🇪 DE 1 → anjue, server: 188.244.122.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇩🇪 DE 2 → anjue, server: 185.135.9.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇩🇪 DE 3 → anjue, server: 188.244.122.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇩🇪 DE 4 → anjue, server: 185.158.133.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇩🇪 DE 5 → anjue, server: 84.200.91.228, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: 5ZQh4pssSk4aK1JG1XhBRg, udp: true}
-  - {name: 🇪🇸 ES 1 → anjue, server: 185.251.82.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇪🇸 ES 2 → anjue, server: 185.251.83.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇪🇸 ES 3 → anjue, server: 185.251.81.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇪🇸 ES 4 → anjue, server: 185.251.80.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇪🇸 ES 5 → anjue, server: 185.238.228.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇫🇷 FR 1 → anjue, server: 185.7.240.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇫🇷 FR 2 → anjue, server: 185.16.110.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇫🇷 FR 3 → anjue, server: 57.129.28.69, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇨🇳 TW 9 → anjue, server: 45.121.48.174, port: 20788, type: vmess, uuid: bfc630aa-4598-4481-9338-cac15e3e6b65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE 1 → anjue, server: 188.244.122.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇩🇪 DE 2 → anjue, server: 185.135.9.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇩🇪 DE 3 → anjue, server: 185.158.133.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525252525F0%252525252525259F%2525252525252587%25252525252525A8%25252525252525F0%252525252525259F%2525252525252587%25252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇩🇪 DE 4 → anjue, server: 188.244.122.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇪🇸 ES 1 → anjue, server: 185.251.83.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇪🇸 ES 2 → anjue, server: 185.238.228.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇪🇸 ES 3 → anjue, server: 185.251.80.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇪🇸 ES 4 → anjue, server: 185.251.81.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇪🇸 ES 5 → anjue, server: 185.251.82.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇫🇷 FR 1 → anjue, server: 185.7.240.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇫🇷 FR 2 → anjue, server: 185.16.110.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇫🇷 FR 3 → anjue, server: 146.59.55.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
   - {name: 🇫🇷 FR 4 → anjue, server: 38.60.134.249, port: 443, type: vmess, uuid: beb28159-7f4c-4c09-9313-6283515f150b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 5 → anjue, server: 51.195.119.47, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: qXvO7zYU7KeaB0Md7DQLow, udp: true}
-  - {name: 🇫🇷 FR 6 → anjue, server: 57.129.25.20, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
-  - {name: 🇬🇧 GB 1 → anjue, server: 185.193.30.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇬🇧 GB 10 → anjue, server: 141.98.101.178, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇫🇷 FR 5 → anjue, server: 57.129.25.20, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇫🇷 FR 6 → anjue, server: 38.60.134.249, port: 443, type: vmess, uuid: beb28159-7f4c-4c09-9313-6283515f150b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 7 → anjue, server: 51.195.119.47, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: qXvO7zYU7KeaB0Md7DQLow, udp: true}
+  - {name: 🇬🇧 GB 1 → anjue, server: 141.98.101.178, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇬🇧 GB 10 → anjue, server: 185.193.29.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
   - {name: 🇬🇧 GB 11 → anjue, server: 213.109.147.242, port: 62685, type: ss, cipher: chacha20-ietf-poly1305, password: VpKABcOpNNA0l5G2AVOmw8, udp: true}
-  - {name: 🇬🇧 GB 2 → anjue, server: 185.156.19.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇬🇧 GB 3 → anjue, server: 185.193.31.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇬🇧 GB 4 → anjue, server: 185.193.29.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇬🇧 GB 5 → anjue, server: 195.26.229.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇬🇧 GB 6 → anjue, server: 194.36.55.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇬🇧 GB 7 → anjue, server: 185.193.28.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇬🇧 GB 8 → anjue, server: 194.36.55.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇬🇧 GB 9 → anjue, server: 185.170.166.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇭🇰 HK 1 → anjue, server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 🇭🇰 HK 3 → anjue, server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com}}, udp: true}
-  - {name: 🇭🇰 HK 4 → anjue, server: 103.30.76.251, port: 21872, type: vmess, uuid: 566d4bf4-b0be-4b38-b73b-0bf18d86f2ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 5 → anjue, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
-  - {name: 🇭🇰 HK 6 → anjue, server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net}}, udp: true}
-  - {name: 🇭🇰 HK 7 → anjue, server: 194.104.147.74, port: 1066, type: trojan, password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59, sni: 194.104.147.74, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB 2 → anjue, server: 185.156.19.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇬🇧 GB 3 → anjue, server: 195.26.229.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇬🇧 GB 4 → anjue, server: 185.193.31.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇬🇧 GB 5 → anjue, server: 185.193.30.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇬🇧 GB 6 → anjue, server: 185.193.28.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇬🇧 GB 7 → anjue, server: 194.36.55.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇬🇧 GB 8 → anjue, server: 194.36.55.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇬🇧 GB 9 → anjue, server: 185.170.166.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇭🇰 HK 1 → anjue, server: 103.30.76.251, port: 21872, type: vmess, uuid: 566d4bf4-b0be-4b38-b73b-0bf18d86f2ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 10 → anjue, server: 47.238.252.154, port: 58867, type: vmess, uuid: 7b80e36f-b082-46fc-ae59-6bb0dd17eee8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 🇭🇰 HK 2 → anjue, server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com}}, udp: true}
+  - {name: 🇭🇰 HK 3 → anjue, server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net}}, udp: true}
+  - {name: 🇭🇰 HK 4 → anjue, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: 🇭🇰 HK 5 → anjue, server: 103.30.76.251, port: 21872, type: vmess, uuid: 566d4bf4-b0be-4b38-b73b-0bf18d86f2ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 6 → anjue, server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
   - {name: 🇭🇰 HK 8 → anjue, server: 194.104.147.74, port: 1066, type: trojan, password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 IN 1 → anjue, server: 188.208.141.177, port: 443, type: vmess, uuid: 0970834f-5b4d-44da-d890-19dcb2a72d4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 9 → anjue, server: 194.104.147.74, port: 1066, type: trojan, password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59, sni: 194.104.147.74, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 IN 1 → anjue, server: 123.58.203.92, port: 8443, type: vmess, uuid: 0bb0365b-c183-48c3-ad0d-a90fc76e2926, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇯🇵 JP 1 → anjue, server: 172.104.98.192, port: 43722, type: vmess, uuid: 71dc43f8-dc50-4bb6-93e2-95dd5149d7fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 KR 1 → anjue, server: 121.148.27.194, port: 45630, type: vmess, uuid: 75970383-3123-404d-86a5-136819cfcedf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
   - {name: 🇰🇷 KR 2 → anjue, server: 121.148.27.194, port: 55582, type: vmess, uuid: c47059b2-c52e-4abd-b585-417461366b0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
   - {name: 🇰🇷 KR 3 → anjue, server: 121.148.27.194, port: 31164, type: vmess, uuid: 013517ba-85e5-4d0a-8610-af8632cca6ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
   - {name: 🇰🇷 KR 4 → anjue, server: 121.148.27.194, port: 55582, type: vmess, uuid: c47059b2-c52e-4abd-b585-417461366b0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /arki}, udp: true}
-  - {name: 🇳🇱 NL 1 → anjue, server: 194.152.44.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇳🇱 NL 2 → anjue, server: 188.164.248.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇳🇱 NL 3 → anjue, server: 194.152.44.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇳🇱 NL 4 → anjue, server: 188.164.248.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇳🇱 NL 5 → anjue, server: 208.67.105.196, port: 42029, type: ss, cipher: chacha20-ietf-poly1305, password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD, udp: true}
-  - {name: 🇳🇱 NL 6 → anjue, server: 193.29.139.202, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
-  - {name: 🇳🇱 NL 7 → anjue, server: 38.180.211.126, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Kuiqk2cP0BMWrgme9IfEvp, udp: true}
-  - {name: 🇷🇺 RU 1 → anjue, server: 185.59.218.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇷🇺 RU 10 → anjue, server: 193.9.49.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇷🇺 RU 11 → anjue, server: 185.174.138.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇷🇺 RU 12 → anjue, server: 213.241.198.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇳🇱 NL 1 → anjue, server: 193.29.139.202, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 🇳🇱 NL 2 → anjue, server: 188.164.248.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇳🇱 NL 3 → anjue, server: 194.152.44.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇳🇱 NL 4 → anjue, server: 188.164.248.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇳🇱 NL 5 → anjue, server: 194.152.44.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇳🇱 NL 6 → anjue, server: 208.67.105.196, port: 42029, type: ss, cipher: chacha20-ietf-poly1305, password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD, udp: true}
+  - {name: 🇷🇺 RU 1 → anjue, server: 193.9.49.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇷🇺 RU 10 → anjue, server: 185.176.24.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇷🇺 RU 11 → anjue, server: 213.241.198.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇷🇺 RU 12 → anjue, server: 188.42.145.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
   - {name: 🇷🇺 RU 13 → anjue, server: 95.163.176.37, port: 8506, type: ss, cipher: chacha20-ietf-poly1305, password: eUh4lSpi7nOYj0vSrqLUh0, udp: true}
-  - {name: 🇷🇺 RU 2 → anjue, server: 194.53.53.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇷🇺 RU 3 → anjue, server: 185.221.160.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇷🇺 RU 4 → anjue, server: 188.42.145.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇷🇺 RU 5 → anjue, server: 194.53.53.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇷🇺 RU 6 → anjue, server: 185.176.24.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇷🇺 RU 7 → anjue, server: 193.9.49.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇷🇺 RU 8 → anjue, server: 213.241.198.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇷🇺 RU 9 → anjue, server: 188.42.145.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 1 → anjue, server: 198.177.56.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 10 → anjue, server: 192.169.220.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 100 → anjue, server: 47.83.192.216, port: 36199, type: vmess, uuid: 49bb1bac-226e-434e-985b-e5fd1ac6c48b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 🇺🇸 US 101 → anjue, server: DdDDdddddDFrrrrrrRRy.IRan2035.dPDns.ORG, port: 443, type: vmess, uuid: a94fafdb-10d6-46c2-be8a-5c2e8358fbb0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /CjJ9A46ZRHvgWvVcmjyiKVby2Lp, headers: {Host: ddddddddddfrrrrrrrry.iran2035.dpdns.org}}, udp: true}
-  - {name: 🇺🇸 US 102 → anjue, server: test3.flha.ru, port: 80, type: vmess, uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess, headers: {Host: test3.flha.ru}}, udp: true}
-  - {name: 🇺🇸 US 103 → anjue, server: ssssssssssssfffffffgh.2032.pp.ua, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: ssssssssssssfffffffgh.2032.pp.ua}}, udp: true}
-  - {name: 🇺🇸 US 104 → anjue, server: v2ray.codefyinc.com, port: 443, type: vmess, uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmessws, headers: {Host: v2ray.codefyinc.com}}, udp: true}
-  - {name: 🇺🇸 US 105 → anjue, server: 198.46.152.83, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: sj3.freeguard.org, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 11 → anjue, server: 192.200.160.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 12 → anjue, server: 192.169.222.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 13 → anjue, server: 198.12.145.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 14 → anjue, server: 192.169.223.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 15 → anjue, server: 193.124.224.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 16 → anjue, server: 192.169.222.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 17 → anjue, server: 192.169.220.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 18 → anjue, server: 192.169.223.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 19 → anjue, server: 198.62.62.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 2 → anjue, server: 195.13.44.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 20 → anjue, server: 199.181.197.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 21 → anjue, server: 198.177.57.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 22 → anjue, server: 3.149.233.188, port: 20086, type: vmess, uuid: 158ee47c-c5f6-4892-8662-8fc113fb3d6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 23 → anjue, server: 190.93.245.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 24 → anjue, server: 198.12.145.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 25 → anjue, server: 198.71.189.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 26 → anjue, server: 185.148.104.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 27 → anjue, server: 216.24.57.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: "%252525252FTelegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3", headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 28 → anjue, server: 209.46.30.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 29 → anjue, server: 209.94.90.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: "%252525252FTelegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3", headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 3 → anjue, server: 195.13.54.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 30 → anjue, server: 185.148.106.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 31 → anjue, server: 192.0.63.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 32 → anjue, server: 205.233.181.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 33 → anjue, server: 190.93.245.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 34 → anjue, server: 185.148.107.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 35 → anjue, server: 198.202.211.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 36 → anjue, server: 195.13.45.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 37 → anjue, server: 192.169.221.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 38 → anjue, server: 192.200.160.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 39 → anjue, server: 198.177.56.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 4 → anjue, server: 195.13.45.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 40 → anjue, server: 199.34.230.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 41 → anjue, server: 198.71.188.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 42 → anjue, server: 204.93.210.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 43 → anjue, server: 190.93.244.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 44 → anjue, server: 193.124.224.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 45 → anjue, server: 199.34.230.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 46 → anjue, server: 199.34.228.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 47 → anjue, server: 195.13.44.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 48 → anjue, server: 198.71.190.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 49 → anjue, server: 216.205.52.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 5 → anjue, server: 195.13.54.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 50 → anjue, server: 198.62.62.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 51 → anjue, server: 192.0.54.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 52 → anjue, server: 199.34.229.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 53 → anjue, server: 195.13.55.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 54 → anjue, server: 198.12.144.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 55 → anjue, server: 195.13.55.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 56 → anjue, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: "%25252525252FStupid-World%25252525252F103.106.228.126-2053", headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 🇺🇸 US 57 → anjue, server: 216.24.57.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 58 → anjue, server: 209.94.90.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 59 → anjue, server: 198.202.211.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 6 → anjue, server: 192.169.221.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 60 → anjue, server: 198.71.232.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 61 → anjue, server: 198.71.188.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 62 → anjue, server: 198.71.191.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 63 → anjue, server: 199.68.156.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: "%2525252FTelegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3", headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 64 → anjue, server: 198.71.232.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 65 → anjue, server: 198.177.57.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 66 → anjue, server: 198.71.233.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 67 → anjue, server: 198.71.189.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 68 → anjue, server: 198.71.190.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 69 → anjue, server: 199.181.197.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 7 → anjue, server: 192.0.54.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 70 → anjue, server: 216.205.52.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 71 → anjue, server: 209.46.30.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 72 → anjue, server: 198.71.191.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 73 → anjue, server: 198.71.233.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 74 → anjue, server: 199.34.229.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 75 → anjue, server: 185.148.105.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: "%2525252FTelegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3", headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 76 → anjue, server: 204.93.210.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 77 → anjue, server: 199.34.228.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 78 → anjue, server: 199.68.156.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 79 → anjue, server: 198.12.144.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 8 → anjue, server: 192.0.63.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 80 → anjue, server: 205.233.181.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 81 → anjue, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: "%252525252FStupid-World%252525252F103.106.228.126-2053", headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 🇺🇸 US 82 → anjue, server: 15.204.234.200, port: 41100, type: vmess, uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 83 → anjue, server: 144.229.20.26, port: 20086, type: vmess, uuid: 68c2773b-8685-4a8a-a9c1-95d0efc05191, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 84 → anjue, server: 142.171.194.105, port: 6666, type: vmess, uuid: 3eb8b7ad-19b6-4ad8-8eaf-ccc3564c8eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sbb}, udp: true}
-  - {name: 🇺🇸 US 85 → anjue, server: 104.167.197.25, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: 360e21d21977dc11, udp: true}
-  - {name: 🇺🇸 US 86 → anjue, server: 165.140.216.141, port: 443, type: vmess, uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 87 → anjue, server: 38.12.83.217, port: 30002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 89 → anjue, server: 38.12.83.217, port: 30002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 9 → anjue, server: 190.93.244.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
-  - {name: 🇺🇸 US 90 → anjue, server: 38.99.82.193, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇷🇺 RU 2 → anjue, server: 185.59.218.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇷🇺 RU 3 → anjue, server: 213.241.198.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇷🇺 RU 4 → anjue, server: 194.53.53.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇷🇺 RU 5 → anjue, server: 185.174.138.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇷🇺 RU 6 → anjue, server: 194.53.53.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇷🇺 RU 7 → anjue, server: 185.221.160.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇷🇺 RU 8 → anjue, server: 188.42.145.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇷🇺 RU 9 → anjue, server: 193.9.49.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 1 → anjue, server: 198.177.56.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 10 → anjue, server: 192.169.223.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 100 → anjue, server: hackney-latest-strike.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: XUMTygEM1jVYIvysXKqA5T, udp: true}
+  - {name: 🇺🇸 US 101 → anjue, server: 137.175.124.167, port: 20086, type: vmess, uuid: b4bce500-11fe-4f8f-a344-01ac247af9bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 102 → anjue, server: 47.83.192.216, port: 36199, type: vmess, uuid: 49bb1bac-226e-434e-985b-e5fd1ac6c48b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 🇺🇸 US 103 → anjue, server: dddvvbn.931.pp.ua, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: dddvvbn.931.pp.ua}}, udp: true}
+  - {name: 🇺🇸 US 11 → anjue, server: 192.169.222.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 12 → anjue, server: 198.62.62.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 13 → anjue, server: 192.169.220.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 14 → anjue, server: 198.177.57.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 15 → anjue, server: 195.13.54.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 16 → anjue, server: 216.24.57.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: "%25252525252FTelegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3", headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 17 → anjue, server: 198.12.145.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 18 → anjue, server: 209.46.30.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 19 → anjue, server: 185.148.104.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 2 → anjue, server: 192.169.220.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 20 → anjue, server: 190.93.245.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 21 → anjue, server: 185.148.106.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 22 → anjue, server: 192.169.221.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 23 → anjue, server: 209.94.90.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: "%25252525252FTelegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3", headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 24 → anjue, server: 205.233.181.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 25 → anjue, server: 195.13.44.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 26 → anjue, server: 198.202.211.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 27 → anjue, server: 185.148.107.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 28 → anjue, server: 192.200.160.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 29 → anjue, server: 192.0.63.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 3 → anjue, server: 192.200.160.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 30 → anjue, server: 190.93.245.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 31 → anjue, server: 195.13.45.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 32 → anjue, server: 195.13.45.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 33 → anjue, server: 199.34.230.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 34 → anjue, server: 198.177.56.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525252525F0%252525252525259F%2525252525252587%25252525252525A8%25252525252525F0%252525252525259F%2525252525252587%25252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 35 → anjue, server: 199.34.228.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 36 → anjue, server: 216.205.52.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525252525F0%252525252525259F%2525252525252587%25252525252525A8%25252525252525F0%252525252525259F%2525252525252587%25252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 37 → anjue, server: 190.93.244.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 38 → anjue, server: 204.93.210.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525252525F0%252525252525259F%2525252525252587%25252525252525A8%25252525252525F0%252525252525259F%2525252525252587%25252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 39 → anjue, server: 198.71.188.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525252525F0%252525252525259F%2525252525252587%25252525252525A8%25252525252525F0%252525252525259F%2525252525252587%25252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 4 → anjue, server: 192.169.223.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 40 → anjue, server: 193.124.224.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 41 → anjue, server: 192.0.54.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 42 → anjue, server: 195.13.44.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 43 → anjue, server: 198.71.190.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525252525F0%252525252525259F%2525252525252587%25252525252525A8%25252525252525F0%252525252525259F%2525252525252587%25252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 44 → anjue, server: 199.34.230.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 45 → anjue, server: 199.34.229.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 46 → anjue, server: 195.13.54.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 47 → anjue, server: 195.13.55.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 48 → anjue, server: 216.24.57.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 49 → anjue, server: 209.94.90.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 5 → anjue, server: 198.12.145.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 50 → anjue, server: 198.12.144.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525252525F0%252525252525259F%2525252525252587%25252525252525A8%25252525252525F0%252525252525259F%2525252525252587%25252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 51 → anjue, server: 198.71.232.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525252525F0%252525252525259F%2525252525252587%25252525252525A8%25252525252525F0%252525252525259F%2525252525252587%25252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 52 → anjue, server: 198.202.211.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 53 → anjue, server: 198.62.62.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 54 → anjue, server: 3.149.233.188, port: 20086, type: vmess, uuid: 158ee47c-c5f6-4892-8662-8fc113fb3d6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 55 → anjue, server: 198.177.57.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 56 → anjue, server: 195.13.55.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 57 → anjue, server: 198.71.188.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 58 → anjue, server: 198.71.191.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 59 → anjue, server: 198.71.233.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 6 → anjue, server: 192.169.222.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 60 → anjue, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: "%2525252525252FStupid-World%2525252525252F103.106.228.126-2053", headers: {Host: vpn.stupidworld.web.id}}, udp: true}
+  - {name: 🇺🇸 US 61 → anjue, server: 199.68.156.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: "%252525252FTelegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3", headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 62 → anjue, server: 198.71.189.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%2525252525F0%25252525259F%252525252587%2525252525A8%2525252525F0%25252525259F%252525252587%2525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 63 → anjue, server: 199.34.229.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 64 → anjue, server: 199.68.156.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 65 → anjue, server: 199.181.197.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 66 → anjue, server: 192.169.221.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 67 → anjue, server: 198.71.191.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 68 → anjue, server: 198.71.190.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 69 → anjue, server: 185.148.105.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: "%252525252FTelegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3", headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 7 → anjue, server: 198.71.189.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 70 → anjue, server: 15.204.234.200, port: 41100, type: vmess, uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 71 → anjue, server: 209.46.30.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 72 → anjue, server: 199.34.228.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 73 → anjue, server: 198.71.232.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 74 → anjue, server: 192.0.54.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 75 → anjue, server: 198.71.233.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 76 → anjue, server: 216.205.52.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 77 → anjue, server: 205.233.181.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 78 → anjue, server: 204.93.210.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 79 → anjue, server: 198.12.144.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 8 → anjue, server: 193.124.224.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 80 → anjue, server: 190.93.244.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 81 → anjue, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: "%25252525252FStupid-World%25252525252F103.106.228.126-2053", headers: {Host: vpn.stupidworld.web.id}}, udp: true}
+  - {name: 🇺🇸 US 82 → anjue, server: 192.0.63.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 83 → anjue, server: 142.171.194.105, port: 6666, type: vmess, uuid: 3eb8b7ad-19b6-4ad8-8eaf-ccc3564c8eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sbb}, udp: true}
+  - {name: 🇺🇸 US 84 → anjue, server: 165.140.216.141, port: 443, type: vmess, uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 85 → anjue, server: gggggggggggggg.222769.xyz, port: 80, type: vmess, uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /f6taOMcOSZb9TPR, headers: {Host: gggggggggggggg.222769.xyz}}, udp: true}
+  - {name: 🇺🇸 US 86 → anjue, server: 104.167.197.25, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: 360e21d21977dc11, udp: true}
+  - {name: 🇺🇸 US 87 → anjue, server: 38.12.83.217, port: 30002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 88 → anjue, server: 15.204.234.200, port: 41100, type: vmess, uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 89 → anjue, server: 38.12.83.217, port: 30002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 9 → anjue, server: 199.181.197.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, network: ws, ws-opts: {path: Telegram%252525252525F0%2525252525259F%25252525252587%252525252525A8%252525252525F0%2525252525259F%25252525252587%252525252525B3, headers: {Host: ocost-dy.wmlefl.cc}}, udp: true}
+  - {name: 🇺🇸 US 90 → anjue, server: 107.149.134.165, port: 21014, type: vmess, uuid: ff373066-b8b9-4537-a6a6-b7455e9b8cdf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
   - {name: 🇺🇸 US 91 → anjue, server: test.hdcloud.link, port: 443, type: trojan, password: a630876d-75d4-4b98-8c52-a0f9a1951495, sni: static.icloud.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 92 → anjue, server: 107.149.134.165, port: 40982, type: vmess, uuid: b9474847-8724-491a-a042-cfc245d36024, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 🇺🇸 US 93 → anjue, server: 107.149.134.165, port: 21014, type: vmess, uuid: ff373066-b8b9-4537-a6a6-b7455e9b8cdf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 🇺🇸 US 94 → anjue, server: 107.149.134.165, port: 5855, type: vmess, uuid: 707ce7a6-4489-4ef0-ab73-9b3a28405c08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 🇺🇸 US 95 → anjue, server: hackney-latest-strike.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: XUMTygEM1jVYIvysXKqA5T, udp: true}
-  - {name: 🇺🇸 US 96 → anjue, server: bBbbbbbBb.222769.XYZ, port: 80, type: vmess, uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /f6taOMcOSZb9TPR, headers: {Host: bbbbbbbbb.222769.xyz}}, udp: true}
-  - {name: 🇺🇸 US 97 → anjue, server: 137.175.124.167, port: 20086, type: vmess, uuid: b4bce500-11fe-4f8f-a344-01ac247af9bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 98 → anjue, server: gggggggggggggg.222769.xyz, port: 80, type: vmess, uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /f6taOMcOSZb9TPR, headers: {Host: gggggggggggggg.222769.xyz}}, udp: true}
+  - {name: 🇺🇸 US 92 → anjue, server: 107.149.134.165, port: 5855, type: vmess, uuid: 707ce7a6-4489-4ef0-ab73-9b3a28405c08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 🇺🇸 US 93 → anjue, server: 107.149.134.165, port: 40982, type: vmess, uuid: b9474847-8724-491a-a042-cfc245d36024, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 🇺🇸 US 95 → anjue, server: 144.229.20.26, port: 20086, type: vmess, uuid: 68c2773b-8685-4a8a-a9c1-95d0efc05191, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 97 → anjue, server: 165.140.216.141, port: 443, type: vmess, uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 98 → anjue, server: v2ray.codefyinc.com, port: 443, type: vmess, uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmessws, headers: {Host: v2ray.codefyinc.com}}, udp: true}
   - {name: 🇺🇸 US 99 → anjue, server: 206.206.80.227, port: 20086, type: vmess, uuid: 0abb7b9e-81ba-4336-8ca7-056866032ff3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -452,6 +452,7 @@ proxy-groups:
       - AT 1 → anjue
       - AT 2 → anjue
       - AT 3 → anjue
+      - AT 4 → anjue
       - BR 1 → anjue
       - CH 1 → anjue
       - CR 1 → anjue
@@ -468,7 +469,6 @@ proxy-groups:
       - HR 2 → anjue
       - HU 1 → anjue
       - HU 2 → anjue
-      - IR 1 → anjue
       - KZ 1 → anjue
       - KZ 2 → anjue
       - KZ 3 → anjue
@@ -476,6 +476,7 @@ proxy-groups:
       - KZ 5 → anjue
       - KZ 6 → anjue
       - KZ 7 → anjue
+      - LT 1 → anjue
       - LU 1 → anjue
       - LU 2 → anjue
       - MT 1 → anjue
@@ -487,6 +488,7 @@ proxy-groups:
       - 🇦🇺 AU 5 → anjue
       - 🇦🇺 AU 6 → anjue
       - 🇦🇺 AU 7 → anjue
+      - 🇦🇺 AU 8 → anjue
       - 🇨🇦 CA 1 → anjue
       - 🇨🇦 CA 2 → anjue
       - 🇨🇦 CA 3 → anjue
@@ -497,15 +499,14 @@ proxy-groups:
       - 🇨🇳 TW 2 → anjue
       - 🇨🇳 TW 3 → anjue
       - 🇨🇳 TW 4 → anjue
+      - 🇨🇳 TW 5 → anjue
       - 🇨🇳 TW 6 → anjue
       - 🇨🇳 TW 7 → anjue
-      - 🇨🇳 TW 8 → anjue
       - 🇨🇳 TW 9 → anjue
       - 🇩🇪 DE 1 → anjue
       - 🇩🇪 DE 2 → anjue
       - 🇩🇪 DE 3 → anjue
       - 🇩🇪 DE 4 → anjue
-      - 🇩🇪 DE 5 → anjue
       - 🇪🇸 ES 1 → anjue
       - 🇪🇸 ES 2 → anjue
       - 🇪🇸 ES 3 → anjue
@@ -517,6 +518,7 @@ proxy-groups:
       - 🇫🇷 FR 4 → anjue
       - 🇫🇷 FR 5 → anjue
       - 🇫🇷 FR 6 → anjue
+      - 🇫🇷 FR 7 → anjue
       - 🇬🇧 GB 1 → anjue
       - 🇬🇧 GB 10 → anjue
       - 🇬🇧 GB 11 → anjue
@@ -529,12 +531,14 @@ proxy-groups:
       - 🇬🇧 GB 8 → anjue
       - 🇬🇧 GB 9 → anjue
       - 🇭🇰 HK 1 → anjue
+      - 🇭🇰 HK 10 → anjue
+      - 🇭🇰 HK 2 → anjue
       - 🇭🇰 HK 3 → anjue
       - 🇭🇰 HK 4 → anjue
       - 🇭🇰 HK 5 → anjue
       - 🇭🇰 HK 6 → anjue
-      - 🇭🇰 HK 7 → anjue
       - 🇭🇰 HK 8 → anjue
+      - 🇭🇰 HK 9 → anjue
       - 🇮🇳 IN 1 → anjue
       - 🇯🇵 JP 1 → anjue
       - 🇰🇷 KR 1 → anjue
@@ -547,7 +551,6 @@ proxy-groups:
       - 🇳🇱 NL 4 → anjue
       - 🇳🇱 NL 5 → anjue
       - 🇳🇱 NL 6 → anjue
-      - 🇳🇱 NL 7 → anjue
       - 🇷🇺 RU 1 → anjue
       - 🇷🇺 RU 10 → anjue
       - 🇷🇺 RU 11 → anjue
@@ -567,8 +570,6 @@ proxy-groups:
       - 🇺🇸 US 101 → anjue
       - 🇺🇸 US 102 → anjue
       - 🇺🇸 US 103 → anjue
-      - 🇺🇸 US 104 → anjue
-      - 🇺🇸 US 105 → anjue
       - 🇺🇸 US 11 → anjue
       - 🇺🇸 US 12 → anjue
       - 🇺🇸 US 13 → anjue
@@ -653,15 +654,14 @@ proxy-groups:
       - 🇺🇸 US 85 → anjue
       - 🇺🇸 US 86 → anjue
       - 🇺🇸 US 87 → anjue
+      - 🇺🇸 US 88 → anjue
       - 🇺🇸 US 89 → anjue
       - 🇺🇸 US 9 → anjue
       - 🇺🇸 US 90 → anjue
       - 🇺🇸 US 91 → anjue
       - 🇺🇸 US 92 → anjue
       - 🇺🇸 US 93 → anjue
-      - 🇺🇸 US 94 → anjue
       - 🇺🇸 US 95 → anjue
-      - 🇺🇸 US 96 → anjue
       - 🇺🇸 US 97 → anjue
       - 🇺🇸 US 98 → anjue
       - 🇺🇸 US 99 → anjue
@@ -684,6 +684,7 @@ proxy-groups:
       - AT 1 → anjue
       - AT 2 → anjue
       - AT 3 → anjue
+      - AT 4 → anjue
       - BR 1 → anjue
       - CH 1 → anjue
       - CR 1 → anjue
@@ -700,7 +701,6 @@ proxy-groups:
       - HR 2 → anjue
       - HU 1 → anjue
       - HU 2 → anjue
-      - IR 1 → anjue
       - KZ 1 → anjue
       - KZ 2 → anjue
       - KZ 3 → anjue
@@ -708,6 +708,7 @@ proxy-groups:
       - KZ 5 → anjue
       - KZ 6 → anjue
       - KZ 7 → anjue
+      - LT 1 → anjue
       - LU 1 → anjue
       - LU 2 → anjue
       - MT 1 → anjue
@@ -719,6 +720,7 @@ proxy-groups:
       - 🇦🇺 AU 5 → anjue
       - 🇦🇺 AU 6 → anjue
       - 🇦🇺 AU 7 → anjue
+      - 🇦🇺 AU 8 → anjue
       - 🇨🇦 CA 1 → anjue
       - 🇨🇦 CA 2 → anjue
       - 🇨🇦 CA 3 → anjue
@@ -729,15 +731,14 @@ proxy-groups:
       - 🇨🇳 TW 2 → anjue
       - 🇨🇳 TW 3 → anjue
       - 🇨🇳 TW 4 → anjue
+      - 🇨🇳 TW 5 → anjue
       - 🇨🇳 TW 6 → anjue
       - 🇨🇳 TW 7 → anjue
-      - 🇨🇳 TW 8 → anjue
       - 🇨🇳 TW 9 → anjue
       - 🇩🇪 DE 1 → anjue
       - 🇩🇪 DE 2 → anjue
       - 🇩🇪 DE 3 → anjue
       - 🇩🇪 DE 4 → anjue
-      - 🇩🇪 DE 5 → anjue
       - 🇪🇸 ES 1 → anjue
       - 🇪🇸 ES 2 → anjue
       - 🇪🇸 ES 3 → anjue
@@ -749,6 +750,7 @@ proxy-groups:
       - 🇫🇷 FR 4 → anjue
       - 🇫🇷 FR 5 → anjue
       - 🇫🇷 FR 6 → anjue
+      - 🇫🇷 FR 7 → anjue
       - 🇬🇧 GB 1 → anjue
       - 🇬🇧 GB 10 → anjue
       - 🇬🇧 GB 11 → anjue
@@ -761,12 +763,14 @@ proxy-groups:
       - 🇬🇧 GB 8 → anjue
       - 🇬🇧 GB 9 → anjue
       - 🇭🇰 HK 1 → anjue
+      - 🇭🇰 HK 10 → anjue
+      - 🇭🇰 HK 2 → anjue
       - 🇭🇰 HK 3 → anjue
       - 🇭🇰 HK 4 → anjue
       - 🇭🇰 HK 5 → anjue
       - 🇭🇰 HK 6 → anjue
-      - 🇭🇰 HK 7 → anjue
       - 🇭🇰 HK 8 → anjue
+      - 🇭🇰 HK 9 → anjue
       - 🇮🇳 IN 1 → anjue
       - 🇯🇵 JP 1 → anjue
       - 🇰🇷 KR 1 → anjue
@@ -779,7 +783,6 @@ proxy-groups:
       - 🇳🇱 NL 4 → anjue
       - 🇳🇱 NL 5 → anjue
       - 🇳🇱 NL 6 → anjue
-      - 🇳🇱 NL 7 → anjue
       - 🇷🇺 RU 1 → anjue
       - 🇷🇺 RU 10 → anjue
       - 🇷🇺 RU 11 → anjue
@@ -799,8 +802,6 @@ proxy-groups:
       - 🇺🇸 US 101 → anjue
       - 🇺🇸 US 102 → anjue
       - 🇺🇸 US 103 → anjue
-      - 🇺🇸 US 104 → anjue
-      - 🇺🇸 US 105 → anjue
       - 🇺🇸 US 11 → anjue
       - 🇺🇸 US 12 → anjue
       - 🇺🇸 US 13 → anjue
@@ -885,15 +886,14 @@ proxy-groups:
       - 🇺🇸 US 85 → anjue
       - 🇺🇸 US 86 → anjue
       - 🇺🇸 US 87 → anjue
+      - 🇺🇸 US 88 → anjue
       - 🇺🇸 US 89 → anjue
       - 🇺🇸 US 9 → anjue
       - 🇺🇸 US 90 → anjue
       - 🇺🇸 US 91 → anjue
       - 🇺🇸 US 92 → anjue
       - 🇺🇸 US 93 → anjue
-      - 🇺🇸 US 94 → anjue
       - 🇺🇸 US 95 → anjue
-      - 🇺🇸 US 96 → anjue
       - 🇺🇸 US 97 → anjue
       - 🇺🇸 US 98 → anjue
       - 🇺🇸 US 99 → anjue
@@ -904,12 +904,14 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇭🇰 HK 1 → anjue
+      - 🇭🇰 HK 10 → anjue
+      - 🇭🇰 HK 2 → anjue
       - 🇭🇰 HK 3 → anjue
       - 🇭🇰 HK 4 → anjue
       - 🇭🇰 HK 5 → anjue
       - 🇭🇰 HK 6 → anjue
-      - 🇭🇰 HK 7 → anjue
       - 🇭🇰 HK 8 → anjue
+      - 🇭🇰 HK 9 → anjue
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -929,8 +931,6 @@ proxy-groups:
       - 🇺🇸 US 101 → anjue
       - 🇺🇸 US 102 → anjue
       - 🇺🇸 US 103 → anjue
-      - 🇺🇸 US 104 → anjue
-      - 🇺🇸 US 105 → anjue
       - 🇺🇸 US 11 → anjue
       - 🇺🇸 US 12 → anjue
       - 🇺🇸 US 13 → anjue
@@ -1015,15 +1015,14 @@ proxy-groups:
       - 🇺🇸 US 85 → anjue
       - 🇺🇸 US 86 → anjue
       - 🇺🇸 US 87 → anjue
+      - 🇺🇸 US 88 → anjue
       - 🇺🇸 US 89 → anjue
       - 🇺🇸 US 9 → anjue
       - 🇺🇸 US 90 → anjue
       - 🇺🇸 US 91 → anjue
       - 🇺🇸 US 92 → anjue
       - 🇺🇸 US 93 → anjue
-      - 🇺🇸 US 94 → anjue
       - 🇺🇸 US 95 → anjue
-      - 🇺🇸 US 96 → anjue
       - 🇺🇸 US 97 → anjue
       - 🇺🇸 US 98 → anjue
       - 🇺🇸 US 99 → anjue
@@ -1037,9 +1036,9 @@ proxy-groups:
       - 🇨🇳 TW 2 → anjue
       - 🇨🇳 TW 3 → anjue
       - 🇨🇳 TW 4 → anjue
+      - 🇨🇳 TW 5 → anjue
       - 🇨🇳 TW 6 → anjue
       - 🇨🇳 TW 7 → anjue
-      - 🇨🇳 TW 8 → anjue
       - 🇨🇳 TW 9 → anjue
   - name: 🇸🇬 狮城节点
     type: url-test
@@ -1074,6 +1073,7 @@ proxy-groups:
       - AT 1 → anjue
       - AT 2 → anjue
       - AT 3 → anjue
+      - AT 4 → anjue
       - BR 1 → anjue
       - CH 1 → anjue
       - CR 1 → anjue
@@ -1090,7 +1090,6 @@ proxy-groups:
       - HR 2 → anjue
       - HU 1 → anjue
       - HU 2 → anjue
-      - IR 1 → anjue
       - KZ 1 → anjue
       - KZ 2 → anjue
       - KZ 3 → anjue
@@ -1098,6 +1097,7 @@ proxy-groups:
       - KZ 5 → anjue
       - KZ 6 → anjue
       - KZ 7 → anjue
+      - LT 1 → anjue
       - LU 1 → anjue
       - LU 2 → anjue
       - MT 1 → anjue
@@ -1109,6 +1109,7 @@ proxy-groups:
       - 🇦🇺 AU 5 → anjue
       - 🇦🇺 AU 6 → anjue
       - 🇦🇺 AU 7 → anjue
+      - 🇦🇺 AU 8 → anjue
       - 🇨🇦 CA 1 → anjue
       - 🇨🇦 CA 2 → anjue
       - 🇨🇦 CA 3 → anjue
@@ -1119,7 +1120,6 @@ proxy-groups:
       - 🇩🇪 DE 2 → anjue
       - 🇩🇪 DE 3 → anjue
       - 🇩🇪 DE 4 → anjue
-      - 🇩🇪 DE 5 → anjue
       - 🇪🇸 ES 1 → anjue
       - 🇪🇸 ES 2 → anjue
       - 🇪🇸 ES 3 → anjue
@@ -1131,6 +1131,7 @@ proxy-groups:
       - 🇫🇷 FR 4 → anjue
       - 🇫🇷 FR 5 → anjue
       - 🇫🇷 FR 6 → anjue
+      - 🇫🇷 FR 7 → anjue
       - 🇬🇧 GB 1 → anjue
       - 🇬🇧 GB 10 → anjue
       - 🇬🇧 GB 11 → anjue
@@ -1149,7 +1150,6 @@ proxy-groups:
       - 🇳🇱 NL 4 → anjue
       - 🇳🇱 NL 5 → anjue
       - 🇳🇱 NL 6 → anjue
-      - 🇳🇱 NL 7 → anjue
       - 🇷🇺 RU 1 → anjue
       - 🇷🇺 RU 10 → anjue
       - 🇷🇺 RU 11 → anjue
@@ -1182,6 +1182,7 @@ proxy-groups:
       - AT 1 → anjue
       - AT 2 → anjue
       - AT 3 → anjue
+      - AT 4 → anjue
       - BR 1 → anjue
       - CH 1 → anjue
       - CR 1 → anjue
@@ -1198,7 +1199,6 @@ proxy-groups:
       - HR 2 → anjue
       - HU 1 → anjue
       - HU 2 → anjue
-      - IR 1 → anjue
       - KZ 1 → anjue
       - KZ 2 → anjue
       - KZ 3 → anjue
@@ -1206,6 +1206,7 @@ proxy-groups:
       - KZ 5 → anjue
       - KZ 6 → anjue
       - KZ 7 → anjue
+      - LT 1 → anjue
       - LU 1 → anjue
       - LU 2 → anjue
       - MT 1 → anjue
@@ -1217,6 +1218,7 @@ proxy-groups:
       - 🇦🇺 AU 5 → anjue
       - 🇦🇺 AU 6 → anjue
       - 🇦🇺 AU 7 → anjue
+      - 🇦🇺 AU 8 → anjue
       - 🇨🇦 CA 1 → anjue
       - 🇨🇦 CA 2 → anjue
       - 🇨🇦 CA 3 → anjue
@@ -1227,15 +1229,14 @@ proxy-groups:
       - 🇨🇳 TW 2 → anjue
       - 🇨🇳 TW 3 → anjue
       - 🇨🇳 TW 4 → anjue
+      - 🇨🇳 TW 5 → anjue
       - 🇨🇳 TW 6 → anjue
       - 🇨🇳 TW 7 → anjue
-      - 🇨🇳 TW 8 → anjue
       - 🇨🇳 TW 9 → anjue
       - 🇩🇪 DE 1 → anjue
       - 🇩🇪 DE 2 → anjue
       - 🇩🇪 DE 3 → anjue
       - 🇩🇪 DE 4 → anjue
-      - 🇩🇪 DE 5 → anjue
       - 🇪🇸 ES 1 → anjue
       - 🇪🇸 ES 2 → anjue
       - 🇪🇸 ES 3 → anjue
@@ -1247,6 +1248,7 @@ proxy-groups:
       - 🇫🇷 FR 4 → anjue
       - 🇫🇷 FR 5 → anjue
       - 🇫🇷 FR 6 → anjue
+      - 🇫🇷 FR 7 → anjue
       - 🇬🇧 GB 1 → anjue
       - 🇬🇧 GB 10 → anjue
       - 🇬🇧 GB 11 → anjue
@@ -1259,12 +1261,14 @@ proxy-groups:
       - 🇬🇧 GB 8 → anjue
       - 🇬🇧 GB 9 → anjue
       - 🇭🇰 HK 1 → anjue
+      - 🇭🇰 HK 10 → anjue
+      - 🇭🇰 HK 2 → anjue
       - 🇭🇰 HK 3 → anjue
       - 🇭🇰 HK 4 → anjue
       - 🇭🇰 HK 5 → anjue
       - 🇭🇰 HK 6 → anjue
-      - 🇭🇰 HK 7 → anjue
       - 🇭🇰 HK 8 → anjue
+      - 🇭🇰 HK 9 → anjue
       - 🇮🇳 IN 1 → anjue
       - 🇯🇵 JP 1 → anjue
       - 🇰🇷 KR 1 → anjue
@@ -1277,7 +1281,6 @@ proxy-groups:
       - 🇳🇱 NL 4 → anjue
       - 🇳🇱 NL 5 → anjue
       - 🇳🇱 NL 6 → anjue
-      - 🇳🇱 NL 7 → anjue
       - 🇷🇺 RU 1 → anjue
       - 🇷🇺 RU 10 → anjue
       - 🇷🇺 RU 11 → anjue
@@ -1297,8 +1300,6 @@ proxy-groups:
       - 🇺🇸 US 101 → anjue
       - 🇺🇸 US 102 → anjue
       - 🇺🇸 US 103 → anjue
-      - 🇺🇸 US 104 → anjue
-      - 🇺🇸 US 105 → anjue
       - 🇺🇸 US 11 → anjue
       - 🇺🇸 US 12 → anjue
       - 🇺🇸 US 13 → anjue
@@ -1383,15 +1384,14 @@ proxy-groups:
       - 🇺🇸 US 85 → anjue
       - 🇺🇸 US 86 → anjue
       - 🇺🇸 US 87 → anjue
+      - 🇺🇸 US 88 → anjue
       - 🇺🇸 US 89 → anjue
       - 🇺🇸 US 9 → anjue
       - 🇺🇸 US 90 → anjue
       - 🇺🇸 US 91 → anjue
       - 🇺🇸 US 92 → anjue
       - 🇺🇸 US 93 → anjue
-      - 🇺🇸 US 94 → anjue
       - 🇺🇸 US 95 → anjue
-      - 🇺🇸 US 96 → anjue
       - 🇺🇸 US 97 → anjue
       - 🇺🇸 US 98 → anjue
       - 🇺🇸 US 99 → anjue
