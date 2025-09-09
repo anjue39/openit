@@ -1,25 +1,25 @@
 sub: #远程Clash配置文件，注有#的是失效的链接
 # proxypool节点池
   - https://www.xrayvip.com/free.yaml #同上，https://t.me/xrayfree 目前主力clash订阅链接
-  - https://api.v1.mk/sub?target=clash&url=http://weoknow.com/data/dayupdate/1/z1.txt&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=http://weoknow.com/data/dayupdate/2/z1.txt&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=http://weoknow.com/data/dayupdate/1/z1.txt&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=http://weoknow.com/data/dayupdate/2/z1.txt&insert=false&list=true
 # - http://weoknow.com/data/dayupdate/1/z.yaml
 # - http://weoknow.com/data/dayupdate/2/z.yaml
-# - https://api.v1.mk/sub?target=clash&url=http://weoknow.com/data/dayupdate/1/z.yaml
-  - https://api.v1.mk/sub?target=clash&url=https://jiang.netlify.app&insert=false&list=true #🚩二爷翻墙
+# - https://api-suc.0z.gs/sub?target=clash&url=http://weoknow.com/data/dayupdate/1/z.yaml
+  - https://api-suc.0z.gs/sub?target=clash&url=https://jiang.netlify.app&insert=false&list=true #🚩二爷翻墙
   - http://150.230.195.209:12580/clash/proxies
   - https://proxypool.link/clash/proxies
 # GitHub托管clash订阅链接
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml&insert=false&list=true #clash公益免费节点订阅每天更新
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2&insert=false&list=true #v2rayfree，这个可以推荐朋友免费用🚩
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg&insert=false&list=true #每天更新，注意看抓取速度
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml&insert=false&list=true #clash公益免费节点订阅每天更新
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2&insert=false&list=true #v2rayfree，这个可以推荐朋友免费用🚩
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg&insert=false&list=true #每天更新，注意看抓取速度
   - https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml #不错的免费站点，每天更新，里面有大量合并的节点，有list源
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub&insert=false&list=true #🐱
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub&insert=false&list=true #🐱
 # - https://raw.githubusercontent.com/anjue39/PoolActions/main/subscribe/clash.yaml
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/all.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/all.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml&insert=false&list=true
 # 25.1.2 add
   - http://141.147.161.50:12580/clash/proxies
   - http://150.230.195.209:12580/clash/proxies
@@ -27,46 +27,46 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - http://140.238.31.152:12580/clash/proxies
   - https://proxypool1999.banyunxiaoxi.icu/clash/proxies
 # 25.3.26 add
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list.meta.yml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Flikify/Free-Node/main/clash.yaml
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/xiaoji235/airport-free/main/clash/naidounode.txt
-  - https://api.v1.mk/sub?target=clash&url=https://fastly.jsdelivr.net/gh/dongchengjie/airport@main/subs/merged/tested_within.yaml
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list.meta.yml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Flikify/Free-Node/main/clash.yaml
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/xiaoji235/airport-free/main/clash/naidounode.txt
+  - https://api-suc.0z.gs/sub?target=clash&url=https://fastly.jsdelivr.net/gh/dongchengjie/airport@main/subs/merged/tested_within.yaml
 # 25.4.1 add
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml&insert=false&list=true
- #- https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity.yml&insert=false&list=true #测速后美国服务器优选高速节点200个
- # - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_yaml.yml&insert=false&list=true #非测速后的所有节点，便于本地测试
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml&insert=false&list=true
+ #- https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity.yml&insert=false&list=true #测速后美国服务器优选高速节点200个
+ # - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_yaml.yml&insert=false&list=true #非测速后的所有节点，便于本地测试
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml&insert=false&list=true
 # 25.9.4 add
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/ndnode.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/yudou66.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/wenode.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/nodefree.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/nodev2ray.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/v2rayshare.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/clash.yml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/ClashNode.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/clash.yml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/ClashNode.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Flik6/getNode/main/clash.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/free18/v2ray/main/c.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/ts-sf/fly/main/clash&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/baip01/clash/main/clash&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/ssrsub/ssr/master/clash.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/chongdong1230/dxz/main/clash&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.txt&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/moneyfly1/collectSub/main/output/all.txt&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/lagzian/SS-Collector/main/mix_clash.yaml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/sub.txt&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml&insert=false&list=true
-  - https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/Misaka-blog/chromego_merge/main/sub/merged_proxies_new.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/ndnode.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/yudou66.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/wenode.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/nodefree.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/nodev2ray.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/v2rayshare.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/clash.yml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/ClashNode.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/clash.yml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/ClashNode.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Flik6/getNode/main/clash.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/free18/v2ray/main/c.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/ts-sf/fly/main/clash&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/baip01/clash/main/clash&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/ssrsub/ssr/master/clash.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/chongdong1230/dxz/main/clash&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.txt&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/moneyfly1/collectSub/main/output/all.txt&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/lagzian/SS-Collector/main/mix_clash.yaml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/sub.txt&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml&insert=false&list=true
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Misaka-blog/chromego_merge/main/sub/merged_proxies_new.yaml&insert=false&list=true
 # openit
 # - https://raw.githubusercontent.com/yu-steven/openit/main/Clash.yaml #回环订阅
 # - https://raw.githubusercontent.com/yu-steven/openit/main/utils/pool/pool.yaml #入库订阅
