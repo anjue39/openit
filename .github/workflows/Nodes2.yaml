@@ -22,7 +22,7 @@ jobs:
     - uses: actions/setup-node@v5   #Node.js环境
       with:
         node-version: '21.x'        #Node.js 21.x
-    - uses: actions/setup-python@v5 #python环境
+    - uses: actions/setup-python@v6 #python环境
       with:
         python-version: '3.x'       #python 3.x
         cache: 'pip'                #pip cache
