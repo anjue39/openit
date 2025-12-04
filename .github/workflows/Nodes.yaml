@@ -24,7 +24,7 @@ jobs:
         node-version: '21.x'        #Node.js 21.x
     - uses: actions/setup-python@v6 #python环境
       with:
-        python-version: '3.13'       #python 3.x
+        python-version: '3.x'       #python 3.x
         cache: 'pip'                #pip cache
     - name: Timezone #UTC+0 → UTC+8
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
