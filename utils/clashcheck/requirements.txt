@@ -1,4 +1,4 @@
-PyYAML==6.0.1 --only-binary=PyYAML
+PyYAML==6.0.3
 requests~=2.32.5
 geoip2==5.2.0
 maxminddb~=2.8.2
