@@ -1,4 +1,4 @@
-name: Nodes_pages
+name: Nodes
 
 on: 
   workflow_dispatch:
@@ -24,7 +24,7 @@ jobs:
     - name: npm
       run: cd ./utils/rm/ && npm ci
     - name: Download source
-      run: curl -L "https://page.anjue39.qzz.io/ok/sub?target=clash" -o ./utils/subconverter/check.yaml
+      run: curl -L "${{ secrets.SUB_SOURCE_URL }}" -o ./utils/subconverter/check.yaml
     - name: subconverter
       run: |
          cd ./utils/subconverter/
