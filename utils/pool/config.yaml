@@ -10,19 +10,17 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - http://150.230.195.209:12580/clash/proxies
   - https://proxypool.link/clash/proxies
 # GitHub托管clash订阅链接
-  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml&insert=false&list=true #clash公益免费节点订阅每天更新
-  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2&insert=false&list=true #v2rayfree，这个可以推荐朋友免费用🚩
-  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg&insert=false&list=true #每天更新，注意看抓取速度
+# - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml&insert=false&list=true #🐱clash公益免费节点订阅每天更新，12月以后改成动态的日期了
+# - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2&insert=false&list=true #🐱v2rayfree，这个可以推荐朋友免费用🚩
+  - https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg #每天更新，注意看抓取速度
   - https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml #不错的免费站点，每天更新，里面有大量合并的节点，有list源
-  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub&insert=false&list=true #🐱
+  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub&insert=false&list=true #🐱12月后改成动态的了
 # - https://raw.githubusercontent.com/anjue39/PoolActions/main/subscribe/clash.yaml
   - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml&insert=false&list=true
   - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/all.yaml&insert=false&list=true
   - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml&insert=false&list=true
   - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml&insert=false&list=true
 # 25.1.2 add
-  - http://141.147.161.50:12580/clash/proxies
-  - http://150.230.195.209:12580/clash/proxies
   - http://66.42.50.118:12580/clash/proxies
   - http://140.238.31.152:12580/clash/proxies
   - https://proxypool1999.banyunxiaoxi.icu/clash/proxies
@@ -55,7 +53,7 @@ sub: #远程Clash配置文件，注有#的是失效的链接
   - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/ClashNode.yaml&insert=false&list=true
   - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/Flik6/getNode/main/clash.yaml&insert=false&list=true
   - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/free18/v2ray/main/c.yaml&insert=false&list=true
-  - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml&insert=false&list=true
+  - https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml
   - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/ts-sf/fly/main/clash&insert=false&list=true
   - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/baip01/clash/main/clash&insert=false&list=true
   - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/ssrsub/ssr/master/clash.yaml&insert=false&list=true

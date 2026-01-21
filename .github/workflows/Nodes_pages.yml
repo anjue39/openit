@@ -1,0 +1,70 @@
+name: Nodes_pages
+
+on: 
+  workflow_dispatch:
+
+jobs: 
+  my-job: 
+    name: Max Job
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '21.x'
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: git config
+      run: |
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+    - name: npm
+      run: cd ./utils/rm/ && npm ci
+    - name: Download source
+      run: curl -L "${{ secrets.SUB_SOURCE_URL }}" -o ./utils/subconverter/check.yaml
+    - name: Install yq
+      run: |
+        wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/local/bin/yq
+        chmod +x /usr/local/bin/yq
+        yq --version
+    - name: Extract only proxies (no header)
+      run: |
+        yq '.proxies // []' ./utils/subconverter/check.yaml > ./utils/subconverter/proxies-only.yaml
+        mv ./utils/subconverter/proxies-only.yaml ./utils/subconverter/check.yaml
+    - name: subconverter
+      run: |
+         cd ./utils/subconverter/
+         ./subconverter -g --artifact "clash"
+         ./subconverter -g --artifact "long"
+         ./subconverter -g --artifact "output"
+         ./subconverter -g --artifact "clash2base64"
+    - name: marge urls
+      run: base64 -d ./utils/subconverter/check > ./utils/rm/url1 && cat ./utils/rm/url1 ./sub/url2 > ./utils/rm/url && rm ./utils/subconverter/check ./utils/rm/url1 #output ./utils/rm/url & delete ./utils/subconverter/check ./utils/rm/url1 ./nodes
+    - name: remove & rename
+      run: cd ./utils/rm/ && npm start #output ./utils/rm/out
+    - name: url & https
+      run: | #input ./utils/rm/out
+         rm ./utils/rm/url             #delete ./utils/rm/url
+         mv ./utils/rm/out ./url       #output ./url
+         ./.github/url.sh > ./1        #output ./1
+         cp url 2                      #output ./2
+         cat 1 2 > 3 && rm 1 2         #output ./3 & delete ./1 ./2
+         base64 3 > https -w 0 && rm 3 #output ./https & delete ./3
+         base64 ./url > ./utils/subconverter/base64 -w 0 #url文件base64编码引入subconverter
+         cp ./utils/pool/output.yaml ./utils/subconverter/output.yaml #output.yaml节点池引入subconverter
+         sort url -o url #将url排序并修改至原文件，突出增删的节点 output ./url
+    - name: long & Clash.yaml
+      run: | #input ./utils/subconverter/base64 ./utils/subconverter/output.yaml
+         ./utils/subconverter/subconverter -g --artifact "clash"
+         ./utils/subconverter/subconverter -g --artifact "long"
+         ./utils/subconverter/subconverter -g --artifact "output"
+         #output ./utils/subconverter/Clash.yaml ./utils/subconverter/long ./utils/subconverter/output.txt
+         mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true #output ./Clash.yaml
+         mv ./utils/subconverter/long ./long || true #output ./long
+         mv ./utils/subconverter/output.txt ./utils/pool/output.txt || true #output ./utils/pool/output.txt
+         rm ./utils/subconverter/base64 ./utils/subconverter/output.yaml  #delete ./utils/subconverter/base64 ./utils/subconverter/output.yaml
+    - name: git push
+      run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/pool/output.txt to GitHub
