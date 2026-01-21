@@ -18,6 +18,8 @@ jobs:
     name: Max Job
     runs-on: ubuntu-latest
     steps: 
+    - uses: actions/checkout@v5     #git clone
+    - uses: actions/setup-node@v6   #Node.js环境
     - uses: actions/checkout@v6     #git clone
     - uses: actions/setup-node@v5   #Node.js环境
       with:
