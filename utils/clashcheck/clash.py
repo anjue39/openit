@@ -9,7 +9,6 @@ import requests
 from tqdm import tqdm
 from pathlib import Path
 
-
 def push(list, outfile):
     country_count = {}
     count = 1
@@ -21,34 +20,37 @@ def push(list, outfile):
         for i in tqdm(range(int(len(list))), desc="Parse"):
             x = list[i]
             try:
-                float(x['password'])
-            except:
+                # 强制转换可能受影响的字段为字符串
+                if 'password' in x:
+                    x['password'] = str(x['password'])
+                if 'uuid' in x:
+                    x['uuid'] = str(x['uuid'])
+                
                 try:
-                    float(x['uuid'])
+                    ip = str(socket.gethostbyname(x["server"]))
                 except:
-                    try:
-                        ip = str(socket.gethostbyname(x["server"]))
-                    except:
-                        ip = str(x["server"])
-                    try:
-                        country = str(countrify.get(ip)['country']['iso_code'])
-                    except:
-                        country = 'UN'
-                    flagcountry = country
-                    try:
-                        country_count[country] = country_count[country] + 1
-                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                    except:
-                        country_count[country] = 1
-                        x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
-                    clash['proxies'].append(x)
-                    clash['proxy-groups'][0]['proxies'].append(x['name'])
-                    clash['proxy-groups'][1]['proxies'].append(x['name'])
-                    count = count + 1
+                    ip = str(x["server"])
+                try:
+                    country = str(countrify.get(ip)['country']['iso_code'])
+                except:
+                    country = 'UN'
+                flagcountry = country
+                try:
+                    country_count[country] = country_count[country] + 1
+                    x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                except:
+                    country_count[country] = 1
+                    x['name'] = str(flag.flag(flagcountry)) + " " + country + " " + str(count)
+                clash['proxies'].append(x)
+                clash['proxy-groups'][0]['proxies'].append(x['name'])
+                clash['proxy-groups'][1]['proxies'].append(x['name'])
+                count = count + 1
+            except:
+                # 单个节点出错，跳过不影响整体
+                continue
 
     with open(outfile, 'w') as writer:
         yaml.dump(clash, writer, sort_keys=False)
-
 
 def checkenv():
     operating_system = str(platform.system() + '/' +  platform.machine() + ' with ' + platform.node())
@@ -81,7 +83,6 @@ def checkenv():
 
     return clashname, operating_system
 
-
 def checkuse(clashname, operating_system):
     pids = psutil.process_iter()
     for pid in pids:
@@ -96,7 +97,6 @@ def checkuse(clashname, operating_system):
                 print(clashname, str(pid.pid) + " ← kill to continue")
                 exit(1)
 
-
 def filter(config):
     list = config["proxies"]
     ss_supported_ciphers = ['aes-128-gcm', 'aes-256-gcm', 'chacha20-ietf-poly1305'] 
@@ -106,6 +106,8 @@ def filter(config):
     iplist = {}
     passlist = []
     count = 1
+    ss_omit_cipher_unsupported = 0  # 初始化计数变量
+    ss_omit_ip_dupe = 0  # 初始化计数变量
     clash = {'proxies': [], 'proxy-groups': [
             {'name': 'automatic', 'type': 'url-test', 'proxies': [], 'url': 'https://www.google.com/favicon.ico',
              'interval': 300}, {'name': '🌐 Proxy', 'type': 'select', 'proxies': ['automatic']}],
@@ -115,7 +117,10 @@ def filter(config):
             try:
                 x = list[i]
                 authentication = ''
-                x['port'] = int(x['port'])
+                try:
+                    x['port'] = int(x['port'])
+                except:
+                    continue  # port 转换失败，跳过
                 # 新增逻辑：直接跳过所有 h2/grpc 节点
                 network = x.get('network', 'tcp')  # 获取传输协议类型
                 if network in ['h2', 'grpc']:
@@ -130,6 +135,13 @@ def filter(config):
                         x['password'] = ''  # 如果处理失败，设置为空字符串或跳过该节点
                 else:
                     x['password'] = ''  # 如果字段缺失，设置默认值   
+                # 额外处理其他可能受影响的字段，根据类型
+                if x['type'] == 'vmess' and 'uuid' in x:
+                    x['uuid'] = str(x['uuid'])
+                elif x['type'] == 'snell' and 'psk' in x:
+                    x['psk'] = str(x['psk'])
+                # ... (如果有其他类型，可扩展)
+                
                 try:
                     ip = str(socket.gethostbyname(x["server"]))
                 except:
@@ -164,7 +176,7 @@ def filter(config):
                         if ip in iplist:
                             continue
                         else:
-                            iplist.append(ip)
+                            iplist[ip] = []  # 修正：从 iplist.append(ip) 改为 iplist[ip] = []
                             iplist[ip].append(x['port'])
                         authentication = 'password'
                         x['name'] = str(flag.flag(country)) + ' ' + str(country) + ' ' + str(count) + ' ' + 'SSR'
