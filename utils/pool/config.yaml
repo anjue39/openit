@@ -8,7 +8,7 @@ sub: #远程Clash配置文件，注有#的是失效的链接
 # - https://api-suc.0z.gs/sub?target=clash&url=http://weoknow.com/data/dayupdate/1/z.yaml
   - https://api-suc.0z.gs/sub?target=clash&url=https://jiang.netlify.app&insert=false&list=true #🚩二爷翻墙
   - http://150.230.195.209:12580/clash/proxies
- #- https://proxypool.link/clash/proxies
+  - https://proxypool.link/clash/proxies
 # GitHub托管clash订阅链接
 # - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml&insert=false&list=true #🐱clash公益免费节点订阅每天更新，12月以后改成动态的日期了
 # - https://api-suc.0z.gs/sub?target=clash&url=https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2&insert=false&list=true #🐱v2rayfree，这个可以推荐朋友免费用🚩
