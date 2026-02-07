@@ -4,4 +4,4 @@ geoip2==5.2.0
 maxminddb~=3.0.0
 psutil~=7.2.1
 emoji-country-flag~=2.1.0
-tqdm~=4.67.1
+tqdm~=4.67.2
