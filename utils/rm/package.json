@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/anjue39/openit#readme",
   "dependencies": {
-    "geoip-lite": "^1.4.5"
+    "geoip-lite": "^2.0.1"
   }
 }
